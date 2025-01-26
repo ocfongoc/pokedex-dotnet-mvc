@@ -1,0 +1,215 @@
+body {
+    margin: 0;
+    background-color: #c5293b;
+    background-image: linear-gradient( rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.05) ) !important;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    background-color: #d2f9f9;
+    padding: 10px;
+    z-index: 2;
+    height: calc(100vh - 20px);
+    width: 1024px;
+}
+
+.main-inner {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #95e7e7;
+    padding: 8px;
+    height: calc(100% - 16px);
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.1), 0 0 10px rgb(0 0 0 / 0.1);
+}
+
+.content {
+    padding: 10px;
+    width: 732px;
+}
+
+.sidebar {
+    padding: 10px;
+    width: 292px;
+}
+
+.border {
+    position: relative;
+    width: 424px;
+}
+
+    .border.left {
+        border-right: 12px #c0c0c0 solid;
+    }
+
+    .border.right {
+        border-left: 12px #c0c0c0 solid;
+    }
+
+.ball-inner {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    height: 256px;
+    width: 256px;
+    border: 72px black solid;
+    border-radius: 50%;
+    /* background-color: #d2f9f9; */
+    background-color: #ececec;
+}
+
+    .ball-inner.left {
+        transform: translateY(-200px) translateX(36px);
+    }
+
+    .ball-inner.right {
+        transform: translateY(-200px) translateX(-436px);
+    }
+
+.ball-outer {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    height: 256px;
+    width: 256px;
+    border: 84px #c0c0c0 solid;
+    border-radius: 50%;
+}
+
+    .ball-outer.left {
+        transform: translateY(-612px) translateX(24px);
+    }
+
+    .ball-outer.right {
+        transform: translateY(-612px) translateX(-448px);
+    }
+
+.name {
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    background-color: #1e8fe7;
+    margin-bottom: 8px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    font-size: 24px;
+    font-weight: bold;
+    border: 2px #d6d6d6 solid;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+    .name span {
+        margin-right: 10px;
+    }
+
+    .name:hover {
+        opacity: 0.9;
+    }
+
+.pokemon-detail {
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    border: 2px #d6d6d6 solid;
+    background-color: #1e8fe7;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    color: white;
+    font-weight: bold;
+}
+
+.pokemon-image {
+    width: 360px;
+}
+
+/* General Reset for Inputs */
+input[type="text"] {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+    input[type="text"]:focus {
+        border-color: #80bdff;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+
+/* Label Styling */
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: #212529;
+}
+
+/* Input Group Container */
+.input-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+    width:100%
+}
+
+    /* Helper or Error Text */
+    .input-group .helper-text {
+        font-size: 0.875rem;
+        color: #6c757d;
+        margin-top: 0.25rem;
+    }
+
+    .input-group .error-text {
+        font-size: 0.875rem;
+        color: #dc3545;
+        margin-top: 0.25rem;
+    }
+
+    /* Optional Inline Icon */
+    .input-group .icon {
+        position: absolute;
+        top: 50%;
+        left: 1rem;
+        transform: translateY(-50%);
+        color: #6c757d;
+    }
+
+    .input-group .input-with-icon {
+        padding-left: 2.5rem;
+    }
+
+/* Example Hover Effects */
+input[type="text"]:hover {
+    border-color: #adb5bd;
+}
+
+/* Disabled State */
+input[type="text"][disabled] {
+    background-color: #e9ecef;
+    opacity: 1;
+    cursor: not-allowed;
+}

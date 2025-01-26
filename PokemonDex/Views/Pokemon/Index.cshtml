@@ -1,0 +1,20 @@
+﻿@model List<Pokemon>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="main-inner">
+    <div class="content">
+        <div class="pokemon-detail">
+            <div>ポケモンずかん</div>
+        </div>
+    </div>
+    <div class="sidebar">
+        @foreach (var pokemon in Model)
+        {
+            <a asp-action="Detail" asp-route-id="@pokemon.IndexId">
+                <div class="name"><span>No.@pokemon.IndexId</span> @pokemon.Name</div>
+            </a>
+        }
+    </div>
+</div>
