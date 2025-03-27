@@ -36,12 +36,15 @@ a {
 .content {
     padding: 10px;
     width: 732px;
+    height: 100%;
+    overflow-y: auto;
 }
 
 .sidebar {
     padding: 10px;
     width: 292px;
     overflow-y: auto;
+    height: calc(100% - 30px);
 }
 
 .border {
@@ -127,17 +130,75 @@ a {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: calc(100% - 20px);
     margin: auto;
+    padding: 40px 20px;
     justify-content: center;
     align-items: center;
-    font-size: 48px;
     color: white;
-    font-weight: bold;
+    box-sizing: border-box;
 }
 
 .pokemon-image {
     width: 360px;
+    height: auto;
+}
+
+.pokemon-info {
+    text-align: center;
+    width: 100%;
+}
+
+.pokemon-name {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.pokemon-type {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.type-badge {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Pokemon type colors */
+.type-badge[data-type="ノーマル"] { background-color: #A8A878; }
+.type-badge[data-type="ほのお"] { background-color: #F08030; }
+.type-badge[data-type="みず"] { background-color: #6890F0; }
+.type-badge[data-type="でんき"] { background-color: #F8D030; }
+.type-badge[data-type="くさ"] { background-color: #78C850; }
+.type-badge[data-type="こおり"] { background-color: #98D8D8; }
+.type-badge[data-type="かくとう"] { background-color: #C03028; }
+.type-badge[data-type="どく"] { background-color: #A040A0; }
+.type-badge[data-type="じめん"] { background-color: #E0C068; }
+.type-badge[data-type="ひこう"] { background-color: #A890F0; }
+.type-badge[data-type="エスパー"] { background-color: #F85888; }
+.type-badge[data-type="むし"] { background-color: #A8B820; }
+.type-badge[data-type="いわ"] { background-color: #B8A038; }
+.type-badge[data-type="ゴースト"] { background-color: #705898; }
+.type-badge[data-type="ドラゴン"] { background-color: #7038F8; }
+.type-badge[data-type="あく"] { background-color: #705848; }
+.type-badge[data-type="はがね"] { background-color: #B8B8D0; }
+.type-badge[data-type="フェアリー"] { background-color: #EE99AC; }
+
+.pokemon-description {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    background-color: rgba(30, 143, 231, 0.7);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    white-space: pre-wrap;
 }
 
 /* General Reset for Inputs */

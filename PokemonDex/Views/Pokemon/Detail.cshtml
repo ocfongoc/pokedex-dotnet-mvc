@@ -8,7 +8,16 @@
 	<div class="content">
 		<div class="pokemon-detail">
 			<img class="pokemon-image" src=@("/images/"+@Model.pokemon?.IndexId+".png") />
-			<div>No.@Model.pokemon?.IndexId @Model.pokemon?.Name</div>
+			<div class="pokemon-info">
+				<div class="pokemon-name">No.@Model.pokemon?.IndexId @Model.pokemon?.Name</div>
+				<div class="pokemon-type">
+					@foreach (var type in Model.pokemon?.Type.Split(", ") ?? Array.Empty<string>())
+					{
+						<span class="type-badge" data-type="@type">@type</span>
+					}
+				</div>
+				<div class="pokemon-description">@Model.pokemon?.Description</div>
+			</div>
 		</div>
 	</div>
 	<div class="sidebar">
