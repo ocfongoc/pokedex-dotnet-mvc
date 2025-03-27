@@ -41,6 +41,7 @@ a {
 .sidebar {
     padding: 10px;
     width: 292px;
+    overflow-y: auto;
 }
 
 .border {
@@ -111,13 +112,13 @@ a {
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
-    .name span {
-        margin-right: 10px;
-    }
+.name span {
+    margin-right: 10px;
+}
 
-    .name:hover {
-        opacity: 0.9;
-    }
+.name:hover {
+    opacity: 0.9;
+}
 
 .pokemon-detail {
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);

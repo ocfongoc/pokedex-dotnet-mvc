@@ -15,7 +15,6 @@ namespace PokemonDex.Controllers
             _db = db;
         }
 
-
         public IActionResult Index()
         {
             List<Pokemon> pokemons = _db.Pokemons.ToList();
@@ -24,8 +23,18 @@ namespace PokemonDex.Controllers
 
         public IActionResult Detail(string? id)
         {
+            if (string.IsNullOrEmpty(id))
+            {
+                return RedirectToAction(nameof(Index));
+            }
+
             List<Pokemon> pokemons = _db.Pokemons.ToList();
             Pokemon? pokemon = _db.Pokemons.FirstOrDefault(p => p.IndexId == id);
+
+            if (pokemon == null)
+            {
+                return RedirectToAction(nameof(Index));
+            }
 
             PokemonDetailViewModel pokemonDetailViewModel = new PokemonDetailViewModel { 
                 pokemon = pokemon,
@@ -33,8 +42,6 @@ namespace PokemonDex.Controllers
             };
             return View(pokemonDetailViewModel);
         }
-
-
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

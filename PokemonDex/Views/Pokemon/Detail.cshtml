@@ -1,21 +1,21 @@
 ﻿@model PokemonDetailViewModel
 
 @{
-	ViewData["Title"] = Model.pokemon.Name;
+	ViewData["Title"] = Model.pokemon?.Name ?? "Pokemon Not Found";
 }
 
 <div class="main-inner">
 	<div class="content">
 		<div class="pokemon-detail">
-			<img class="pokemon-image" src=@("/images/"+@Model.pokemon.IndexId+".png") />
-			<div><span>No.@Model.pokemon.IndexId</span> @Model.pokemon.Name</div>
+			<img class="pokemon-image" src=@("/images/"+@Model.pokemon?.IndexId+".png") />
+			<div>No.@Model.pokemon?.IndexId @Model.pokemon?.Name</div>
 		</div>
 	</div>
 	<div class="sidebar">
-		@foreach (var pokemon in Model.pokemons)
+		@foreach (var pokemon in Model.pokemons ?? Enumerable.Empty<Pokemon>())
 		{
 			<a asp-action="Detail" asp-route-id="@pokemon.IndexId">
-				<div class="name"><span>No.@pokemon.IndexId</span> @pokemon.Name</div>
+				<div class="name"><span>No.@pokemon.IndexId</span>@pokemon.Name</div>
 			</a>
 		}
 	</div>

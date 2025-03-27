@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PokemonDex.Data;
 
@@ -10,9 +11,11 @@ using PokemonDex.Data;
 namespace PokemonDex.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250327155837_UpdatePokemonData")]
+    partial class UpdatePokemonData
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -205,6 +208,14 @@ namespace PokemonDex.Migrations
                         new
                         {
                             Id = 20,
+                            Description = "キバは ながくて するどい。いっしょう のびつづけるので かたい モノを かじって けずる。",
+                            IndexId = "0019",
+                            Name = "コラッタ\n(アローラのすがた)",
+                            Type = "あく, ノーマル"
+                        },
+                        new
+                        {
+                            Id = 21,
                             Description = "うしろあしの ゆびは 3ぼんで ちいさな みずかきが ついている。かわを およいで わたる。",
                             IndexId = "0020",
                             Name = "ラッタ",
@@ -212,7 +223,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 21,
+                            Id = 22,
+                            Description = "うしろあしの ゆびは 3ぼんで ちいさな みずかきが ついている。かわを およいで わたる。",
+                            IndexId = "0020",
+                            Name = "ラッタ\n(アローラのすがた)",
+                            Type = "あく, ノーマル"
+                        },
+                        new
+                        {
+                            Id = 23,
                             Description = "いそがしく あちこちを とびまわる。たいりょくは すくないが オウムがえしを つかうと てごわい。",
                             IndexId = "0021",
                             Name = "オニスズメ",
@@ -220,7 +239,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 22,
+                            Id = 24,
                             Description = "おおきな つばさで おおぞらを とびつづけることが できる。1にち おりなくても だいじょうぶ。",
                             IndexId = "0022",
                             Name = "オニドリル",
@@ -228,7 +247,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 23,
+                            Id = 25,
                             Description = "くさちなどに おおく せいそくする。 したを チロチロ させて まわりの きけんを かんじとる。",
                             IndexId = "0023",
                             Name = "アーボ",
@@ -236,7 +255,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 24,
+                            Id = 26,
                             Description = "おなかの もようが こわいかおに みえる。よわいてきは そのもようを みただけで にげだしてしまう。",
                             IndexId = "0024",
                             Name = "アーボック",
@@ -244,7 +263,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 25,
+                            Id = 27,
                             Description = "ほっぺたの りょうがわに ちいさい でんきぶくろを もつ。ピンチのときに ほうでんする。",
                             IndexId = "0025",
                             Name = "ピカチュウ",
@@ -252,7 +271,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 26,
+                            Id = 28,
                             Description = "でんげきは 10まんボルトに たっすることもあり ヘタにさわると インドぞうでも きぜつする。",
                             IndexId = "0026",
                             Name = "ライチュウ",
@@ -260,7 +279,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 27,
+                            Id = 29,
+                            Description = "でんげきは 10まんボルトに たっすることもあり ヘタにさわると インドぞうでも きぜつする。",
+                            IndexId = "0026",
+                            Name = "ライチュウ\n(アローラのすがた)",
+                            Type = "でんき, エスパー"
+                        },
+                        new
+                        {
+                            Id = 30,
                             Description = "じめんに あなを ほって すむ。 じぶんに きけんが せまると まるくなって みを まもる。",
                             IndexId = "0027",
                             Name = "サンド",
@@ -268,7 +295,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 28,
+                            Id = 31,
+                            Description = "じめんに あなを ほって すむ。 じぶんに きけんが せまると まるくなって みを まもる。",
+                            IndexId = "0027",
+                            Name = "サンド\n(アローラのすがた)",
+                            Type = "こおり, はがね"
+                        },
+                        new
+                        {
+                            Id = 32,
                             Description = "すばしっこく はしり まわり せなかの ハリと するどい ツメの こうげきが とくい。",
                             IndexId = "0028",
                             Name = "サンドパン",
@@ -276,7 +311,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 29,
+                            Id = 33,
+                            Description = "すばしっこく はしり まわり せなかの ハリと するどい ツメの こうげきが とくい。",
+                            IndexId = "0028",
+                            Name = "サンドパン\n(アローラのすがた)",
+                            Type = "こおり, はがね"
+                        },
+                        new
+                        {
+                            Id = 34,
                             Description = "ちいさくても どくばりの いりょくは きょうれつで ちゅういが ひつよう。メスのほうが つのが ちいさい。",
                             IndexId = "0029",
                             Name = "ニドラン♀",
@@ -284,7 +327,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 30,
+                            Id = 35,
                             Description = "メスなので せいかくは おんこう。くちから だす ちょうおんぱは あいてを まどわす ちからがある。",
                             IndexId = "0030",
                             Name = "ニドリーナ",
@@ -292,7 +335,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 31,
+                            Id = 36,
                             Description = "かたくて はりのような ウロコが からだを おおっている。こうふんすると はりが さかだつ。",
                             IndexId = "0031",
                             Name = "ニドクイン",
@@ -300,7 +343,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 32,
+                            Id = 37,
                             Description = "みみが おおきく とおくの おとを きくとき はばたくように うごく。おこると どくばりを だす。",
                             IndexId = "0032",
                             Name = "ニドラン♂",
@@ -308,7 +351,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 33,
+                            Id = 38,
                             Description = "おこりやすい せいかく。はったつした ツノを ふりまわして ダイヤモンドも くしざしに する。",
                             IndexId = "0033",
                             Name = "ニドリーノ",
@@ -316,7 +359,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 34,
+                            Id = 39,
                             Description = "いしのように かたい ひふと ながく のびた ツノが とくちょう。ツノには どくもあるので ちゅうい。",
                             IndexId = "0034",
                             Name = "ニドキング",
@@ -324,7 +367,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 35,
+                            Id = 40,
                             Description = "あいくるしい すがたから ペットように にんきが ある。ただし なかなか みつけられない。",
                             IndexId = "0035",
                             Name = "ピッピ",
@@ -332,7 +375,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 36,
+                            Id = 41,
                             Description = "みみが よくて 1キロ はなれた ところで おとした はりのおとを みごとに ききわけられる。",
                             IndexId = "0036",
                             Name = "ピクシー",
@@ -340,7 +383,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 37,
+                            Id = 42,
                             Description = "こどもだが 6ほんの しっぽが うつくしい。せいちょうすると さらに しっぽが ふえる。",
                             IndexId = "0037",
                             Name = "ロコン",
@@ -348,7 +391,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 38,
+                            Id = 43,
+                            Description = "こどもだが 6ほんの しっぽが うつくしい。せいちょうすると さらに しっぽが ふえる。",
+                            IndexId = "0037",
+                            Name = "ロコン\n(アローラのすがた)",
+                            Type = "こおり"
+                        },
+                        new
+                        {
+                            Id = 44,
                             Description = "おうごんに かがやく たいもうと 9ほんの ながい しっぽを もつ。 1000ねんは いきると いわれる。",
                             IndexId = "0038",
                             Name = "キュウコン",
@@ -356,7 +407,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 39,
+                            Id = 45,
+                            Description = "おうごんに かがやく たいもうと 9ほんの ながい しっぽを もつ。 1000ねんは いきると いわれる。",
+                            IndexId = "0038",
+                            Name = "キュウコン\n(アローラのすがた)",
+                            Type = "こおり, フェアリー"
+                        },
+                        new
+                        {
+                            Id = 46,
                             Description = "まるくて おおきい ひとみで さそいこみ ここちよい うたを うたい あいてを ねむらせる。",
                             IndexId = "0039",
                             Name = "プリン",
@@ -364,7 +423,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 40,
+                            Id = 47,
                             Description = "キメ こまかく しなやかな たいもうは うっとりするほど。けがわは こうきゅうひんだ。",
                             IndexId = "0040",
                             Name = "プクリン",
@@ -372,7 +431,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 41,
+                            Id = 48,
                             Description = "りょうほうの めが そんざいしない。くちから ちょうおんぱを だして くらやみを とびまわる。",
                             IndexId = "0041",
                             Name = "ズバット",
@@ -380,7 +439,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 42,
+                            Id = 49,
                             Description = "するどいキバで かみついて いちどに 300シーシーの ちを すいとってしまう。",
                             IndexId = "0042",
                             Name = "ゴルバット",
@@ -388,7 +447,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 43,
+                            Id = 50,
                             Description = "べつめい アルキメンデス。よるに なると 2ほんの ねっこで 300メートルも あるくという。",
                             IndexId = "0043",
                             Name = "ナゾノクサ",
@@ -396,7 +455,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 44,
+                            Id = 51,
                             Description = "めしべが はなつ とてつもなく くさい においは 2キロさきまで とどき きを うしなわせる。",
                             IndexId = "0044",
                             Name = "クサイハナ",
@@ -404,7 +463,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 45,
+                            Id = 52,
                             Description = "せかいいち おおきい はなびらから アレルギーを おこす かふんを オニの ように ばらまく。",
                             IndexId = "0045",
                             Name = "ラフレシア",
@@ -412,7 +471,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 46,
+                            Id = 53,
                             Description = "むしの せなかに はえているのは とうちゅうかそう という キノコ。そだつと キノコも おおきくなる。",
                             IndexId = "0046",
                             Name = "パラス",
@@ -420,7 +479,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 47,
+                            Id = 54,
                             Description = "キノコの カサから どくほうしを まきちらす。しかし ちゅうごくでは このほうしを かんぽうやくに する。",
                             IndexId = "0047",
                             Name = "パラセクト",
@@ -428,7 +487,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 48,
+                            Id = 55,
                             Description = "くらやみでも めが レーダーの やくわりをして かつどうできる。めから ビームを はっしゃする。",
                             IndexId = "0048",
                             Name = "コンパン",
@@ -436,7 +495,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 49,
+                            Id = 56,
                             Description = "はねに りんぷんが ついていて ヒラヒラと はばたくたびに もうどくの こなを ばらまく。",
                             IndexId = "0049",
                             Name = "モルフォン",
@@ -444,7 +503,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 50,
+                            Id = 57,
                             Description = "ちちゅうの あさいところを いどう。 ほりすすんだあとは じめんが もりあがっているので すぐわかる。",
                             IndexId = "0050",
                             Name = "ディグダ",
@@ -452,7 +511,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 51,
+                            Id = 58,
+                            Description = "ちちゅうの あさいところを いどう。 ほりすすんだあとは じめんが もりあがっているので すぐわかる。",
+                            IndexId = "0050",
+                            Name = "ディグダ\n(アローラのすがた)",
+                            Type = "じめん, はがね"
+                        },
+                        new
+                        {
+                            Id = 59,
                             Description = "ちちゅうを ほりすすんで あいてが ゆだんしているところを べつの ばしょから こうげきする。",
                             IndexId = "0051",
                             Name = "ダグトリオ",
@@ -460,7 +527,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 52,
+                            Id = 60,
+                            Description = "ちちゅうを ほりすすんで あいてが ゆだんしているところを べつの ばしょから こうげきする。",
+                            IndexId = "0051",
+                            Name = "ダグトリオ\n(アローラのすがた)",
+                            Type = "じめん, はがね"
+                        },
+                        new
+                        {
+                            Id = 61,
                             Description = "ひるまは ねてばかりいる。 よるになると めが かがやき なわばりを あるきまわる。",
                             IndexId = "0052",
                             Name = "ニャース",
@@ -468,7 +543,23 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 53,
+                            Id = 62,
+                            Description = "ひるまは ねてばかりいる。 よるになると めが かがやき なわばりを あるきまわる。",
+                            IndexId = "0052",
+                            Name = "ニャース\n(アローラのすがた)",
+                            Type = "あく"
+                        },
+                        new
+                        {
+                            Id = 63,
+                            Description = "ひるまは ねてばかりいる。 よるになると めが かがやき なわばりを あるきまわる。",
+                            IndexId = "0052",
+                            Name = "ニャース\n(ガラルのすがた)",
+                            Type = "はがね"
+                        },
+                        new
+                        {
+                            Id = 64,
                             Description = "きしょうが はげしく しっぽを まっすぐ たてたら よう ちゅうい。 とびかかって かみつく まえぶれだ。",
                             IndexId = "0053",
                             Name = "ペルシアン",
@@ -476,7 +567,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 54,
+                            Id = 65,
+                            Description = "きしょうが はげしく しっぽを まっすぐ たてたら よう ちゅうい。 とびかかって かみつく まえぶれだ。",
+                            IndexId = "0053",
+                            Name = "ペルシアン\n(アローラのすがた)",
+                            Type = "あく"
+                        },
+                        new
+                        {
+                            Id = 66,
                             Description = "いつも ずつうに なやまされている。この ずつうが はげしくなると ふしぎな ちからを つかいはじめる。",
                             IndexId = "0054",
                             Name = "コダック",
@@ -484,7 +583,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 55,
+                            Id = 67,
                             Description = "てのひらが みずかきに なっていて およぐのが とくい。みずうみなどで ゆうがな すがたが みかけられる。",
                             IndexId = "0055",
                             Name = "ゴルダック",
@@ -492,7 +591,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 56,
+                            Id = 68,
                             Description = "みのこなしが かるく きょうぼうな せいかく。おこって あばれると てが つけられなくなる。",
                             IndexId = "0056",
                             Name = "マンキー",
@@ -500,7 +599,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 57,
+                            Id = 69,
                             Description = "いつも もうれつに おこっており にげても にげても どこまでも おいかけてくる。",
                             IndexId = "0057",
                             Name = "オコリザル",
@@ -508,7 +607,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 58,
+                            Id = 70,
                             Description = "ひとなつこく せいじつな せいかく。てきには ほえて かみつき おいはらおうとする。",
                             IndexId = "0058",
                             Name = "ガーディ",
@@ -516,7 +615,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 59,
+                            Id = 71,
+                            Description = "ひとなつこく せいじつな せいかく。てきには ほえて かみつき おいはらおうとする。",
+                            IndexId = "0058",
+                            Name = "ガーディ\n(ヒスイのすがた)",
+                            Type = "ほのお, いわ"
+                        },
+                        new
+                        {
+                            Id = 72,
                             Description = "ちゅうごくの いいつたえにある でんせつの ポケモン。ものすごい スピードで はしるという。",
                             IndexId = "0059",
                             Name = "ウインディ",
@@ -524,7 +631,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 60,
+                            Id = 73,
+                            Description = "ちゅうごくの いいつたえにある でんせつの ポケモン。ものすごい スピードで はしるという。",
+                            IndexId = "0059",
+                            Name = "ウインディ\n(ヒスイのすがた)",
+                            Type = "ほのお, いわ"
+                        },
+                        new
+                        {
+                            Id = 74,
                             Description = "スベスベした くろいひふは うすく しめっている。ないぞうの いちぶが すけて うずまきじょうに みえる。",
                             IndexId = "0060",
                             Name = "ニョロモ",
@@ -532,7 +647,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 61,
+                            Id = 75,
                             Description = "2ほんの あしは はったつしており  ちじょうで くらせるのに なぜか すいちゅう せいかつが すき。",
                             IndexId = "0061",
                             Name = "ニョロゾ",
@@ -540,7 +655,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 62,
+                            Id = 76,
                             Description = "およぎが とくいで クロールや バタフライが できる。オリンピックの せんしゅも かなわないほど はやい。",
                             IndexId = "0062",
                             Name = "ニョロボン",
@@ -548,7 +663,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 63,
+                            Id = 77,
                             Description = "1にち 18じかんは ねている。ねむってる あいだでも さまざまな ちょうのうりょくを つかう。",
                             IndexId = "0063",
                             Name = "ケーシィ",
@@ -556,7 +671,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 64,
+                            Id = 78,
                             Description = "あるあさのこと。 ちょうのうりょく しょうねんが ベッドから めざめると ユンゲラーに へんしん していた。",
                             IndexId = "0064",
                             Name = "ユンゲラー",
@@ -564,7 +679,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 65,
+                            Id = 79,
                             Description = "ちからわざを あまり このまず ちょうのうりょくを じざいに あやつって あいてを たおす。",
                             IndexId = "0065",
                             Name = "フーディン",
@@ -572,7 +687,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 66,
+                            Id = 80,
                             Description = "ぜんしんが きんにくに なっており こどもほどの おおきさしかないのに おとな 100にんを なげとばせる。",
                             IndexId = "0066",
                             Name = "ワンリキー",
@@ -580,7 +695,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 67,
+                            Id = 81,
                             Description = "つかれることのない きょうじんな にくたいを もつ。おもい にもつの うんぱんなどの しごとを てつだう。",
                             IndexId = "0067",
                             Name = "ゴーリキー",
@@ -588,7 +703,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 68,
+                            Id = 82,
                             Description = "はったつした 4ほんの うでは 2びょうかんに 1000ぱつの パンチを くりだすことができる。",
                             IndexId = "0068",
                             Name = "カイリキー",
@@ -596,7 +711,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 69,
+                            Id = 83,
                             Description = "ひとの かおのような ツボミから でんせつの マンドラゴラの いっしゅ ではないかと ささやかれている。",
                             IndexId = "0069",
                             Name = "マダツボミ",
@@ -604,7 +719,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 70,
+                            Id = 84,
                             Description = "ハッパの ぶぶんは カッターになって あいてを きりさく。くちからは なんでも とかす えきたいを はく。",
                             IndexId = "0070",
                             Name = "ウツドン",
@@ -612,7 +727,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 71,
+                            Id = 85,
                             Description = "ミツの ような かおりで くちの なかに さそいこまれたら さいご。ようかいえきで とかされてしまう。",
                             IndexId = "0071",
                             Name = "ウツボット",
@@ -620,7 +735,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 72,
+                            Id = 86,
                             Description = "すいしょうの ように すきとおった めだまから ふしぎな ひかりの ビームを はっしゃする。",
                             IndexId = "0072",
                             Name = "メノクラゲ",
@@ -628,7 +743,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 73,
+                            Id = 87,
                             Description = "80ぽん の しょくしゅが じゆうに うごく。さされると どくに おかされ するどい いたみが はしる。",
                             IndexId = "0073",
                             Name = "ドククラゲ",
@@ -636,7 +751,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 74,
+                            Id = 88,
                             Description = "まるくて もちやすいので つかんで あいてに なげて ぶつける イシツブテ がっせんが できる。",
                             IndexId = "0074",
                             Name = "イシツブテ",
@@ -644,7 +759,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 75,
+                            Id = 89,
+                            Description = "まるくて もちやすいので つかんで あいてに なげて ぶつける イシツブテ がっせんが できる。",
+                            IndexId = "0074",
+                            Name = "イシツブテ\n(アローラのすがた)",
+                            Type = "いわ, でんき"
+                        },
+                        new
+                        {
+                            Id = 90,
                             Description = "やまのなかの さかみちを あるいていると ゴローンが ころがって くることが ある。",
                             IndexId = "0075",
                             Name = "ゴローン",
@@ -652,7 +775,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 76,
+                            Id = 91,
+                            Description = "やまのなかの さかみちを あるいていると ゴローンが ころがって くることが ある。",
+                            IndexId = "0075",
+                            Name = "ゴローン\n(アローラのすがた)",
+                            Type = "いわ, でんき"
+                        },
+                        new
+                        {
+                            Id = 92,
                             Description = "がんばんのような かたい カラで おおわれている。1ねんに 1かい だっぴして おおきくなる。",
                             IndexId = "0076",
                             Name = "ゴローニャ",
@@ -660,7 +791,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 77,
+                            Id = 93,
+                            Description = "がんばんのような かたい カラで おおわれている。1ねんに 1かい だっぴして おおきくなる。",
+                            IndexId = "0076",
+                            Name = "ゴローニャ\n(アローラのすがた)",
+                            Type = "いわ, でんき"
+                        },
+                        new
+                        {
+                            Id = 94,
                             Description = "からだが かるく あしの ちからが ものすごい。1かいの ジャンプで とうきょうタワーも とびこえる。",
                             IndexId = "0077",
                             Name = "ポニータ",
@@ -668,7 +807,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 78,
+                            Id = 95,
+                            Description = "からだが かるく あしの ちからが ものすごい。1かいの ジャンプで とうきょうタワーも とびこえる。",
+                            IndexId = "0077",
+                            Name = "ポニータ\n(ガラルのすがた)",
+                            Type = "エスパー"
+                        },
+                        new
+                        {
+                            Id = 96,
                             Description = "じそくは さいこう 240キロ。メラメラ もえながら しんかんせんと おなじ スピードで かけぬける。",
                             IndexId = "0078",
                             Name = "ギャロップ",
@@ -676,7 +823,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 79,
+                            Id = 97,
+                            Description = "じそくは さいこう 240キロ。メラメラ もえながら しんかんせんと おなじ スピードで かけぬける。",
+                            IndexId = "0078",
+                            Name = "ギャロップ\n(ガラルのすがた)",
+                            Type = "エスパー, フェアリー"
+                        },
+                        new
+                        {
+                            Id = 98,
                             Description = "いつも ボーッとしていて なにを かんがえているか わからない。 しっぽで エサを つるのが とくい。",
                             IndexId = "0079",
                             Name = "ヤドン",
@@ -684,7 +839,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 80,
+                            Id = 99,
+                            Description = "いつも ボーッとしていて なにを かんがえているか わからない。 しっぽで エサを つるのが とくい。",
+                            IndexId = "0079",
+                            Name = "ヤドン\n(ガラルのすがた)",
+                            Type = "エスパー"
+                        },
+                        new
+                        {
+                            Id = 100,
                             Description = "ヤドンが うみへ エサを とりにいったとき シェルダーに しっぽをかまれ ヤドランになった。",
                             IndexId = "0080",
                             Name = "ヤドラン",
@@ -692,7 +855,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 81,
+                            Id = 101,
+                            Description = "ヤドンが うみへ エサを とりにいったとき シェルダーに しっぽをかまれ ヤドランになった。",
+                            IndexId = "0080",
+                            Name = "ヤドラン\n(ガラルのすがた)",
+                            Type = "どく, エスパー"
+                        },
+                        new
+                        {
+                            Id = 102,
                             Description = "くうちゅうに ういたまま いどうして さゆうの ユニットから でんじはなどを ほうしゃする。",
                             IndexId = "0081",
                             Name = "コイル",
@@ -700,7 +871,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 82,
+                            Id = 103,
                             Description = "ふくすうの コイルが れんけつして きょうりょくな じりょくせんと こうでんあつを ほうしゃする。",
                             IndexId = "0082",
                             Name = "レアコイル",
@@ -708,7 +879,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 83,
+                            Id = 104,
                             Description = "じぶんの すを つくるための しょくぶつの クキを いっぽん いつも もって あるいている。",
                             IndexId = "0083",
                             Name = "カモネギ",
@@ -716,7 +887,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 84,
+                            Id = 105,
+                            Description = "じぶんの すを つくるための しょくぶつの クキを いっぽん いつも もって あるいている。",
+                            IndexId = "0083",
+                            Name = "カモネギ\n(ガラルのすがた)",
+                            Type = "かくとう"
+                        },
+                        new
+                        {
+                            Id = 106,
                             Description = "とつぜんへんいで みつかった ふたつの あたまを もつ ポケモン。じそく 100キロで はしる。",
                             IndexId = "0084",
                             Name = "ドードー",
@@ -724,7 +903,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 85,
+                            Id = 107,
                             Description = "めったに みつからない ちんしゅ。3つの あたまは よろこび かなしみ いかりの かんじょうを あらわす。",
                             IndexId = "0085",
                             Name = "ドードリオ",
@@ -732,7 +911,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 86,
+                            Id = 108,
                             Description = "みずいろの たいもうに おおわれた ひふは ぶあつくて じょうぶ。れいか40ど でも かつどうできる。",
                             IndexId = "0086",
                             Name = "パウワウ",
@@ -740,7 +919,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 87,
+                            Id = 109,
                             Description = "ぜんしんが まっしろな けで おおわれている。さむさに つよく むしろ さむいほど げんきになる。",
                             IndexId = "0087",
                             Name = "ジュゴン",
@@ -748,7 +927,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 88,
+                            Id = 110,
                             Description = "つきからの エックスせんをあびた ヘドロが ベトベターにへんかした。 きたないモノが だいこうぶつ。",
                             IndexId = "0088",
                             Name = "ベトベター",
@@ -756,7 +935,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 89,
+                            Id = 111,
+                            Description = "つきからの エックスせんをあびた ヘドロが ベトベターにへんかした。 きたないモノが だいこうぶつ。",
+                            IndexId = "0088",
+                            Name = "ベトベター\n(アローラのすがた)",
+                            Type = "どく, あく"
+                        },
+                        new
+                        {
+                            Id = 112,
                             Description = "ふだんは じめんに まざっていて わからない。からだに さわると もうどくに おかされる。",
                             IndexId = "0089",
                             Name = "ベトベトン",
@@ -764,7 +951,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 90,
+                            Id = 113,
+                            Description = "ふだんは じめんに まざっていて わからない。からだに さわると もうどくに おかされる。",
+                            IndexId = "0089",
+                            Name = "ベトベトン\n(アローラのすがた)",
+                            Type = "どく, あく"
+                        },
+                        new
+                        {
+                            Id = 114,
                             Description = "ダイヤモンドよりも かたいカラに おおわれている。しかし なかは いがいと やわらかい。",
                             IndexId = "0090",
                             Name = "シェルダー",
@@ -772,7 +967,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 91,
+                            Id = 115,
                             Description = "カラが ひじょうに かたく ナパームだんでも こわせない。こうげきするときだけ ひらく。",
                             IndexId = "0091",
                             Name = "パルシェン",
@@ -780,7 +975,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 92,
+                            Id = 116,
                             Description = "うすい ガスじょうの せいめいたい。ガスに つつまれると インドぞうも 2びょうで たおれる。",
                             IndexId = "0092",
                             Name = "ゴース",
@@ -788,7 +983,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 93,
+                            Id = 117,
                             Description = "くらやみで だれもいないのに みられているような きがしたら そこに ゴーストが いるのだ。",
                             IndexId = "0093",
                             Name = "ゴースト",
@@ -796,7 +991,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 94,
+                            Id = 118,
                             Description = "やまで そうなんしたとき いのちをうばいに くらやみから あらわれることが あるという。",
                             IndexId = "0094",
                             Name = "ゲンガー",
@@ -804,7 +999,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 95,
+                            Id = 119,
                             Description = "ふだんは つちのなかに すんでいる。ちちゅうを じそく 80キロで ほりながら エサを さがす。",
                             IndexId = "0095",
                             Name = "イワーク",
@@ -812,7 +1007,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 96,
+                            Id = 120,
                             Description = "ユメを たべるという でんせつの いきもの バクの しそん。さいみんじゅつが とくいだ。",
                             IndexId = "0096",
                             Name = "スリープ",
@@ -820,7 +1015,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 97,
+                            Id = 121,
                             Description = "ふりこのようなものを もちあるく。 こどもに さいみんじゅつを かけて どこかへ つれさるじけんが あった。",
                             IndexId = "0097",
                             Name = "スリーパー",
@@ -828,7 +1023,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 98,
+                            Id = 122,
                             Description = "うみの ちかくで みつかる。おおきな ハサミは もぎとっても あとから また はえてくる。",
                             IndexId = "0098",
                             Name = "クラブ",
@@ -836,7 +1031,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 99,
+                            Id = 123,
                             Description = "かたい ハサミは 1まんばりきの パワーを もっているが おおきすぎて うごきが にぶい。",
                             IndexId = "0099",
                             Name = "キングラー",
@@ -844,7 +1039,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 100,
+                            Id = 124,
                             Description = "しょうたい ふめいの いきもの。いやなおとを だしたり とつぜん じばくする ことも あるという。",
                             IndexId = "0100",
                             Name = "ビリリダマ",
@@ -852,7 +1047,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 101,
+                            Id = 125,
+                            Description = "しょうたい ふめいの いきもの。いやなおとを だしたり とつぜん じばくする ことも あるという。",
+                            IndexId = "0100",
+                            Name = "ビリリダマ\n(ヒスイのすがた)",
+                            Type = "でんき, くさ"
+                        },
+                        new
+                        {
+                            Id = 126,
                             Description = "すこしの しげきに はんのうして ばくはつする。バクダンボールという あだなで こわがられて いる。",
                             IndexId = "0101",
                             Name = "マルマイン",
@@ -860,7 +1063,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 102,
+                            Id = 127,
+                            Description = "すこしの しげきに はんのうして ばくはつする。バクダンボールという あだなで こわがられて いる。",
+                            IndexId = "0101",
+                            Name = "マルマイン\n(ヒスイのすがた)",
+                            Type = "でんき, くさ"
+                        },
+                        new
+                        {
+                            Id = 128,
                             Description = "なにかの たまごの ようだが じつは しょくぶつの タネにちかい いきもの であることが わかった。",
                             IndexId = "0102",
                             Name = "タマタマ",
@@ -868,7 +1079,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 103,
+                            Id = 129,
                             Description = "あるく ねったいうりん とよばれる。 みの ひとつひとつに かおがあって それぞれ いしを もっている。",
                             IndexId = "0103",
                             Name = "ナッシー",
@@ -876,7 +1087,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 104,
+                            Id = 130,
+                            Description = "あるく ねったいうりん とよばれる。 みの ひとつひとつに かおがあって それぞれ いしを もっている。",
+                            IndexId = "0103",
+                            Name = "ナッシー\n(アローラのすがた)",
+                            Type = "くさ, ドラゴン"
+                        },
+                        new
+                        {
+                            Id = 131,
                             Description = "しにわかれた ははおやの ほねを あたまに かぶっている。さびしいとき おおごえで なくという。",
                             IndexId = "0104",
                             Name = "カラカラ",
@@ -884,7 +1103,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 105,
+                            Id = 132,
                             Description = "からだも ちいさく もともと よわかった。ホネを つかうようになり せいかくが きょうぼうか した。",
                             IndexId = "0105",
                             Name = "ガラガラ",
@@ -892,7 +1111,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 106,
+                            Id = 133,
+                            Description = "からだも ちいさく もともと よわかった。ホネを つかうようになり せいかくが きょうぼうか した。",
+                            IndexId = "0105",
+                            Name = "ガラガラ\n(アローラのすがた)",
+                            Type = "ほのお, ゴースト"
+                        },
+                        new
+                        {
+                            Id = 134,
                             Description = "あしが じゆうに のびちぢみして とおく はなれている ばあいでも あいてを けりあげることが できる。",
                             IndexId = "0106",
                             Name = "サワムラー",
@@ -900,7 +1127,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 107,
+                            Id = 135,
                             Description = "プロボクサーの たましいが のりうつっている。パンチのスピードは しんかんせんよりも はやい。",
                             IndexId = "0107",
                             Name = "エビワラー",
@@ -908,7 +1135,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 108,
+                            Id = 136,
                             Description = "したが しんちょうの 2ばいもある。エサをとったり こうげきをしたりと まるで てのように うごかせる。",
                             IndexId = "0108",
                             Name = "ベロリンガ",
@@ -916,7 +1143,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 109,
+                            Id = 137,
                             Description = "うすい バルーンじょうの からだに もうどくの ガスが つまっている。ちかくにくると くさい。",
                             IndexId = "0109",
                             Name = "ドガース",
@@ -924,7 +1151,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 110,
+                            Id = 138,
                             Description = "ごくまれに とつぜんへんいで ふたごの ちいさい ドガースが れんけつしたまま でることがある。",
                             IndexId = "0110",
                             Name = "マタドガス",
@@ -932,7 +1159,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 111,
+                            Id = 139,
+                            Description = "ごくまれに とつぜんへんいで ふたごの ちいさい ドガースが れんけつしたまま でることがある。",
+                            IndexId = "0110",
+                            Name = "マタドガス\n(ガラルのすがた)",
+                            Type = "どく, フェアリー"
+                        },
+                        new
+                        {
+                            Id = 140,
                             Description = "あたまは わるいが ちからが つよく こうそうビルも たいあたりで コナゴナに ふんさいする。",
                             IndexId = "0111",
                             Name = "サイホーン",
@@ -940,7 +1175,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 112,
+                            Id = 141,
                             Description = "しんかして うしろあし だけで たつようになった。ツノで つかれると がんせきにも あながあいてしまう。",
                             IndexId = "0112",
                             Name = "サイドン",
@@ -948,7 +1183,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 113,
+                            Id = 142,
                             Description = "1にちに いくつか たまごを うむ。その たまごは えいよう まんてんで ものすごく おいしい らしい。",
                             IndexId = "0113",
                             Name = "ラッキー",
@@ -956,7 +1191,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 114,
+                            Id = 143,
                             Description = "ブルーの つるしょくぶつが からみあい しょうたいは みえない。ちかづくものに からみついてくる。",
                             IndexId = "0114",
                             Name = "モンジャラ",
@@ -964,7 +1199,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 115,
+                            Id = 144,
                             Description = "メスは おなかの ふくろに こどもを いれて そだてる。れんぞくパンチ こうげきが とくい。",
                             IndexId = "0115",
                             Name = "ガルーラ",
@@ -972,7 +1207,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 116,
+                            Id = 145,
                             Description = "ぜんまいのように クルクルまかれた しっぽで からだの バランスをとる。 くちから スミを はくことが ある。",
                             IndexId = "0116",
                             Name = "タッツー",
@@ -980,7 +1215,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 117,
+                            Id = 146,
                             Description = "うかつに さわろうとすると からだじゅうに はえる トゲに さされて きぜつすることも ある。",
                             IndexId = "0117",
                             Name = "シードラ",
@@ -988,7 +1223,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 118,
+                            Id = 147,
                             Description = "せビレ むなビレが きんにくのように はったつしており すいちゅうを 5ノットの はやさで およぐ。",
                             IndexId = "0118",
                             Name = "トサキント",
@@ -996,7 +1231,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 119,
+                            Id = 148,
                             Description = "ドリルのように とがっている ツノで いわはだを くりぬき じぶんの すを つくっている。",
                             IndexId = "0119",
                             Name = "アズマオウ",
@@ -1004,7 +1239,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 120,
+                            Id = 149,
                             Description = "うみべに おおく あらわれ よるになると ちゅうしんが あかく てんめつする。",
                             IndexId = "0120",
                             Name = "ヒトデマン",
@@ -1012,7 +1247,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 121,
+                            Id = 150,
                             Description = "きかがくてきな ボディーから うちゅうせいぶつ ではないかと じもとでは うたがわれている。",
                             IndexId = "0121",
                             Name = "スターミー",
@@ -1020,7 +1255,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 122,
+                            Id = 151,
                             Description = "ひとを しんじこませるのが うまい。パントマイムで つくったカベが ほんとうに あらわれるという。",
                             IndexId = "0122",
                             Name = "バリヤード",
@@ -1028,7 +1263,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 123,
+                            Id = 152,
+                            Description = "ひとを しんじこませるのが うまい。パントマイムで つくったカベが ほんとうに あらわれるという。",
+                            IndexId = "0122",
+                            Name = "バリヤード\n(ガラルのすがた)",
+                            Type = "こおり, エスパー"
+                        },
+                        new
+                        {
+                            Id = 153,
                             Description = "するどいカマで えものを きりさき いきのねを とめる。ごくまれに ハネをつかって とぶ。",
                             IndexId = "0123",
                             Name = "ストライク",
@@ -1036,7 +1279,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 124,
+                            Id = 154,
                             Description = "にんげんのような ことばを はなすが まだ なにをいっているか ふめいで げんざい けんきゅうされている。",
                             IndexId = "0124",
                             Name = "ルージュラ",
@@ -1044,7 +1287,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 125,
+                            Id = 155,
                             Description = "つよい でんきが だいこうぶつで おおきな はつでんしょ などに  しばしば あらわれる。",
                             IndexId = "0125",
                             Name = "エレブー",
@@ -1052,7 +1295,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 126,
+                            Id = 156,
                             Description = "かざんの かこうちかくで みつかった。くちから ほのおをはく。たいおんは 1200ど もある。",
                             IndexId = "0126",
                             Name = "ブーバー",
@@ -1060,7 +1303,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 127,
+                            Id = 157,
                             Description = "2ほんの ながい ツノは パワフル。いちど はさまれて しまったら ちぎれるまで はなさない。",
                             IndexId = "0127",
                             Name = "カイロス",
@@ -1068,7 +1311,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 128,
+                            Id = 158,
                             Description = "たいあたりしてくるとき 2ほん[dex 1]の しっぽで じぶんの からだを ピシピシと たたく。",
                             IndexId = "0128",
                             Name = "ケンタロス",
@@ -1076,7 +1319,31 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 129,
+                            Id = 159,
+                            Description = "たいあたりしてくるとき 2ほん[dex 1]の しっぽで じぶんの からだを ピシピシと たたく。",
+                            IndexId = "0128",
+                            Name = "ケンタロス\n(パルデアのすがた)",
+                            Type = "かくとう"
+                        },
+                        new
+                        {
+                            Id = 160,
+                            Description = "たいあたりしてくるとき 2ほん[dex 1]の しっぽで じぶんの からだを ピシピシと たたく。",
+                            IndexId = "0128",
+                            Name = "ケンタロス\n(パルデアのすがた)",
+                            Type = "かくとう, ほのお"
+                        },
+                        new
+                        {
+                            Id = 161,
+                            Description = "たいあたりしてくるとき 2ほん[dex 1]の しっぽで じぶんの からだを ピシピシと たたく。",
+                            IndexId = "0128",
+                            Name = "ケンタロス\n(パルデアのすがた)",
+                            Type = "かくとう, みず"
+                        },
+                        new
+                        {
+                            Id = 162,
                             Description = "ちからも スピードも ほとんどダメ。せかいで いちばん よわくて なさけない ポケモンだ。",
                             IndexId = "0129",
                             Name = "コイキング",
@@ -1084,7 +1351,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 130,
+                            Id = 163,
                             Description = "ひじょうに きょうぼうな せいかく。 くちからだす はかいこうせんは すべてのものを やきつくす。",
                             IndexId = "0130",
                             Name = "ギャラドス",
@@ -1092,7 +1359,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 131,
+                            Id = 164,
                             Description = "ひとのことばを りかいする たかい ちのうをもつ。うみの うえを ひとをのせて すすむのが すき。",
                             IndexId = "0131",
                             Name = "ラプラス",
@@ -1100,7 +1367,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 132,
+                            Id = 165,
                             Description = "からだの さいぼうの つくりを じぶんで くみかえて ほかの せいめいたいに へんしんする。",
                             IndexId = "0132",
                             Name = "メタモン",
@@ -1108,7 +1375,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 133,
+                            Id = 166,
                             Description = "3しゅるいの ポケモンに しんかする かのうせいを もつ めずらしい ポケモンだ。",
                             IndexId = "0133",
                             Name = "イーブイ",
@@ -1116,7 +1383,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 134,
+                            Id = 167,
                             Description = "からだの さいぼうの つくりが みずの ぶんしと にている。みずに とけると みえなくなる。",
                             IndexId = "0134",
                             Name = "シャワーズ",
@@ -1124,7 +1391,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 135,
+                            Id = 168,
                             Description = "おこったり おどろいたりすると ぜんしんの けが はりの ように さかだって あいてを つらぬく。",
                             IndexId = "0135",
                             Name = "サンダース",
@@ -1132,7 +1399,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 136,
+                            Id = 169,
                             Description = "たいないに ほのおぶくろが あり ふかく いきを すいこんだあと 1700どの ひを はく。",
                             IndexId = "0136",
                             Name = "ブースター",
@@ -1140,7 +1407,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 137,
+                            Id = 170,
                             Description = "さいこうの かがくりょくを つかい ついに じんこうの ポケモンを つくることに せいこうした。",
                             IndexId = "0137",
                             Name = "ポリゴン",
@@ -1148,7 +1415,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 138,
+                            Id = 171,
                             Description = "おおむかし うみに すんでいた こだい ポケモン。10ぽんの あしを くねらせて およぐ。",
                             IndexId = "0138",
                             Name = "オムナイト",
@@ -1156,7 +1423,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 139,
+                            Id = 172,
                             Description = "しょくしゅが てあしの ように はったつ してる。しがみつくと どうじに かみついて くる。",
                             IndexId = "0139",
                             Name = "オムスター",
@@ -1164,7 +1431,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 140,
+                            Id = 173,
                             Description = "こだい せいぶつの かせきから さいせいしたポケモン。かたい カラで みを まもっている。",
                             IndexId = "0140",
                             Name = "カブト",
@@ -1172,7 +1439,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 141,
+                            Id = 174,
                             Description = "すいちゅうを じゆうに およぎ するどい カマで えものを とらえ たいえきを すいとってしまう。",
                             IndexId = "0141",
                             Name = "カブトプス",
@@ -1180,7 +1447,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 142,
+                            Id = 175,
                             Description = "こはくに のこされた きょうりゅうの いでんしから ふっかつさせた。たかいこえで なきながら とぶ。",
                             IndexId = "0142",
                             Name = "プテラ",
@@ -1188,7 +1455,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 143,
+                            Id = 176,
                             Description = "1にちに たべものを 400キロ たべないと きが すまない。たべおわると ねむってしまう。",
                             IndexId = "0143",
                             Name = "カビゴン",
@@ -1196,7 +1463,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 144,
+                            Id = 177,
                             Description = "でんせつの とりポケモンの ひとつ。ながい しっぽが たなびいて とんでいく すがたは すばらしい。",
                             IndexId = "0144",
                             Name = "フリーザー",
@@ -1204,7 +1471,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 145,
+                            Id = 178,
+                            Description = "でんせつの とりポケモンの ひとつ。ながい しっぽが たなびいて とんでいく すがたは すばらしい。",
+                            IndexId = "0144",
+                            Name = "フリーザー\n(ガラルのすがた)",
+                            Type = "エスパー, ひこう"
+                        },
+                        new
+                        {
+                            Id = 179,
                             Description = "でんせつの とりポケモンの ひとつ。とぶときに バチバチと なにかの はじけるような おとがする。",
                             IndexId = "0145",
                             Name = "サンダー",
@@ -1212,7 +1487,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 146,
+                            Id = 180,
+                            Description = "でんせつの とりポケモンの ひとつ。とぶときに バチバチと なにかの はじけるような おとがする。",
+                            IndexId = "0145",
+                            Name = "サンダー\n(ガラルのすがた)",
+                            Type = "かくとう, ひこう"
+                        },
+                        new
+                        {
+                            Id = 181,
                             Description = "でんせつの とりポケモンの ひとつ。オレンジいろの もえるようなハネが みるものを あっとうする。",
                             IndexId = "0146",
                             Name = "ファイヤー",
@@ -1220,7 +1503,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 147,
+                            Id = 182,
+                            Description = "でんせつの とりポケモンの ひとつ。オレンジいろの もえるようなハネが みるものを あっとうする。",
+                            IndexId = "0146",
+                            Name = "ファイヤー\n(ガラルのすがた)",
+                            Type = "あく, ひこう"
+                        },
+                        new
+                        {
+                            Id = 183,
                             Description = "こどもでも しんちょうは 2メートル いじょう。だっぴを くりかえして おおきくなる。",
                             IndexId = "0147",
                             Name = "ミニリュウ",
@@ -1228,7 +1519,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 148,
+                            Id = 184,
                             Description = "うみや みずうみなどに すむという。はねをもたないが たまに そらを とぶ すがたが もくげきされる。",
                             IndexId = "0148",
                             Name = "ハクリュー",
@@ -1236,7 +1527,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 149,
+                            Id = 185,
                             Description = "おおきな たいかくで そらを とぶ。ちきゅうを やく16じかんで 1しゅう してしまう。",
                             IndexId = "0149",
                             Name = "カイリュー",
@@ -1244,7 +1535,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 150,
+                            Id = 186,
                             Description = "けんきゅうの ために いでんしを どんどん くみかえていった けっか きょうぼうな ポケモンに なった。",
                             IndexId = "0150",
                             Name = "ミュウツー",
@@ -1252,7 +1543,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 151,
+                            Id = 187,
                             Description = "みなみアメリカに せいそくする ぜつめつしたはずの ポケモン。ちのうがたかく なんでも おぼえる。",
                             IndexId = "0151",
                             Name = "ミュウ",
@@ -1260,7 +1551,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 152,
+                            Id = 188,
                             Description = "あたまのハッパから ほのかに あまい かおりが ただよう。おとなしくて ひざしを あびるのが だいすき。",
                             IndexId = "0152",
                             Name = "チコリータ",
@@ -1268,7 +1559,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 153,
+                            Id = 189,
                             Description = "くびの まわりから だされる スパイシーな かおりを かいでいると なぜだか たたかいたくなる。",
                             IndexId = "0153",
                             Name = "ベイリーフ",
@@ -1276,7 +1567,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 154,
+                            Id = 190,
                             Description = "はなびら から はっさんされる においには あらそう きもちを しずめる せいぶんが ふくまれる。",
                             IndexId = "0154",
                             Name = "メガニウム",
@@ -1284,7 +1575,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 155,
+                            Id = 191,
                             Description = "おくびょうで いつも からだを まるめている。おそわれると せなかの ほのおを もえあがらせ みをまもる。",
                             IndexId = "0155",
                             Name = "ヒノアラシ",
@@ -1292,7 +1583,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 156,
+                            Id = 192,
                             Description = "せんとうちゅう せなかを むけたら ようちゅうい。せなかの ほのおで こうげき してくる まえぶれだ。",
                             IndexId = "0156",
                             Name = "マグマラシ",
@@ -1300,7 +1591,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 157,
+                            Id = 193,
                             Description = "いかりが さいこうちょうのとき さわったもの すべて いっしゅんで もえあがらせるほどに あつい。",
                             IndexId = "0157",
                             Name = "バクフーン",
@@ -1308,7 +1599,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 158,
+                            Id = 194,
+                            Description = "いかりが さいこうちょうのとき さわったもの すべて いっしゅんで もえあがらせるほどに あつい。",
+                            IndexId = "0157",
+                            Name = "バクフーン\n(ヒスイのすがた)",
+                            Type = "ほのお, ゴースト"
+                        },
+                        new
+                        {
+                            Id = 195,
                             Description = "はったつした あごは パワフルで なんでも かみくだいて しまうので おやのトレーナーでも ようちゅうい。",
                             IndexId = "0158",
                             Name = "ワニノコ",
@@ -1316,7 +1615,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 159,
+                            Id = 196,
                             Description = "キバは ぬけても つぎから つぎに はえてくる。いつも くちのなかには 48ぽんの キバが そろっている。",
                             IndexId = "0159",
                             Name = "アリゲイツ",
@@ -1324,7 +1623,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 160,
+                            Id = 197,
                             Description = "おおきく ちからづよい あごで かみつくと そのまま くびをふって あいてを ずたずたに ひきちぎる。",
                             IndexId = "0160",
                             Name = "オーダイル",
@@ -1332,7 +1631,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 161,
+                            Id = 198,
                             Description = "シッポを たてて すこしでも とおくの ようすを しらべている けいかいしんが つよい ポケモン。",
                             IndexId = "0161",
                             Name = "オタチ",
@@ -1340,7 +1639,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 162,
+                            Id = 199,
                             Description = "ほそながい からだの かたちに あわせた すを つくり ほかの ポケモンは はいれなくしている。",
                             IndexId = "0162",
                             Name = "オオタチ",
@@ -1348,7 +1647,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 163,
+                            Id = 200,
                             Description = "いつも いっぽんあしで たっている。あしを いれかえる しゅんかんは すばやくて なかなか みられない。",
                             IndexId = "0163",
                             Name = "ホーホー",
@@ -1356,7 +1655,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 164,
+                            Id = 201,
                             Description = "りょうめは とくしゅな つくり。 わずかな ひかりを あつめては くらやみでも まわりを みわける。",
                             IndexId = "0164",
                             Name = "ヨルノズク",
@@ -1364,7 +1663,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 165,
+                            Id = 202,
                             Description = "むれを つくらないと ふあんで うごけなくなるほど おくびょうだが なかまがいると かっぱつに うごく。",
                             IndexId = "0165",
                             Name = "レディバ",
@@ -1372,7 +1671,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 166,
+                            Id = 203,
                             Description = "よぞらに ほしが またたくとき かがやく こなを ふりまきながら ひらひらと とんでいく。",
                             IndexId = "0166",
                             Name = "レディアン",
@@ -1380,7 +1679,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 167,
+                            Id = 204,
                             Description = "えものが ちかくを とおりかかるまで じぶんの すで なんにちも おなじ かっこうで じっと まちつづける。",
                             IndexId = "0167",
                             Name = "イトマル",
@@ -1388,7 +1687,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 168,
+                            Id = 205,
                             Description = "おしりからだけでなく くちからも いとを だすので みただけでは どっちが あたまか わからない。",
                             IndexId = "0168",
                             Name = "アリアドス",
@@ -1396,7 +1695,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 169,
+                            Id = 206,
                             Description = "4まいに ふえた つばさで くらやみを しずかに とんでいく。となりを とおられても きづかない。",
                             IndexId = "0169",
                             Name = "クロバット",
@@ -1404,7 +1703,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 170,
+                            Id = 207,
                             Description = "2つの しょくしゅの さきから プラスと マイナスの でんきを ながして あいてを しびれさせる。",
                             IndexId = "0170",
                             Name = "チョンチー",
@@ -1412,7 +1711,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 171,
+                            Id = 208,
                             Description = "ランターンのだす ひかりは 5000メートルの ふかさ からでも すいめんまで とどくほど あかるい。",
                             IndexId = "0171",
                             Name = "ランターン",
@@ -1420,7 +1719,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 172,
+                            Id = 209,
                             Description = "まだまだ でんきを ためるのがへた。おどろいたり わらったりすると すぐに ほうでん してしまう。",
                             IndexId = "0172",
                             Name = "ピチュー",
@@ -1428,7 +1727,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 173,
+                            Id = 210,
                             Description = "おほしさまのような シルエット。そのすがたから ながれぼしにのって やってくると しんじられている。",
                             IndexId = "0173",
                             Name = "ピィ",
@@ -1436,7 +1735,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 174,
+                            Id = 211,
                             Description = "とても やわらかい からだ。いちど ころがると はずみまくって ぜんぜん とまれなくなる。",
                             IndexId = "0174",
                             Name = "ププリン",
@@ -1444,7 +1743,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 175,
+                            Id = 212,
                             Description = "カラのなかに しあわせが たくさん つまっているらしく やさしくされると こううんを わけあたえる という。",
                             IndexId = "0175",
                             Name = "トゲピー",
@@ -1452,7 +1751,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 176,
+                            Id = 213,
                             Description = "こころやさしい ひとの まえに しあわせを もたらすため すがたを あらわすと いわれている。",
                             IndexId = "0176",
                             Name = "トゲチック",
@@ -1460,7 +1759,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 177,
+                            Id = 214,
                             Description = "はねが そだちきって おらず とびはねるようにして いどうする。いつも なにかを みつめている。",
                             IndexId = "0177",
                             Name = "ネイティ",
@@ -1468,7 +1767,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 178,
+                            Id = 215,
                             Description = "ほとんど うごかず なきもせず じっとするのは かこと みらいを みているからだと しんじられている。",
                             IndexId = "0178",
                             Name = "ネイティオ",
@@ -1476,7 +1775,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 179,
+                            Id = 216,
                             Description = "からだに せいでんきが たまると たいもうが いつもの 2ばいほどに ふくらむ。さわると しびれる。",
                             IndexId = "0179",
                             Name = "メリープ",
@@ -1484,7 +1783,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 180,
+                            Id = 217,
                             Description = "でんきを たくわえすぎた けっか からだの ひょうめんに うぶげすら はえない ぶぶんが できてしまった。",
                             IndexId = "0180",
                             Name = "モココ",
@@ -1492,7 +1791,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 181,
+                            Id = 218,
                             Description = "シッポのさきが ひかりかがやく。ひかりは はるか とおくまで とどき まよったものの みちしるべとなる。",
                             IndexId = "0181",
                             Name = "デンリュウ",
@@ -1500,7 +1799,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 182,
+                            Id = 219,
                             Description = "ときおり キレイハナが あつまって おどるような しぐさを みせる。たいようをよぶ ぎしき といわれる。",
                             IndexId = "0182",
                             Name = "キレイハナ",
@@ -1508,7 +1807,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 183,
+                            Id = 220,
                             Description = "しっぽの さきには みずよりも かるい あぶらが つまっているから おぼれることなく かわをすすめる。",
                             IndexId = "0183",
                             Name = "マリル",
@@ -1516,7 +1815,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 184,
+                            Id = 221,
                             Description = "じっと みみを すますと はげしい ながれの かわの なかに なにが いるのか ききわけられる。",
                             IndexId = "0184",
                             Name = "マリルリ",
@@ -1524,7 +1823,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 185,
+                            Id = 222,
                             Description = "いつも きのふりを している。からだの つくりは しょくぶつより いしや いわなどに ちかいようだ。",
                             IndexId = "0185",
                             Name = "ウソッキー",
@@ -1532,7 +1831,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 186,
+                            Id = 223,
                             Description = "なきごえが ひびきわたると あちこちから ニョロモや ニョロゾたちが あつまってくる。",
                             IndexId = "0186",
                             Name = "ニョロトノ",
@@ -1540,7 +1839,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 187,
+                            Id = 224,
                             Description = "ハネッコどうし あつまって かぜに ふきとばされないように している。でも そよかぜに ふかれるのはすき。",
                             IndexId = "0187",
                             Name = "ハネッコ",
@@ -1548,7 +1847,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 188,
+                            Id = 225,
                             Description = "あたまのうえに さいた ハナは きおんに よって ひらいたり とじたりする せいしつを もつ。",
                             IndexId = "0188",
                             Name = "ポポッコ",
@@ -1556,7 +1855,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 189,
+                            Id = 226,
                             Description = "いちど かぜに のってしまうと わたほうしを たくみに あやつって せかいいっしゅう だってしてしまう。",
                             IndexId = "0189",
                             Name = "ワタッコ",
@@ -1564,7 +1863,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 190,
+                            Id = 227,
                             Description = "ちからづよい シッポだけで きの えだに ぶらさがって からだを ささえることが できる。",
                             IndexId = "0190",
                             Name = "エイパム",
@@ -1572,7 +1871,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 191,
+                            Id = 228,
                             Description = "あるあさ とつぜん ふってくる。オニスズメに おそわれると はっぱを はげしく ふって おいはらう。",
                             IndexId = "0191",
                             Name = "ヒマナッツ",
@@ -1580,7 +1879,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 192,
+                            Id = 229,
                             Description = "ひざしを エネルギーに かえる。たいようが しずみ くらくなると はなびらを とじて たたずんでいる。",
                             IndexId = "0192",
                             Name = "キマワリ",
@@ -1588,7 +1887,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 193,
+                            Id = 230,
                             Description = "こうそくで ハネを はばたかせると しょうげきは が はっせいして まわりの まどガラスが われていく。",
                             IndexId = "0193",
                             Name = "ヤンヤンマ",
@@ -1596,7 +1895,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 194,
+                            Id = 231,
                             Description = "つめたい みずのなかで せいかつ。あたりが すずしくなると エサを さがしに ちじょうにも あらわれる。",
                             IndexId = "0194",
                             Name = "ウパー",
@@ -1604,7 +1903,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 195,
+                            Id = 232,
+                            Description = "つめたい みずのなかで せいかつ。あたりが すずしくなると エサを さがしに ちじょうにも あらわれる。",
+                            IndexId = "0194",
+                            Name = "ウパー\n(パルデアのすがた)",
+                            Type = "どく, じめん"
+                        },
+                        new
+                        {
+                            Id = 233,
                             Description = "のんびりとした せいかくで きままに およいでは いつも ふなぞこに あたまを ぶつけている。",
                             IndexId = "0195",
                             Name = "ヌオー",
@@ -1612,7 +1919,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 196,
+                            Id = 234,
                             Description = "ぜんしんの こまかな たいもうで くうきの ながれを かんじとり あいての こうどうを よそくする。",
                             IndexId = "0196",
                             Name = "エーフィ",
@@ -1620,7 +1927,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 197,
+                            Id = 235,
                             Description = "こうふんすると からだじゅうの けあなから どくその まじった あせを ふきとばし みをまもる。",
                             IndexId = "0197",
                             Name = "ブラッキー",
@@ -1628,7 +1935,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 198,
+                            Id = 236,
                             Description = "よる すがたを みかけると ふきつなことが おきると しんじられ いみきらわれている ポケモン。",
                             IndexId = "0198",
                             Name = "ヤミカラス",
@@ -1636,7 +1943,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 199,
+                            Id = 237,
                             Description = "すごい ちせいと ひらめきを もっている。どんなときでも あわてず さわがず のんびりとしている。",
                             IndexId = "0199",
                             Name = "ヤドキング",
@@ -1644,7 +1951,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 200,
+                            Id = 238,
+                            Description = "すごい ちせいと ひらめきを もっている。どんなときでも あわてず さわがず のんびりとしている。",
+                            IndexId = "0199",
+                            Name = "ヤドキング\n(ガラルのすがた)",
+                            Type = "どく, エスパー"
+                        },
+                        new
+                        {
+                            Id = 239,
                             Description = "よなかに ひとの なきさけぶような なきごえを だして みんなを おどろかせる いたずらずき。",
                             IndexId = "0200",
                             Name = "ムウマ",
@@ -1652,7 +1967,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 201,
+                            Id = 240,
                             Description = "すがたかたちが むかしの せきばんに しるされた もじに にており かんけいあるのではと ウワサされる。",
                             IndexId = "0201",
                             Name = "アンノーン",
@@ -1660,7 +1975,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 202,
+                            Id = 241,
                             Description = "ひかりや ショックを きらう。こうげきされると からだが ふくらみ はんげきが きょうりょくに なる。",
                             IndexId = "0202",
                             Name = "ソーナンス",
@@ -1668,7 +1983,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 203,
+                            Id = 242,
                             Description = "シッポにも ちいさな のうがある。ちかよると においに はんのうして かみついて くるので ちゅうい。",
                             IndexId = "0203",
                             Name = "キリンリキ",
@@ -1676,7 +1991,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 204,
+                            Id = 243,
                             Description = "きの かわを かさねあわせて カラを ぶあつくするのが だいすき。おもくなっても きにしない。",
                             IndexId = "0204",
                             Name = "クヌギダマ",
@@ -1684,7 +1999,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 205,
+                            Id = 244,
                             Description = "こうてつのように かたい カラで ぜんしんを おおっている。なかの しょうたいは ふめい。",
                             IndexId = "0205",
                             Name = "フォレトス",
@@ -1692,7 +2007,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 206,
+                            Id = 245,
                             Description = "だれかに みられると シッポで じめんを ほって うしろむきに にげだすのだ。",
                             IndexId = "0206",
                             Name = "ノコッチ",
@@ -1700,7 +2015,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 207,
+                            Id = 246,
                             Description = "がんめん めがけて とんでくる。はりつかれた えものが おどろく あいだに どくバリを さしこむ。",
                             IndexId = "0207",
                             Name = "グライガー",
@@ -1708,7 +2023,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 208,
+                            Id = 247,
                             Description = "ふかい じめんの したで あっしゅく された からだは ダイヤモンドよりも かたいのだ。",
                             IndexId = "0208",
                             Name = "ハガネール",
@@ -1716,7 +2031,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 209,
+                            Id = 248,
                             Description = "こわい かおつきだが こころねは とても やさしく じょせいにも だいにんきの ポケモン。",
                             IndexId = "0209",
                             Name = "ブルー",
@@ -1724,7 +2039,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 210,
+                            Id = 249,
                             Description = "ほんとうは おくびょうで こわがり。おそわれると ひっしに てあしを ふって てきを おいはらおうとする。",
                             IndexId = "0210",
                             Name = "グランブル",
@@ -1732,7 +2047,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 211,
+                            Id = 250,
                             Description = "ぜんしんの どくばりを とばすため 10リットルの みずを いっきに のみこみ からだを ふくらませる。",
                             IndexId = "0211",
                             Name = "ハリーセン",
@@ -1740,7 +2055,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 212,
+                            Id = 251,
+                            Description = "ぜんしんの どくばりを とばすため 10リットルの みずを いっきに のみこみ からだを ふくらませる。",
+                            IndexId = "0211",
+                            Name = "ハリーセン\n(ヒスイのすがた)",
+                            Type = "あく, どく"
+                        },
+                        new
+                        {
+                            Id = 252,
                             Description = "めだまもようの ついた はさみを ふりあげて あいてを いかくすると あたまが 3つ あるように みえる。",
                             IndexId = "0212",
                             Name = "ハッサム",
@@ -1748,7 +2071,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 213,
+                            Id = 253,
                             Description = "つぼのような こうらの なかに たくわえられた きのみは とけて ドロドロの えきたいに なるという。",
                             IndexId = "0213",
                             Name = "ツボツボ",
@@ -1756,7 +2079,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 214,
+                            Id = 254,
                             Description = "じまんのツノを あいての おなかの したに ねじこみ いっきに もちあげ ぶんなげてしまう ちからもち。",
                             IndexId = "0214",
                             Name = "ヘラクロス",
@@ -1764,7 +2087,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 215,
+                            Id = 255,
                             Description = "するどいツメを ゆびの なかに かくしている。いきなり のばして おそってきた あいてを ひるませる。",
                             IndexId = "0215",
                             Name = "ニューラ",
@@ -1772,7 +2095,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 216,
+                            Id = 256,
+                            Description = "するどいツメを ゆびの なかに かくしている。いきなり のばして おそってきた あいてを ひるませる。",
+                            IndexId = "0215",
+                            Name = "ニューラ\n(ヒスイのすがた)",
+                            Type = "かくとう, どく"
+                        },
+                        new
+                        {
+                            Id = 257,
                             Description = "ミツをみつけると みかづきもようが かがやく。あまいミツが しみこんだ てのひらを いつも なめている。",
                             IndexId = "0216",
                             Name = "ヒメグマ",
@@ -1780,7 +2111,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 217,
+                            Id = 258,
                             Description = "きのぼりも とくいだが まえあしで ふといみきを へしおって おちてきた きのみを たべる。",
                             IndexId = "0217",
                             Name = "リングマ",
@@ -1788,7 +2119,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 218,
+                            Id = 259,
                             Description = "じっとしていると ようがんで できた からだが ひえて かたまるから ねむることなく うごきまわっている。",
                             IndexId = "0218",
                             Name = "マグマッグ",
@@ -1796,7 +2127,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 219,
+                            Id = 260,
                             Description = "せなかのカラは ひふが ひえて かたまっただけ。なにかが ふれただけで かんたんに くずれる。",
                             IndexId = "0219",
                             Name = "マグカルゴ",
@@ -1804,7 +2135,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 220,
+                            Id = 261,
                             Description = "エサを さがすため はなを こすりあわせ じめんを ほっている。たまに おんせんを ほりあてる。",
                             IndexId = "0220",
                             Name = "ウリムー",
@@ -1812,7 +2143,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 221,
+                            Id = 262,
                             Description = "ながい たいもうに おおわれて めのまえの ようすが わからず ひたすらに とっしんを くりかえす。",
                             IndexId = "0221",
                             Name = "イノムー",
@@ -1820,7 +2151,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 222,
+                            Id = 263,
                             Description = "どんどん そだっては はえかわる あたまの さきは きれいなので たからもの として にんきがたかい。",
                             IndexId = "0222",
                             Name = "サニーゴ",
@@ -1828,7 +2159,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 223,
+                            Id = 264,
+                            Description = "どんどん そだっては はえかわる あたまの さきは きれいなので たからもの として にんきがたかい。",
+                            IndexId = "0222",
+                            Name = "サニーゴ\n(ガラルのすがた)",
+                            Type = "ゴースト"
+                        },
+                        new
+                        {
+                            Id = 265,
                             Description = "ねらいは せいかく。ふきだす みずは 100メートルさきで うごく えものに かならず めいちゅうする。",
                             IndexId = "0223",
                             Name = "テッポウオ",
@@ -1836,7 +2175,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 224,
+                            Id = 266,
                             Description = "がんじょうな いしあたま。きゅうばんつきの あしを からませ ひたすら あたまで うちすえる。",
                             IndexId = "0224",
                             Name = "オクタン",
@@ -1844,7 +2183,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 225,
+                            Id = 267,
                             Description = "1にち ずっと えさをはこんでる。 そうなんした ひとが デリバードの えさで たすかった はなしもある。",
                             IndexId = "0225",
                             Name = "デリバード",
@@ -1852,7 +2191,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 226,
+                            Id = 268,
                             Description = "ゆうぜんと うみを およぐ。たべのこしを ねらった テッポウオが くっついていても きにしていない。",
                             IndexId = "0226",
                             Name = "マンタイン",
@@ -1860,7 +2199,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 227,
+                            Id = 269,
                             Description = "じょうぶな ハネは おもそうだが ホネのなかは くうどうで かるく じゆうに おおぞらを とびまわる。",
                             IndexId = "0227",
                             Name = "エアームド",
@@ -1868,7 +2207,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 228,
+                            Id = 270,
                             Description = "なかまに れんらく するときと えものを おいつめるときでは なきごえの しゅるいが ちがうのだ。",
                             IndexId = "0228",
                             Name = "デルビル",
@@ -1876,7 +2215,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 229,
+                            Id = 271,
                             Description = "くちから ふきだす ほのおで やけどすると いつまでたっても キズぐちが うずいてしまう。",
                             IndexId = "0229",
                             Name = "ヘルガー",
@@ -1884,7 +2223,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 230,
+                            Id = 272,
                             Description = "ふだんは かいていどうくつに みを ひそめているらしい。あくびで うずしおを はっせいさせる。",
                             IndexId = "0230",
                             Name = "キングドラ",
@@ -1892,7 +2231,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 231,
+                            Id = 273,
                             Description = "じゃれている つもりで はなを ふりまわしてくるが かなりの ちからなので あぶない。",
                             IndexId = "0231",
                             Name = "ゴマゾウ",
@@ -1900,7 +2239,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 232,
+                            Id = 274,
                             Description = "するどく かたい キバと さらに がんじょうな ひふでの たいあたりは いえをも こわすほど。",
                             IndexId = "0232",
                             Name = "ドンファン",
@@ -1908,7 +2247,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 233,
+                            Id = 275,
                             Description = "わくせい かいはつが できるよう ポリゴンを バージョンアップしたが まだ そらも とべない。",
                             IndexId = "0233",
                             Name = "ポリゴン2",
@@ -1916,7 +2255,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 234,
+                            Id = 276,
                             Description = "ツノの まがりぐあいが まわりの くうきの ながれを びみょうにかえ ふしぎな くうかんを つくりだす。",
                             IndexId = "0234",
                             Name = "オドシシ",
@@ -1924,7 +2263,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 235,
+                            Id = 277,
                             Description = "シッポの さきから ぶんぴつする えきたいを あちこちに ぬりつけて じぶんの なわばりを アピールする。",
                             IndexId = "0235",
                             Name = "ドーブル",
@@ -1932,7 +2271,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 236,
+                            Id = 278,
                             Description = "いつでも げんきいっぱい。つよくなるため まけても まけても あいてに たちむかっていく。",
                             IndexId = "0236",
                             Name = "バルキー",
@@ -1940,7 +2279,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 237,
+                            Id = 279,
                             Description = "おどるように かれいで なめらかな キックわざに みとれていると きつい いちげきを おみまいされる。",
                             IndexId = "0237",
                             Name = "カポエラー",
@@ -1948,7 +2287,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 238,
+                            Id = 280,
                             Description = "くちびるが いちばん びんかん。なんでも まず くちびるで ふれて どんなものか かくにんする。",
                             IndexId = "0238",
                             Name = "ムチュール",
@@ -1956,7 +2295,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 239,
+                            Id = 281,
                             Description = "うでを ぐるぐるまわして でんきを はっせいさせるが すぐ つかれるので すこししか でんきが ためられない。",
                             IndexId = "0239",
                             Name = "エレキッド",
@@ -1964,7 +2303,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 240,
+                            Id = 282,
                             Description = "いきを すったり はいたり するたびに くちと はなから ひのこが もれてしまう。",
                             IndexId = "0240",
                             Name = "ブビィ",
@@ -1972,7 +2311,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 241,
+                            Id = 283,
                             Description = "ミルクは えいようまんてん。おとしよりや びょうきの ひとに とって さいこうの のみもの。",
                             IndexId = "0241",
                             Name = "ミルタンク",
@@ -1980,7 +2319,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 242,
+                            Id = 284,
                             Description = "ハピナスが うんだ タマゴを ひとくちでも たべた ひとは だれにでも やさしく なれる。",
                             IndexId = "0242",
                             Name = "ハピナス",
@@ -1988,7 +2327,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 243,
+                            Id = 285,
                             Description = "あまぐもを せおっているので どんなときでも かみなりを だせる。かみなりとともに おちてきたという。",
                             IndexId = "0243",
                             Name = "ライコウ",
@@ -1996,7 +2335,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 244,
+                            Id = 286,
                             Description = "ほえると かざんが ふんかする。みなぎる ちからを おさえきれず みちという みちを かけめぐる。",
                             IndexId = "0244",
                             Name = "エンテイ",
@@ -2004,7 +2343,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 245,
+                            Id = 287,
                             Description = "いっしゅんで きたなく にごった みずも きよめる ちからをもつ。きたかぜの うまれかわり という。",
                             IndexId = "0245",
                             Name = "スイクン",
@@ -2012,7 +2351,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 246,
+                            Id = 288,
                             Description = "つちを たべて いきている。おおきな やまひとつ たべおわると せいちょうのため ねむりはじめる。",
                             IndexId = "0246",
                             Name = "ヨーギラス",
@@ -2020,7 +2359,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 247,
+                            Id = 289,
                             Description = "がんばんのような かたい カラに おおわれているが ちからは つよく あばれると やまも くずれてしまう。",
                             IndexId = "0247",
                             Name = "サナギラス",
@@ -2028,7 +2367,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 248,
+                            Id = 290,
                             Description = "どんな こうげきにも びくともしない からだを もっているため どんどん しょうぶを しかけてくる。",
                             IndexId = "0248",
                             Name = "バンギラス",
@@ -2036,7 +2375,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 249,
+                            Id = 291,
                             Description = "つよすぎる のうりょくを もつため ふかい うみのそこで しずかに ときを すごすと つたえられる。",
                             IndexId = "0249",
                             Name = "ルギア",
@@ -2044,7 +2383,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 250,
+                            Id = 292,
                             Description = "なないろの みごとな つばさで せかいの そらを とびつづけると しんわに つたえられる ポケモン。",
                             IndexId = "0250",
                             Name = "ホウオウ",
@@ -2052,7 +2391,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 251,
+                            Id = 293,
                             Description = "じかんをこえて あちこち さまよう。セレビィが すがたを あらわした もりは くさきが おいしげるという。",
                             IndexId = "0251",
                             Name = "セレビィ",
@@ -2060,7 +2399,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 252,
+                            Id = 294,
                             Description = "あしの うらの ちいさな トゲを ひっかけて すいちょくの カベを のぼることが できる。ふとい しっぽを たたきつけて こうげきする。",
                             IndexId = "0252",
                             Name = "キモリ",
@@ -2068,7 +2407,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 253,
+                            Id = 295,
                             Description = "からだから はえた はっぱは もりの なかで てきから すがたを かくす ときに べんり。みつりんに くらす きのぼりの めいしゅ。",
                             IndexId = "0253",
                             Name = "ジュプトル",
@@ -2076,7 +2415,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 254,
+                            Id = 296,
                             Description = "からだに はえた はっぱは するどい きれあじ。すばやい みのこなしで きの えだを とびまわり てきの ずじょうや はいごから おそいかかるぞ。",
                             IndexId = "0254",
                             Name = "ジュカイン",
@@ -2084,7 +2423,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 255,
+                            Id = 297,
                             Description = "トレーナーに くっついて ちょこちょこ あるく。くちから とばす ほのおは せっし 1000ど。あいてを くろコゲにする しゃくねつの たまだ。",
                             IndexId = "0255",
                             Name = "アチャモ",
@@ -2092,7 +2431,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 256,
+                            Id = 298,
                             Description = "のやまを はしりまわって あしこしを きたえる。スピードと パワーを かねそなえた あしは 1びょうかんに 10ぱつの キックを くりだす。",
                             IndexId = "0256",
                             Name = "ワカシャモ",
@@ -2100,7 +2439,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 257,
+                            Id = 299,
                             Description = "たたかいに なると てくびから しゃくねつの ほのおを ふきあげ ゆうかんに いどみかかる。 あいてが てごわいほど はげしく もえあがる。",
                             IndexId = "0257",
                             Name = "バシャーモ",
@@ -2108,7 +2447,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 258,
+                            Id = 300,
                             Description = "あたまの ひれは とても びんかんな レーダー。みずや くうきの うごきから めを つかわずに まわりの ようすを キャッチすることが できる。",
                             IndexId = "0258",
                             Name = "ミズゴロウ",
@@ -2116,7 +2455,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 259,
+                            Id = 301,
                             Description = "ちじょうでも せいかつできる ように からだの ひょうめんを うすい ねんまくが つつんでいる。しおの ひいた かいがんで どろあそびを する。",
                             IndexId = "0259",
                             Name = "ヌマクロー",
@@ -2124,7 +2463,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 260,
+                            Id = 302,
                             Description = "おもさ 1トンいじょう ある いわの かたまりを かるがる ひっぱる パワーを もつ ポケモンだ。にごった すいちゅうも みとおす しりょく。",
                             IndexId = "0260",
                             Name = "ラグラージ",
@@ -2132,7 +2471,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 261,
+                            Id = 303,
                             Description = "うごく ものを みつけると すぐに かみつく。えものが ヘトヘトに なるまで おいかけまわすが はんげきされると しりごみする ことも あるよ。",
                             IndexId = "0261",
                             Name = "ポチエナ",
@@ -2140,7 +2479,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 262,
+                            Id = 304,
                             Description = "どうもうな うなりごえを あげながら しせいを ひくく している ときは こうげきの まえぶれ。するどく とがった キバで がぶりと かみつく。",
                             IndexId = "0262",
                             Name = "グラエナ",
@@ -2148,7 +2487,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 263,
+                            Id = 305,
                             Description = "いつも あっち こっちへ ジグザグ あるくのは こうきしんが とても つよくて めに うつる いろんな ものに きょうみを もつからだ。",
                             IndexId = "0263",
                             Name = "ジグザグマ",
@@ -2156,7 +2495,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 264,
+                            Id = 306,
+                            Description = "いつも あっち こっちへ ジグザグ あるくのは こうきしんが とても つよくて めに うつる いろんな ものに きょうみを もつからだ。",
+                            IndexId = "0263",
+                            Name = "ジグザグマ\n(ガラルのすがた)",
+                            Type = "あく, ノーマル"
+                        },
+                        new
+                        {
+                            Id = 307,
                             Description = "まっすぐに つっぱしり しょうがいぶつが ある ときは ちょっかくに おれまがって よける。ゆるやかに カーブした みちが とても にがて。",
                             IndexId = "0264",
                             Name = "マッスグマ",
@@ -2164,7 +2511,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 265,
+                            Id = 308,
+                            Description = "まっすぐに つっぱしり しょうがいぶつが ある ときは ちょっかくに おれまがって よける。ゆるやかに カーブした みちが とても にがて。",
+                            IndexId = "0264",
+                            Name = "マッスグマ\n(ガラルのすがた)",
+                            Type = "あく, ノーマル"
+                        },
+                        new
+                        {
+                            Id = 309,
                             Description = "おしりの トゲで きの かわを はがして しみだした じゅえきを しょくりょうに する。きゅうばんの あしは ガラスでも すべらない。",
                             IndexId = "0265",
                             Name = "ケムッソ",
@@ -2172,7 +2527,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 266,
+                            Id = 310,
                             Description = "おちない ように いとを えだに まきつけて からだを ささえながら しんかを まっている。ちいさな あなから そとの ようすを うかがう。",
                             IndexId = "0266",
                             Name = "カラサリス",
@@ -2180,7 +2535,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 267,
+                            Id = 311,
                             Description = "あまい かふんが だいこうぶつの ポケモン。はなを つけた はちうえを まどべに おけば かふんを あつめに かならず とんでくるよ。",
                             IndexId = "0267",
                             Name = "アゲハント",
@@ -2188,7 +2543,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 268,
+                            Id = 312,
                             Description = "マユルドの からだは くちから だした ほそい いとが からだを つつみ かたくなった もの。マユの なかで しんかの じゅんびを している。",
                             IndexId = "0268",
                             Name = "マユルド",
@@ -2196,7 +2551,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 269,
+                            Id = 313,
                             Description = "あかりに ひきよせられる しゅうせいを もつ。まちあかりに さそわれた ドクケイルの むれが がいろじゅの はっぱを たべちらかしてしまう。",
                             IndexId = "0269",
                             Name = "ドクケイル",
@@ -2204,7 +2559,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 270,
+                            Id = 314,
                             Description = "いけや みずうみの すいめんに ういて くらす。はっぱが かれると よわってしまうが きれいな みずを もとめて たまに りくちを いどうする。",
                             IndexId = "0270",
                             Name = "ハスボー",
@@ -2212,7 +2567,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 271,
+                            Id = 315,
                             Description = "ゆうぐれになると かつどうする やこうせい。つりびとを みかけると すいちゅうから いとを ひっぱり ジャマをしては よろこんでいる。",
                             IndexId = "0271",
                             Name = "ハスブレロ",
@@ -2220,7 +2575,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 272,
+                            Id = 316,
                             Description = "ようきな おんがくを みみにすると おどりだす。ハイキングを している こどもの がっしょうに さそわれて すがたを あらわすと いわれている。",
                             IndexId = "0272",
                             Name = "ルンパッパ",
@@ -2228,7 +2583,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 273,
+                            Id = 317,
                             Description = "あたまの てっぺんを きの えだに くっつけて ぶらさがり ながら すいぶんを すいとっている。みずを のむほど からだが ツヤツヤ ひかる。",
                             IndexId = "0273",
                             Name = "タネボー",
@@ -2236,7 +2591,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 274,
+                            Id = 318,
                             Description = "うっそうと しげった もりに すむ ポケモン。たまに もりを でては ひとを おどろかせる。ながい はなを つかまれるのは だいきらい。",
                             IndexId = "0274",
                             Name = "コノハナ",
@@ -2244,7 +2599,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 275,
+                            Id = 319,
                             Description = "じゅれい 1000ねんを こえた たいぼくの てっぺんに すむと いわれる なぞの ポケモン。はっぱの うちわで きょうふうを まきおこす。",
                             IndexId = "0275",
                             Name = "ダーテング",
@@ -2252,7 +2607,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 276,
+                            Id = 320,
                             Description = "どんな つよい あいてでも ゆうかんに いどむ。まけても へこたれない こんじょうの もちぬし。おなかが すくと おおごえで ないて しまう。",
                             IndexId = "0276",
                             Name = "スバメ",
@@ -2260,7 +2615,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 277,
+                            Id = 321,
                             Description = "はるか じょうくうを えんを えがく ように とびまわり えものを みつけると きゅうこうか。あしの ツメで がっしり つかんで にがさない。",
                             IndexId = "0277",
                             Name = "オオスバメ",
@@ -2268,7 +2623,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 278,
+                            Id = 322,
                             Description = "エサや だいじな ものを くちばしに はさみ いろんな ばしょに かくす しゅうせいを もつ。かぜに のって すべる ように そらを とぶ。",
                             IndexId = "0278",
                             Name = "キャモメ",
@@ -2276,7 +2631,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 279,
+                            Id = 323,
                             Description = "ちいさな ポケモンや タマゴを クチバシに いれて はこぶ そらの はこびやだ。うみべの けわしい がけに すを つくる。",
                             IndexId = "0279",
                             Name = "ペリッパー",
@@ -2284,7 +2639,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 280,
+                            Id = 324,
                             Description = "あたまの ツノで ひとの きもちを かんじとる。ひとまえには めったに すがたを あらわさないが まえむきな きもちを キャッチすると ちかよる。",
                             IndexId = "0280",
                             Name = "ラルトス",
@@ -2292,7 +2647,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 281,
+                            Id = 325,
                             Description = "トレーナーの あかるい かんじょうに ふれている キルリアは うつくしく せいちょうすると いう。はったつした のうで サイコパワーを あやつる。",
                             IndexId = "0281",
                             Name = "キルリア",
@@ -2300,7 +2655,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 282,
+                            Id = 326,
                             Description = "みらいを よちする のうりょくで トレーナーの きけんを さっちしたとき さいだい パワーの サイコエネルギーを つかうと いわれている。",
                             IndexId = "0282",
                             Name = "サーナイト",
@@ -2308,7 +2663,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 283,
+                            Id = 327,
                             Description = "つまさきから あぶらが にじみでて いるので みずの うえを すべる ように あるけるのだ。いけや みずうみの びせいぶつを たべている。",
                             IndexId = "0283",
                             Name = "アメタマ",
@@ -2316,7 +2671,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 284,
+                            Id = 328,
                             Description = "しょっかくの めだま もようで てきを いかく。4まいの はねを つかい ヘリコプターの ように くうちゅうで ぜんごさゆう じゆうに すすめる。",
                             IndexId = "0284",
                             Name = "アメモース",
@@ -2324,7 +2679,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 285,
+                            Id = 329,
                             Description = "ふかい もりの しめった じめんに せいそく。 おちばの したで じっとしていることが おおい。 おちばが つもって できた ふようどを たべる。",
                             IndexId = "0285",
                             Name = "キノココ",
@@ -2332,7 +2687,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 286,
+                            Id = 330,
                             Description = "かろやかな フットワークで てきに ちかづき のびちぢみする うでで パンチを くりだす。 ボクサー かおまけの テクニックの もちぬし。",
                             IndexId = "0286",
                             Name = "キノガッサ",
@@ -2340,7 +2695,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 287,
+                            Id = 331,
                             Description = "1にち 20じかん いじょう ねそべっている。ほとんど からだを うごかさないので はっぱを 3まい たべれば 1にちの しょくじが おわる。",
                             IndexId = "0287",
                             Name = "ナマケロ",
@@ -2348,7 +2703,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 288,
+                            Id = 332,
                             Description = "いつも あばれたくて ウズウズ している。1ぷんでも すわっている ことが たえられない。うごいて いないと ストレスが たまってしまう。",
                             IndexId = "0288",
                             Name = "ヤルキモノ",
@@ -2356,7 +2711,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 289,
+                            Id = 333,
                             Description = "1にちじゅう ねそべったまま くらす ポケモン。ての とどく ばしょに はえている くさを たべ くさが なくなると しぶしぶ ばしょを かえる。",
                             IndexId = "0289",
                             Name = "ケッキング",
@@ -2364,7 +2719,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 290,
+                            Id = 334,
                             Description = "なんねんも まっくらな つちの なかで くらす。きの ねっこから えいようを きゅうしゅうして じっと うごかず しんかの ときを まっている。",
                             IndexId = "0290",
                             Name = "ツチニン",
@@ -2372,7 +2727,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 291,
+                            Id = 335,
                             Description = "こうそくで うごきまわり すがたが みえない。なきごえしか きこえて こないので ながいあいだ とうめいな ポケモンと かんがえられていた。",
                             IndexId = "0291",
                             Name = "テッカニン",
@@ -2380,7 +2735,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 292,
+                            Id = 336,
                             Description = "かたい からだは ぴくりとも うごかない。せなかから からだの くうどうを のぞくと たましいを すいとられると しんじられている。",
                             IndexId = "0292",
                             Name = "ヌケニン",
@@ -2388,7 +2743,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 293,
+                            Id = 337,
                             Description = "ふだんは ちゅういしないと ききとれない くらい ちいさな こえだが きけんを さっち すると ずつうを おこす ほどの おおごえで なきだす。",
                             IndexId = "0293",
                             Name = "ゴニョニョ",
@@ -2396,7 +2751,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 294,
+                            Id = 338,
                             Description = "もくぞうの いえを コナゴナに ふきとばすほどの おおごえを だして あいてを いためつける。まるい みみが スピーカーの はたらきを する。",
                             IndexId = "0294",
                             Name = "ドゴーム",
@@ -2404,7 +2759,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 295,
+                            Id = 339,
                             Description = "おおごえの しんどうで じしんを おこす。からだの あなから くうきを はげしく すいこみ はじめたら おおごえを だす まえぶれだ。",
                             IndexId = "0295",
                             Name = "バクオング",
@@ -2412,7 +2767,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 296,
+                            Id = 340,
                             Description = "なんかい たおされても あきらめず たちあがる。たちあがるたび しんかするための エネルギーが からだの なかに どんどん たくわえられていく。",
                             IndexId = "0296",
                             Name = "マクノシタ",
@@ -2420,7 +2775,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 297,
+                            Id = 341,
                             Description = "いろんな ばしょで はりての けいこに はげむ。きょうれつな はりて こうげきを くらうと でんしんばしらも いちげきで まっぷたつだ。",
                             IndexId = "0297",
                             Name = "ハリテヤマ",
@@ -2428,7 +2783,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 298,
+                            Id = 342,
                             Description = "なげなわの ようりょうで しっぽを ふりまわし なげた ときの ちからで とんでいく。さいこう 10メートル とんだ きろくが ある。",
                             IndexId = "0298",
                             Name = "ルリリ",
@@ -2436,7 +2791,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 299,
+                            Id = 343,
                             Description = "じしゃくの はなは いつも きたを むいている。ノズパスどうしは じしゃくが はんぱつしあうため ちかくで かおを あわせる ことが できない。",
                             IndexId = "0299",
                             Name = "ノズパス",
@@ -2444,7 +2799,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 300,
+                            Id = 344,
                             Description = "うごく ものを みつけると むちゅうに なって おいかけまわす しゅうせいを もつ ポケモン。じぶんの シッポを おいかけて めを まわす。",
                             IndexId = "0300",
                             Name = "エネコ",
@@ -2452,7 +2807,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 301,
+                            Id = 345,
                             Description = "マイペースで じゆうきままな くらしを このむ。きのむくまま エサを たべたり ねむったり しているので 1にちの リズムが バラバラだ。",
                             IndexId = "0301",
                             Name = "エネコロロ",
@@ -2460,7 +2815,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 302,
+                            Id = 346,
                             Description = "どうくつの おくで ひっそりと せいかつする。くらやみで ひとみが あやしく かがやく とき ひとの たましいを うばうと おそれられている。",
                             IndexId = "0302",
                             Name = "ヤミラミ",
@@ -2468,7 +2823,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 303,
+                            Id = 347,
                             Description = "はがねの ツノが へんけいした おおきな あご。おとなしそうな かおに ゆだんを していると とつぜん ふりむき バクリと かみつかれるぞ。",
                             IndexId = "0303",
                             Name = "クチート",
@@ -2476,7 +2831,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 304,
+                            Id = 348,
                             Description = "はがねの からだを つくるため てっこうせきを やまから ほりだして たべているが たまに はしや レールを たべてしまう こまりものだ。",
                             IndexId = "0304",
                             Name = "ココドラ",
@@ -2484,7 +2839,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 305,
+                            Id = 349,
                             Description = "えいよう まんてんの わきみずを おなかいっぱい のむ ことで はがねの からだが きたえられる。おいしい わきみずの ちかくに すを つくる。",
                             IndexId = "0305",
                             Name = "コドラ",
@@ -2492,7 +2847,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 306,
+                            Id = 350,
                             Description = "やま ひとつを じぶんの なわばりに していて あらした あいては ようしゃなく たたきのめす。いつも やまの なかを みまわり している。",
                             IndexId = "0306",
                             Name = "ボスゴドラ",
@@ -2500,7 +2855,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 307,
+                            Id = 351,
                             Description = "やまおくで ヨガの しゅぎょうを している。めいそうを していても しゅうちゅうりょくが とぎれてしまうため しゅぎょうは おわらない。",
                             IndexId = "0307",
                             Name = "アサナン",
@@ -2508,7 +2863,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 308,
+                            Id = 352,
                             Description = "めいそうする ことで からだの エネルギーが たかまり だい6かんが するどくなる という。のやまと いったいになって けはいを けす。",
                             IndexId = "0308",
                             Name = "チャーレム",
@@ -2516,7 +2871,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 309,
+                            Id = 353,
                             Description = "ながい たいもうに でんきを ためている。 でんりゅうで あしの きんにくを しげきして ばくはつてきな しゅんぱつりょくを うみだす。",
                             IndexId = "0309",
                             Name = "ラクライ",
@@ -2524,7 +2879,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 310,
+                            Id = 354,
                             Description = "たてがみから いつも ほうでんしているため ひばなで やまかじを おこしてしまう ことも。 たたかいに なると かみなりぐもを つくりだす。",
                             IndexId = "0310",
                             Name = "ライボルト",
@@ -2532,7 +2887,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 311,
+                            Id = 355,
                             Description = "いつも なかまを おうえんしている ポケモン。なかまが がんばると からだを ショートさせて パチパチと ひばなの おとを たてて よろこぶ。",
                             IndexId = "0311",
                             Name = "プラスル",
@@ -2540,7 +2895,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 312,
+                            Id = 356,
                             Description = "じぶんよりも なかまの おうえんが だいじ。からだから はっする でんきを ショートさせて はでに ひばなを だしながら おうえんするぞ。",
                             IndexId = "0312",
                             Name = "マイナン",
@@ -2548,7 +2903,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 313,
+                            Id = 357,
                             Description = "ひが くれると しっぽから ひかりを だして あかるさや てんめつで なかまと かいわする。イルミーゼの あまい かおりに ひきよせられる。",
                             IndexId = "0313",
                             Name = "バルビート",
@@ -2556,7 +2911,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 314,
+                            Id = 358,
                             Description = "あまい かおりで バルビートを ひきよせる。たくさん あつまった バルビートを ゆうどうして よぞらに きかがくてきな ずけいを えがくぞ。",
                             IndexId = "0314",
                             Name = "イルミーゼ",
@@ -2564,7 +2919,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 315,
+                            Id = 359,
                             Description = "りょうての はなを ねらう あいてには するどい トゲを とばして こうげきする。はなの かおりは きもちを なごませる。",
                             IndexId = "0315",
                             Name = "ロゼリア",
@@ -2572,7 +2927,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 316,
+                            Id = 360,
                             Description = "からだの ほとんどが いぶくろで できているので じぶんと おなじ おおきさの ものも のみこむ。とくしゅな いえきで なんでも しょうかするぞ。",
                             IndexId = "0316",
                             Name = "ゴクリン",
@@ -2580,7 +2935,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 317,
+                            Id = 361,
                             Description = "えものを みつけると けあなから もうどくの たいえきを ふきだして あびせかけるぞ。よわった ところを おおきな くちで ペロリ。",
                             IndexId = "0317",
                             Name = "マルノーム",
@@ -2588,7 +2943,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 318,
+                            Id = 362,
                             Description = "はったつした アゴと するどく とがった キバは ふなぞこを かみちぎる ほどの はかいりょく。キバニアに おそわれ しずんだ ふねは おおい。",
                             IndexId = "0318",
                             Name = "キバニア",
@@ -2596,7 +2951,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 319,
+                            Id = 363,
                             Description = "うみのギャングと よばれ おそれられている。おれても すぐに はえかわる キバを もち おおがたタンカーも 1ぴきで バラバラに する。",
                             IndexId = "0319",
                             Name = "サメハダー",
@@ -2604,7 +2959,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 320,
+                            Id = 364,
                             Description = "めの うえに ついている はなの あなから からだに ためた かいすいを ふきだし ひとを おどろかすのが だいすきな ポケモンだ。",
                             IndexId = "0320",
                             Name = "ホエルコ",
@@ -2612,7 +2967,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 321,
+                            Id = 365,
                             Description = "みつかった なかでは さいだいの ポケモン。おおうなばらを ゆったりと およぎ おおきな くちで いっきに たいりょうの エサを たべる。",
                             IndexId = "0321",
                             Name = "ホエルオー",
@@ -2620,7 +2975,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 322,
+                            Id = 366,
                             Description = "たたかれても きが つかない にぶさ だが くうふくは 1びょうでも がまん できない。からだの なかでは マグマが にえたぎっている。",
                             IndexId = "0322",
                             Name = "ドンメル",
@@ -2628,7 +2983,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 323,
+                            Id = 367,
                             Description = "からだの なかに かざんを もつ ポケモンだ。からだに たまった せっし 1まんどの マグマを ときどき せなかの コブから ふきあげている。",
                             IndexId = "0323",
                             Name = "バクーダ",
@@ -2636,7 +2991,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 324,
+                            Id = 368,
                             Description = "やまを ほって せきたんを みつけては せっせと こうらの くうどうに いれて もやす ポケモン。おそわれると くろい けむりを だして にげる。",
                             IndexId = "0324",
                             Name = "コータス",
@@ -2644,7 +2999,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 325,
+                            Id = 369,
                             Description = "シッポで びょんびょん とびはねる ポケモン。とびはねる しんどうで しんぞうを うごかして いるので とびはねる ことは やめられないのだ。",
                             IndexId = "0325",
                             Name = "バネブー",
@@ -2652,7 +3007,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 326,
+                            Id = 370,
                             Description = "サイコパワーの はどうを くろしんじゅで つよめ じゆうじざいに あいてを あやつる ポケモン。ちからを つかうとき はないきが あらくなるぞ。",
                             IndexId = "0326",
                             Name = "ブーピッグ",
@@ -2660,7 +3015,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 327,
+                            Id = 371,
                             Description = "よのなかに いる パッチールは みんな ちがう ところに ブチもようが あると いわれている。おぼつかない あゆみが おどりのように みえる。",
                             IndexId = "0327",
                             Name = "パッチール",
@@ -2668,7 +3023,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 328,
+                            Id = 372,
                             Description = "すりばちじょうの すあなの そこで じっと えものが おちて くるのを まちつづけている。おおきな アゴは いわをも くだく いりょく。",
                             IndexId = "0328",
                             Name = "ナックラー",
@@ -2676,7 +3031,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 329,
+                            Id = 373,
                             Description = "2まいの ハネを はげしく しんどうさせて ちょうおんぱを だし えものを きぜつさせる。にんげんも ずつうを おこす ほどの いりょく。",
                             IndexId = "0329",
                             Name = "ビブラーバ",
@@ -2684,7 +3039,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 330,
+                            Id = 374,
                             Description = "さばくの せいれいと よばれる ポケモン。ハネの はばたきで すなを まいあげるため とんでいる ときは いつも すなあらしの なか。",
                             IndexId = "0330",
                             Name = "フライゴン",
@@ -2692,7 +3047,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 331,
+                            Id = 375,
                             Description = "さばく など かんそうした ちいきに せいそく。つよい はなの かおりで えものを さそいこみ するどい からだの トゲを とばして しとめる。",
                             IndexId = "0331",
                             Name = "サボネア",
@@ -2700,7 +3055,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 332,
+                            Id = 376,
                             Description = "さばくの ひざしで すいぶんを うしなわない ように ひるまは じっと たちつくしている。きおんの さがる よるに かつどうを はじめる。",
                             IndexId = "0332",
                             Name = "ノクタス",
@@ -2708,7 +3063,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 333,
+                            Id = 377,
                             Description = "わたぐもの ような ふさふさの つばさを もつ。ひとを こわがらず わたの ぼうし みたいに あたまに ちょこんと のっかる ポケモンだ。",
                             IndexId = "0333",
                             Name = "チルット",
@@ -2716,7 +3071,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 334,
+                            Id = 378,
                             Description = "わたぐもに まぎれて おおぞらを まう。すきとおった こえで メロディを さえずれば みみにした ものは うっとり ゆめごこち。",
                             IndexId = "0334",
                             Name = "チルタリス",
@@ -2724,7 +3079,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 335,
+                            Id = 379,
                             Description = "しゅくてき ハブネークとの たたかいの きおくが からだじゅうの さいぼうに きざみこまれている。びんしょうな みのこなしで こうげきを かわす。",
                             IndexId = "0335",
                             Name = "ザングース",
@@ -2732,7 +3087,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 336,
+                            Id = 380,
                             Description = "せんぞだいだい ザングースと たたかってきた。からだの キズは はげしい たたかいの しるし。するどい きれあじの しっぽで こうげきするぞ。",
                             IndexId = "0336",
                             Name = "ハブネーク",
@@ -2740,7 +3095,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 337,
+                            Id = 381,
                             Description = "いんせきの おちた ばしょから みつかったため うちゅうから やってきた ポケモンという せつも あるが まだ しょうめいされていない。",
                             IndexId = "0337",
                             Name = "ルナトーン",
@@ -2748,7 +3103,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 338,
+                            Id = 382,
                             Description = "うちゅうから おちてきたと いわれる しんしゅ。くうちゅうに うかび おともなく いどうする。たたかいに なると つよい ひかりを はなつ。",
                             IndexId = "0338",
                             Name = "ソルロック",
@@ -2756,7 +3111,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 339,
+                            Id = 383,
                             Description = "びんかんな ヒゲは すぐれた レーダーだ。ドロの なかから 2ほんの ヒゲだけを だして えものが ちかよってくるのを まちかまえている。",
                             IndexId = "0339",
                             Name = "ドジョッチ",
@@ -2764,7 +3119,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 340,
+                            Id = 384,
                             Description = "なわばり いしきが とても つよい ポケモン。おおきな ぬま ぜんぶを なわばりに している。てきが ちかづくと あばれて じしんを おこす。",
                             IndexId = "0340",
                             Name = "ナマズン",
@@ -2772,7 +3127,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 341,
+                            Id = 385,
                             Description = "もともと がいこくに すんでいた ポケモンを ペットとして つれてきた ものが やせいかした。せいめいりょくが つよいので どんどん ふえた。",
                             IndexId = "0341",
                             Name = "ヘイガニ",
@@ -2780,7 +3135,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 342,
+                            Id = 386,
                             Description = "すぐに たたかいを いどむ きしょうの あらさ。シザリガーの すむ いけには ほかの いきものが すみつかず さみしい ばしょに なってしまう。",
                             IndexId = "0342",
                             Name = "シザリガー",
@@ -2788,7 +3143,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 343,
+                            Id = 387,
                             Description = "いっぽんあしで かいてん しながら いどうする。ヤジロンと にんげんが いっしょに くらす こだいの へきがが いせきから はっけんされた。",
                             IndexId = "0343",
                             Name = "ヤジロン",
@@ -2796,7 +3151,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 344,
+                            Id = 388,
                             Description = "こだいじんの どろにんぎょうが かいこうせんを あびて せいめいを やどしたと いわれている。くうちゅうに ういて いどうしている。",
                             IndexId = "0344",
                             Name = "ネンドール",
@@ -2804,7 +3159,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 345,
+                            Id = 389,
                             Description = "やく 1おくねんまえに ぜつめつした ポケモン。かいていの いわに くっつき はなびらの ような しょくしゅで よってきた えものを つかまえる。",
                             IndexId = "0345",
                             Name = "リリーラ",
@@ -2812,7 +3167,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 346,
+                            Id = 390,
                             Description = "うみの そこで エサを さがして あるきまわる。きの えだの ような くびを じざいに のばして 8まいの しょくしゅで えものを つかまえる。",
                             IndexId = "0346",
                             Name = "ユレイドル",
@@ -2820,7 +3175,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 347,
+                            Id = 391,
                             Description = "たいこの かせきから よみがえった ポケモン。あたたかい うみに せいそくし はったつした 2ほんの ツメで えものを がっちり つかむ。",
                             IndexId = "0347",
                             Name = "アノプス",
@@ -2828,7 +3183,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 348,
+                            Id = 392,
                             Description = "こうらは あらゆる こうげきを はねかえす。のび ちぢみする きょだいな 2ほんの ツメは てっぱんを くしざしにする ほどの いりょくだ。",
                             IndexId = "0348",
                             Name = "アーマルド",
@@ -2836,7 +3191,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 349,
+                            Id = 393,
                             Description = "うまれつき ヒレが ボロボロで みっともないため だれにも あいてに されない ポケモンだ。うみと かわの どちらでも せいかつできる。",
                             IndexId = "0349",
                             Name = "ヒンバス",
@@ -2844,7 +3199,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 350,
+                            Id = 394,
                             Description = "もっとも うつくしい ポケモンと いわれている。いかりや にくしみの こころを いやして あらそいを しずめる ちからを もっている。",
                             IndexId = "0350",
                             Name = "ミロカロス",
@@ -2852,7 +3207,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 351,
+                            Id = 395,
                             Description = "てんきに よって すがたが かわる ポケモン。ちいさい からだを まもる ために だいしぜんの おおきな パワーを つかえる ように なった。",
                             IndexId = "0351",
                             Name = "ポワルン\n(ポワルンのすがた)",
@@ -2860,7 +3215,31 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 352,
+                            Id = 396,
+                            Description = "てんきに よって すがたが かわる ポケモン。ちいさい からだを まもる ために だいしぜんの おおきな パワーを つかえる ように なった。",
+                            IndexId = "0351",
+                            Name = "ポワルン\n(たいようのすがた)",
+                            Type = "ほのお"
+                        },
+                        new
+                        {
+                            Id = 397,
+                            Description = "てんきに よって すがたが かわる ポケモン。ちいさい からだを まもる ために だいしぜんの おおきな パワーを つかえる ように なった。",
+                            IndexId = "0351",
+                            Name = "ポワルン\n(あまみずのすがた)",
+                            Type = "みず"
+                        },
+                        new
+                        {
+                            Id = 398,
+                            Description = "てんきに よって すがたが かわる ポケモン。ちいさい からだを まもる ために だいしぜんの おおきな パワーを つかえる ように なった。",
+                            IndexId = "0351",
+                            Name = "ポワルン\n(ゆきぐものすがた)",
+                            Type = "こおり"
+                        },
+                        new
+                        {
+                            Id = 399,
                             Description = "からだの いろを じざいに かえる ことで まわりの けしきに とけこむ ことが できる。おなかの ギザギザもよう だけは かえられない。",
                             IndexId = "0352",
                             Name = "カクレオン",
@@ -2868,7 +3247,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 353,
+                            Id = 400,
                             Description = "ねたみ うらみの かんじょうに ひきよせられる。だれかを うらむ こころが つよく なると カゲボウズが のきしたに ずらりと ならぶぞ。",
                             IndexId = "0353",
                             Name = "カゲボウズ",
@@ -2876,7 +3255,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 354,
+                            Id = 401,
                             Description = "じぶんの からだを はりで キズつける とき つよい のろいの エネルギーが はっせいする。もとは すてられた かわいそうな ぬいぐるみ。",
                             IndexId = "0354",
                             Name = "ジュペッタ",
@@ -2884,7 +3263,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 355,
+                            Id = 402,
                             Description = "どんなに あつい カベも とおりぬける。ねらわれたら さいご あさひが のぼるまで ずっと おいかけられる ことに なるぞ。",
                             IndexId = "0355",
                             Name = "ヨマワル",
@@ -2892,7 +3271,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 356,
+                            Id = 403,
                             Description = "からだの なかみは くうどうで なにも ない。ブラックホールの ように なんでも すいこみ すいこまれると もどって これないと いわれる。",
                             IndexId = "0356",
                             Name = "サマヨール",
@@ -2900,7 +3279,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 357,
+                            Id = 404,
                             Description = "くびの フサは あまくて こどもに だいにんき。くだものが だいこうぶつで たべつづけて いたら くびに くだものが できるように なったらしい。",
                             IndexId = "0357",
                             Name = "トロピウス",
@@ -2908,7 +3287,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 358,
+                            Id = 405,
                             Description = "こえを からだの くうどうに はんきょうさせる。おこった ときの なきごえは てきを ふきとばす いりょくを もった ちょうおんぱに なるぞ。",
                             IndexId = "0358",
                             Name = "チリーン",
@@ -2916,7 +3295,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 359,
+                            Id = 406,
                             Description = "アブソルが ひとまえに あらわれると かならず じしんや つなみなどの さいがいが おこったので わざわいポケモン という べつめいで よばれた。",
                             IndexId = "0359",
                             Name = "アブソル",
@@ -2924,7 +3303,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 360,
+                            Id = 407,
                             Description = "いつも ニコニコ えがおの ソーナノ。おこっているときは しっぽに ちゅうもく。じめんを パタパタ たたいているぞ。",
                             IndexId = "0360",
                             Name = "ソーナノ",
@@ -2932,7 +3311,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 361,
+                            Id = 408,
                             Description = "ゆきの おおい とちで くらす ポケモン。はるや なつの ゆきの ふらない きせつには しょうにゅうどうの おくで しずかに くらす。",
                             IndexId = "0361",
                             Name = "ユキワラシ",
@@ -2940,7 +3319,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 362,
+                            Id = 409,
                             Description = "いわの からだを こおりの よろいで かためた。くうきちゅうの すいぶんを こおらせて じゆうな かたちに かえる のうりょくを もつ ポケモン。",
                             IndexId = "0362",
                             Name = "オニゴーリ",
@@ -2948,7 +3327,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 363,
+                            Id = 410,
                             Description = "あるくより ころがる ほうが だんぜん はやい。しょくじの じかんは みんなが いっせいに てを たたいて よろこぶので けっこう うるさいのだ。",
                             IndexId = "0363",
                             Name = "タマザラシ",
@@ -2956,7 +3335,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 364,
+                            Id = 411,
                             Description = "はじめて めにした ものは かならず はなで クルクル まわしてみる しゅうせいを もつ。タマザラシを まわして あそぶ ことが ある。",
                             IndexId = "0364",
                             Name = "トドグラー",
@@ -2964,7 +3343,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 365,
+                            Id = 412,
                             Description = "はったつした 2ほんの キバは 10トンも ある ひょうざんを いちげきで ふんさいする。しぼうが ぶあつく ひょうてんかでも へいき。",
                             IndexId = "0365",
                             Name = "トドゼルガ",
@@ -2972,7 +3351,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 366,
+                            Id = 413,
                             Description = "がんじょうな カラは みを まもる だけではなく えものを はさんで つかまえる ことも できる。そだった パールルの かいがらは キズだらけ。",
                             IndexId = "0366",
                             Name = "パールル",
@@ -2980,7 +3359,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 367,
+                            Id = 414,
                             Description = "とても ふかい うみの そこに すんでいるため ながい あいだ ひとに みつからなかった。くらい しんかいでも よく みえる めを もつ。",
                             IndexId = "0367",
                             Name = "ハンテール",
@@ -2988,7 +3367,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 368,
+                            Id = 415,
                             Description = "みなみの しんかいに せいそくする ポケモン。しんかいの すいあつに きたえられた からだは ちょっとの こうげきでは キズも つかない。",
                             IndexId = "0368",
                             Name = "サクラビス",
@@ -2996,7 +3375,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 369,
+                            Id = 416,
                             Description = "1おくねんの ながい あいだ まったく すがたが かわらずに しんかいで くらしていた ポケモン。はの ない くちで びせいぶつだけを たべる。",
                             IndexId = "0369",
                             Name = "ジーランス",
@@ -3004,7 +3383,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 370,
+                            Id = 417,
                             Description = "ねったいの あさい うみで くらしている。カップルを みつけると うしろに くっついて およぐ ことから この なまえが つけられた。",
                             IndexId = "0370",
                             Name = "ラブカス",
@@ -3012,7 +3391,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 371,
+                            Id = 418,
                             Description = "おおぞらを とぶことを ゆめみて くりかえし だんがいから とびおりている うちに あたまが きたえられ こうてつの ように かたく なった。",
                             IndexId = "0371",
                             Name = "タツベイ",
@@ -3020,7 +3399,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 372,
+                            Id = 419,
                             Description = "かたい カラの ないぶは さいぼうが へんかして あたらしい からだを つくっている さいちゅう。カラが とても おもいので うごきは にぶいぞ。",
                             IndexId = "0372",
                             Name = "コモルー",
@@ -3028,7 +3407,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 373,
+                            Id = 420,
                             Description = "つばさが ほしいと つよく おもい つづけてきた けっか からだの さいぼうが とつぜんへんいを おこし みごとな つばさが はえてきたと いう。",
                             IndexId = "0373",
                             Name = "ボーマンダ",
@@ -3036,7 +3415,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 374,
+                            Id = 421,
                             Description = "からだの なかでは けつえきの かわりに きょうりょくな じりょくが めぐっている。じりょくの はどうで なかまと かいわする。",
                             IndexId = "0374",
                             Name = "ダンバル",
@@ -3044,7 +3423,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 375,
+                            Id = 422,
                             Description = "2ひきの ダンバルが がったいした すがた。2つの のうを じりょくの しんけいが むすぶ ことで つよい サイコエネルギーを うみだす。",
                             IndexId = "0375",
                             Name = "メタング",
@@ -3052,7 +3431,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 376,
+                            Id = 423,
                             Description = "4つの のうみそは スーパーコンピュータよりも はやく むずかしい けいさんの こたえを だす。 4ほんあしを おりたたみ くうちゅうに うかぶ。",
                             IndexId = "0376",
                             Name = "メタグロス",
@@ -3060,7 +3439,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 377,
+                            Id = 424,
                             Description = "むかし ひとに ふういんされた ポケモン。たたかいで からだが くずれると じぶんで あたらしい いわを さがして なおすと いう。",
                             IndexId = "0377",
                             Name = "レジロック",
@@ -3068,7 +3447,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 378,
+                            Id = 425,
                             Description = "ひょうがじだいに つくられた こおりの からだは ほのおでも とかす ことが できない。マイナス 200どの れいきを あやつる。",
                             IndexId = "0378",
                             Name = "レジアイス",
@@ -3076,7 +3455,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 379,
+                            Id = 426,
                             Description = "どんな きんぞくよりも かたい からだを もつ。からだの なかは くうどうに なっているらしく たべている ものも わからない ポケモンだ。",
                             IndexId = "0379",
                             Name = "レジスチル",
@@ -3084,7 +3463,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 380,
+                            Id = 427,
                             Description = "にんげんの こころを びんかんに かんじとる。てきいを キャッチすると ぜんしんの はねを さかだてて はげしく なきごえで いかくする。",
                             IndexId = "0380",
                             Name = "ラティアス",
@@ -3092,7 +3471,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 381,
+                            Id = 428,
                             Description = "みた ものや かんがえた イメージを あいてに えいぞうとして みせる のうりょくを もつ。にんげんの ことばを りかいすることが できる。",
                             IndexId = "0381",
                             Name = "ラティオス",
@@ -3100,7 +3479,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 382,
+                            Id = 429,
                             Description = "そら いちめんを おおう あまぐもを つくりだし おおあめを ふらせる ちからを もつ ポケモン。かんばつに くるしむ ひとびとを すくった。",
                             IndexId = "0382",
                             Name = "カイオーガ",
@@ -3108,7 +3487,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 383,
+                            Id = 430,
+                            Description = "そら いちめんを おおう あまぐもを つくりだし おおあめを ふらせる ちからを もつ ポケモン。かんばつに くるしむ ひとびとを すくった。",
+                            IndexId = "0382",
+                            Name = "カイオーガ\n(ゲンシカイオーガ)",
+                            Type = "みず"
+                        },
+                        new
+                        {
+                            Id = 431,
                             Description = "だいちを もりあげて たいりくを ひろげた ポケモンと しんわで かたり つがれている。カイオーガと しとうの すえ ねむりに ついた。",
                             IndexId = "0383",
                             Name = "グラードン",
@@ -3116,7 +3503,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 384,
+                            Id = 432,
+                            Description = "だいちを もりあげて たいりくを ひろげた ポケモンと しんわで かたり つがれている。カイオーガと しとうの すえ ねむりに ついた。",
+                            IndexId = "0383",
+                            Name = "グラードン\n(ゲンシグラードン)",
+                            Type = "じめん, ほのお"
+                        },
+                        new
+                        {
+                            Id = 433,
                             Description = "なんおくねんも オゾンそうの なかを とびつづけ けっして ちじょうには おりてこない ポケモン。くうきちゅうの チリと みずを たべるらしい。",
                             IndexId = "0384",
                             Name = "レックウザ",
@@ -3124,7 +3519,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 385,
+                            Id = 434,
                             Description = "めざめた とき あたまの たんざくに かかれた ねがいを かなえると いう でんせつを もつ。きけんを かんじると ねむったまま たたかう。",
                             IndexId = "0385",
                             Name = "ジラーチ",
@@ -3132,7 +3527,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 386,
+                            Id = 435,
                             Description = "レーザーを あびた うちゅうウィルスの DNAが とつぜんへんいを おこして うまれた ポケモン。 むねの すいしょうたいが のうみそ らしい。",
                             IndexId = "0386",
                             Name = "デオキシス",
@@ -3140,7 +3535,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 387,
+                            Id = 436,
                             Description = "つちで できた せなかの こうらは みずを のむと さらに かたくなる。 みずうみの ほとりで くらしている。",
                             IndexId = "0387",
                             Name = "ナエトル",
@@ -3148,7 +3543,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 388,
+                            Id = 437,
                             Description = "もりの なかの みずべで くらす。 ひるまは もりの そとに でて こうらの きに ひかりを あてる。",
                             IndexId = "0388",
                             Name = "ハヤシガメ",
@@ -3156,7 +3551,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 389,
+                            Id = 438,
                             Description = "ちいさな ポケモンたちが あつまり うごかない ドダイトスの せなかで すづくりを はじめることがある。",
                             IndexId = "0389",
                             Name = "ドダイトス",
@@ -3164,7 +3559,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 390,
+                            Id = 439,
                             Description = "だんがいぜっぺきを みがるに のぼり いわやまの うえで せいかつする。 ほのおを けして ねむる。",
                             IndexId = "0390",
                             Name = "ヒコザル",
@@ -3172,7 +3567,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 391,
+                            Id = 440,
                             Description = "しっぽの ほのおを ながく のばして からだを おおきく みせることで おそってきた てきを こわがらせる。",
                             IndexId = "0391",
                             Name = "モウカザル",
@@ -3180,7 +3575,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 392,
+                            Id = 441,
                             Description = "りょうて りょうあしを つかった とくしゅな かくとうわざを つかう。 ほのおは いっしょう きえない。",
                             IndexId = "0392",
                             Name = "ゴウカザル",
@@ -3188,7 +3583,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 393,
+                            Id = 442,
                             Description = "プライドが たかく ひとから たべものを もらう ことを きらう。ながい うぶげが さむさを ふせぐ。",
                             IndexId = "0393",
                             Name = "ポッチャマ",
@@ -3196,7 +3591,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 394,
+                            Id = 443,
                             Description = "むれを つくらずに 1ぴきで いる。じぶんが いちばん えらいと どの ポッタイシも かんがえているようだ。",
                             IndexId = "0394",
                             Name = "ポッタイシ",
@@ -3204,7 +3599,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 395,
+                            Id = 444,
                             Description = "クチバシから のびている 3ぼんの ツノは つよさの しょうちょう。リーダーが いちばん おおきい。",
                             IndexId = "0395",
                             Name = "エンペルト",
@@ -3212,7 +3607,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 396,
+                            Id = 445,
                             Description = "たくさんの むれで こうどうする。からだは ちいさいが はばたく ちからは ひじょうに つよい。",
                             IndexId = "0396",
                             Name = "ムックル",
@@ -3220,7 +3615,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 397,
+                            Id = 446,
                             Description = "むしポケモンを ねらって もりや そうげんを とびまわる。おおきな むれで こうどうする。",
                             IndexId = "0397",
                             Name = "ムクバード",
@@ -3228,7 +3623,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 398,
+                            Id = 447,
                             Description = "どうもうな せいかくの ポケモン。 じぶんよりも からだの おおきい あいてにも かかんに いどみかかる。",
                             IndexId = "0398",
                             Name = "ムクホーク",
@@ -3236,7 +3631,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 399,
+                            Id = 448,
                             Description = "なにごとにも どうじない ずぶとい しんけいの もちぬし。みかけの わりには きびんに かつどうする。",
                             IndexId = "0399",
                             Name = "ビッパ",
@@ -3244,7 +3639,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 400,
+                            Id = 449,
                             Description = "かわを きのみきや どろの ダムで せきとめて すみかを つくる。はたらきものとして しられている。",
                             IndexId = "0400",
                             Name = "ビーダル",
@@ -3252,7 +3647,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 401,
+                            Id = 450,
                             Description = "あたまを ぜんごに ゆすって しょっかくを ぶつけあうことで もっきんのような おとを ならす。",
                             IndexId = "0401",
                             Name = "コロボーシ",
@@ -3260,7 +3655,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 402,
+                            Id = 451,
                             Description = "なくときは ナイフのような うでを むねの まえで こうささせる。 そっきょうで メロディを つくる。",
                             IndexId = "0402",
                             Name = "コロトック",
@@ -3268,7 +3663,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 403,
+                            Id = 452,
                             Description = "きけんを かんじると ぜんしんの たいもうが ひかる。あいてが めを くらませている あいだに にげる。",
                             IndexId = "0403",
                             Name = "コリンク",
@@ -3276,7 +3671,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 404,
+                            Id = 453,
                             Description = "いっぱつで きぜつさせるほどの でんりゅうを ツメから ながす。 すうひきの グループで くらす。",
                             IndexId = "0404",
                             Name = "ルクシオ",
@@ -3284,7 +3679,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 405,
+                            Id = 454,
                             Description = "あらゆるものを とうししてしまう めをもつ。 ものかげに かくれた えものを みつけて とらえる。",
                             IndexId = "0405",
                             Name = "レントラー",
@@ -3292,7 +3687,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 406,
+                            Id = 455,
                             Description = "ふゆの あいだは つぼみを とざして さむさに たえる。はるになると つぼみを ひらき かふんを とばす。",
                             IndexId = "0406",
                             Name = "スボミー",
@@ -3300,7 +3695,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 407,
+                            Id = 456,
                             Description = "あまい かおりで おびきよせて りょううでの はなたばの なかに ある とげの むちで しとめる。",
                             IndexId = "0407",
                             Name = "ロズレイド",
@@ -3308,7 +3703,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 408,
+                            Id = 457,
                             Description = "およそ 1おくねんまえに こだいの みつりんで くらしていた。てつのように かたい ずがいこつ。",
                             IndexId = "0408",
                             Name = "ズガイドス",
@@ -3316,7 +3711,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 409,
+                            Id = 458,
                             Description = "きょうれつな ずつきの こうげきは どんなに がんじょうな ものでも いちげきで ふんさいする いりょく。",
                             IndexId = "0409",
                             Name = "ラムパルド",
@@ -3324,7 +3719,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 410,
+                            Id = 459,
                             Description = "およそ 1おくねんまえに みつりんで くらしていた ポケモン。かおの ひふが ひじょうに かたい。",
                             IndexId = "0410",
                             Name = "タテトプス",
@@ -3332,7 +3727,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 411,
+                            Id = 460,
                             Description = "しょうめんからの こうげきは すべて はねかえす。くさや きのみを たべる おとなしい せいかく。",
                             IndexId = "0411",
                             Name = "トリデプス",
@@ -3340,7 +3735,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 412,
+                            Id = 461,
                             Description = "つめたい こがらしを ふせぐため こえだや おちばを ざいりょうに みのを つくり からだを おおう。",
                             IndexId = "0412",
                             Name = "ミノムッチ",
@@ -3348,7 +3743,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 413,
+                            Id = 462,
                             Description = "ミノムッチから しんかしたとき みのが からだの いちぶに なった。いっしょう みのを ぬぐことはない。",
                             IndexId = "0413",
                             Name = "ミノマダム\n(くさきのミノ)",
@@ -3356,7 +3751,23 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 414,
+                            Id = 463,
+                            Description = "ミノムッチから しんかしたとき みのが からだの いちぶに なった。いっしょう みのを ぬぐことはない。",
+                            IndexId = "0413",
+                            Name = "ミノマダム\n(すなちのミノ)",
+                            Type = "むし, じめん"
+                        },
+                        new
+                        {
+                            Id = 464,
+                            Description = "ミノムッチから しんかしたとき みのが からだの いちぶに なった。いっしょう みのを ぬぐことはない。",
+                            IndexId = "0413",
+                            Name = "ミノマダム\n(ゴミのミノ)",
+                            Type = "むし, はがね"
+                        },
+                        new
+                        {
+                            Id = 465,
                             Description = "はなの ミツが だいすき。ミツハニーの あつめた ミツを よこどりして たべてしまう。",
                             IndexId = "0414",
                             Name = "ガーメイル",
@@ -3364,7 +3775,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 415,
+                            Id = 466,
                             Description = "3びきが ひとつになった ポケモン。ビークインのために せっせと はなの あまい みつを はこぶ。",
                             IndexId = "0415",
                             Name = "ミツハニー",
@@ -3372,7 +3783,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 416,
+                            Id = 467,
                             Description = "どうたいが こどもたちの すあなに なっている。ミツハニーの あつめた ミツで こどもたちを そだてる。",
                             IndexId = "0416",
                             Name = "ビークイン",
@@ -3380,7 +3791,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 417,
+                            Id = 468,
                             Description = "せいでんきが たまって パチパチする けだまを だいこうぶつの きのみと いっしょに みきの あなに かくす。",
                             IndexId = "0417",
                             Name = "パチリス",
@@ -3388,7 +3799,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 418,
+                            Id = 469,
                             Description = "くびに ある うきぶくろに くうきをためると うきわのように ふくらむ。すいめんに かおを だして うかぶ。",
                             IndexId = "0418",
                             Name = "ブイゼル",
@@ -3396,7 +3807,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 419,
+                            Id = 470,
                             Description = "はったつした うきぶくろで うかぶ。 おぼれた ひとを きゅうじょする てつだいを している ポケモンだ。",
                             IndexId = "0419",
                             Name = "フローゼル",
@@ -3404,7 +3815,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 420,
+                            Id = 471,
                             Description = "しんかに ひつような えいようぶんが ちいさい たまに ためられている。 とても あまくて おいしい らしい。",
                             IndexId = "0420",
                             Name = "チェリンボ",
@@ -3412,7 +3823,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 421,
+                            Id = 472,
                             Description = "ひざしが つよくなると はなひらく。 つぼみの ときに たえしのんだ うっぷんを いっきに はらすのだ。",
                             IndexId = "0421",
                             Name = "チェリム",
@@ -3420,7 +3831,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 422,
+                            Id = 473,
                             Description = "せいそくちにより ちがった かたちや いろを している。 シンオウちほうでは 2しゅるいが かくにんされている。",
                             IndexId = "0422",
                             Name = "カラナクシ",
@@ -3428,7 +3839,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 423,
+                            Id = 474,
                             Description = "ホネがなく グニャグニャの からだ。 からだの いちぶが ちぎれても すぐに さいせいされて もとどおり。",
                             IndexId = "0423",
                             Name = "トリトドン",
@@ -3436,7 +3847,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 424,
+                            Id = 475,
                             Description = "2ほんの しっぽで きのみの からを きように むいて たべる。ほんものの うでは ほとんど つかわなくなった。",
                             IndexId = "0424",
                             Name = "エテボース",
@@ -3444,7 +3855,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 425,
+                            Id = 476,
                             Description = "ひとや ポケモンの たましいが かたまって うまれた ポケモン。 ジメジメした きせつが だいすき。",
                             IndexId = "0425",
                             Name = "フワンテ",
@@ -3452,7 +3863,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 426,
+                            Id = 477,
                             Description = "ひるまは ねぼけて うかんでいるが ゆうがた たいぐんで とんでいく。いきさきは だれも しらない。",
                             IndexId = "0426",
                             Name = "フワライド",
@@ -3460,7 +3871,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 427,
+                            Id = 478,
                             Description = "まるめた みみを いきおいよく のばして あいてに たたきつける。 おとなでも とびあがるほど いたい。",
                             IndexId = "0427",
                             Name = "ミミロル",
@@ -3468,7 +3879,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 428,
+                            Id = 479,
                             Description = "けいかいしんの つよい ポケモン。 きけんを かんじると ふわふわした みみさきの けで からだを つつむ。",
                             IndexId = "0428",
                             Name = "ミミロップ",
@@ -3476,7 +3887,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 429,
+                            Id = 480,
                             Description = "じゅもんのような なきごえを だして みみにした あいてを ずつうや げんかくで くるしめる。",
                             IndexId = "0429",
                             Name = "ムウマージ",
@@ -3484,7 +3895,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 430,
+                            Id = 481,
                             Description = "よるになると かつどうを はじめる。たくさんの ヤミカラスを ひきつれ むれを つくることで しられる。",
                             IndexId = "0430",
                             Name = "ドンカラス",
@@ -3492,7 +3903,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 431,
+                            Id = 482,
                             Description = "きにいらないと ツメを たてるが たまに のどを ならして あまえる せいかくが いちぶに だいにんきだ。",
                             IndexId = "0431",
                             Name = "ニャルマー",
@@ -3500,7 +3911,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 432,
+                            Id = 483,
                             Description = "ほかの ポケモンの すみかにも かまわず はいりこんで じぶんの ねばしょにしてしまう ずうずうしさ。",
                             IndexId = "0432",
                             Name = "ブニャット",
@@ -3508,7 +3919,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 433,
+                            Id = 484,
                             Description = "のどの おくで まるい たまを ふるわせて なきごえを だす。 ふわりと はずんで いどうする。",
                             IndexId = "0433",
                             Name = "リーシャン",
@@ -3516,7 +3927,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 434,
+                            Id = 485,
                             Description = "おしりから きょうれつに くさい えきたいを とばして みを まもる。 においは 24じかん きえない。",
                             IndexId = "0434",
                             Name = "スカンプー",
@@ -3524,7 +3935,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 435,
+                            Id = 486,
                             Description = "しっぽの さきから ひどい においの えきたいを とばして こうげきする。 ひきょりは 50メートルいじょう。",
                             IndexId = "0435",
                             Name = "スカタンク",
@@ -3532,7 +3943,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 436,
+                            Id = 487,
                             Description = "ふるい おはかから ドーミラーに そっくりな どうぐが ほりだされたが かんけいは わかっていない。",
                             IndexId = "0436",
                             Name = "ドーミラー",
@@ -3540,7 +3951,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 437,
+                            Id = 488,
                             Description = "2000ねん いじょう ねむっていた ドータクンが こうじげんばから ほりだされ だいニュースに なった。",
                             IndexId = "0437",
                             Name = "ドータクン",
@@ -3548,7 +3959,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 438,
+                            Id = 489,
                             Description = "いつも ないているように みえるが たいないの すいぶんを そとに だして ちょうせつしているのだ。",
                             IndexId = "0438",
                             Name = "ウソハチ",
@@ -3556,7 +3967,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 439,
+                            Id = 490,
                             Description = "あいての うごきを モノマネする しゅうせい。まねを された あいては めが はなせなく なる。",
                             IndexId = "0439",
                             Name = "マネネ",
@@ -3564,7 +3975,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 440,
+                            Id = 491,
                             Description = "しろくて まるいものが だいすき。 ラッキーの まねをして タマゴに そっくりな いしを かかえている。",
                             IndexId = "0440",
                             Name = "ピンプク",
@@ -3572,7 +3983,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 441,
+                            Id = 492,
                             Description = "ひとの ことばを おぼえて なく。 なかまが いっかしょに あつまると みんな おなじ ことばを おぼえる。",
                             IndexId = "0441",
                             Name = "ペラップ",
@@ -3580,7 +3991,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 442,
+                            Id = 493,
                             Description = "108この たましいが あつまって うまれた ポケモン。 かなめいしの ひびわれに つながれている。",
                             IndexId = "0442",
                             Name = "ミカルゲ",
@@ -3588,7 +3999,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 443,
+                            Id = 494,
                             Description = "どうくつの ちいさな よこあなを ねぐらにする。 えものが ちかづくと すばやく とびだして つかまえる。",
                             IndexId = "0443",
                             Name = "フカマル",
@@ -3596,7 +4007,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 444,
+                            Id = 495,
                             Description = "ガバイトの ウロコから つくった くすりが ふじのやまいを なおすと ふるくから しんじられてきた。",
                             IndexId = "0444",
                             Name = "ガバイト",
@@ -3604,7 +4015,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 445,
+                            Id = 496,
                             Description = "からだを おりたたみ つばさを のばすと まるで ジェットき。 おんそくで とぶことが できる。",
                             IndexId = "0445",
                             Name = "ガブリアス",
@@ -3612,7 +4023,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 446,
+                            Id = 497,
                             Description = "1にち 1かい たいじゅうと おなじ りょうの エサを いっきに たべる。ほとんど かまずに まるのみ。",
                             IndexId = "0446",
                             Name = "ゴンベ",
@@ -3620,7 +4031,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 447,
+                            Id = 498,
                             Description = "からだから はっする はどうは こわいとき かなしいときに つよまり ピンチを なかまに つたえる。",
                             IndexId = "0447",
                             Name = "リオル",
@@ -3628,7 +4039,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 448,
+                            Id = 499,
                             Description = "あらゆる ものが はっする はどうを キャッチする のうりょくを もつ。ひとの ことばを りかいできる。",
                             IndexId = "0448",
                             Name = "ルカリオ",
@@ -3636,7 +4047,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 449,
+                            Id = 500,
                             Description = "かんそうした とちで くらす。あせの かわりに すなつぶを からだから ぶんぴつする ポケモン。",
                             IndexId = "0449",
                             Name = "ヒポポタス",
@@ -3644,7 +4055,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 450,
+                            Id = 501,
                             Description = "たいないに ためた すなを からだの あなから ふきあげて きょだいな たつまきを つくり こうげきする。",
                             IndexId = "0450",
                             Name = "カバルドン",
@@ -3652,7 +4063,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 451,
+                            Id = 502,
                             Description = "しっぽの ツメで えものを はさみ どくを おくりこむ。 どくが きくまで ぜったいに はなさない しゅうねん。",
                             IndexId = "0451",
                             Name = "スコルピ",
@@ -3660,7 +4071,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 452,
+                            Id = 503,
                             Description = "りょううでの ツメは じどうしゃを スクラップにする はかいりょく。 ツメの さきから どくを だす。",
                             IndexId = "0452",
                             Name = "ドラピオン",
@@ -3668,7 +4079,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 453,
+                            Id = 504,
                             Description = "ほっぺたに どくぶくろを もつ。 あいての すきを ついて もうどくを にじませている ゆびを つきさす。",
                             IndexId = "0453",
                             Name = "グレッグル",
@@ -3676,7 +4087,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 454,
+                            Id = 505,
                             Description = "こぶしの トゲからは かすりきずでも いのちを おとすほどの もうどくを ぶんぴつしている。",
                             IndexId = "0454",
                             Name = "ドクロッグ",
@@ -3684,7 +4095,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 455,
+                            Id = 506,
                             Description = "あまい においの だえきで えものを おびきよせ おおあごで がぶり。 1にち かけて えものをたべる。",
                             IndexId = "0455",
                             Name = "マスキッパ",
@@ -3692,7 +4103,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 456,
+                            Id = 507,
                             Description = "たいようを いっぱいに あびた おびれの もようは くらくなると あざやかな いろで ひかりだす。",
                             IndexId = "0456",
                             Name = "ケイコウオ",
@@ -3700,7 +4111,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 457,
+                            Id = 508,
                             Description = "ふかい うみの そこで くらす。 4まいの ひれの もようを ひからせ えものを おびきよせる。",
                             IndexId = "0457",
                             Name = "ネオラント",
@@ -3708,7 +4119,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 458,
+                            Id = 509,
                             Description = "2ほんの しょっかくで かいすいの びみょうな うごきを キャッチする。 ひとなつっこい ポケモン。",
                             IndexId = "0458",
                             Name = "タマンタ",
@@ -3716,7 +4127,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 459,
+                            Id = 510,
                             Description = "ゆきやまで くらしている。 めったに であわない にんげんを めずらしがって ちかよってくる。",
                             IndexId = "0459",
                             Name = "ユキカブリ",
@@ -3724,7 +4135,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 460,
+                            Id = 511,
                             Description = "まんねんゆきの つもる やまで くらし ブリザードを まきおこす。 ゆきおとこの しょうたいだ。",
                             IndexId = "0460",
                             Name = "ユキノオー",
@@ -3732,7 +4143,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 461,
+                            Id = 512,
                             Description = "さむい ちいきで くらす ポケモン。 4、5ひきの グループは みごとな れんけいで えものを おいつめる。",
                             IndexId = "0461",
                             Name = "マニューラ",
@@ -3740,7 +4151,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 462,
+                            Id = 513,
                             Description = "とくしゅな じばの えいきょうで レアコイルが しんかした。 3つの ユニットから じりょくを だす。",
                             IndexId = "0462",
                             Name = "ジバコイル",
@@ -3748,7 +4159,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 463,
+                            Id = 514,
                             Description = "ぐんぐん のびる ベロを なんにでも まきつける。うかつに ちかよると だえきで べとべとに されてしまう。",
                             IndexId = "0463",
                             Name = "ベロベルト",
@@ -3756,7 +4167,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 464,
+                            Id = 515,
                             Description = "いわを てのひらの あなに つめて きんにくの ちからで はっしゃする。 まれに イシツブテを とばす。",
                             IndexId = "0464",
                             Name = "ドサイドン",
@@ -3764,7 +4175,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 465,
+                            Id = 516,
                             Description = "しょくぶつの ツルで できた うでを のばして えものを からめとる。 うでを たべられても へっちゃら。",
                             IndexId = "0465",
                             Name = "モジャンボ",
@@ -3772,7 +4183,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 466,
+                            Id = 517,
                             Description = "2ほんの しっぽの さきを あいてに おしあてて 2まんボルトいじょうの でんりゅうを ながして こうげき。",
                             IndexId = "0466",
                             Name = "エレキブル",
@@ -3780,7 +4191,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 467,
+                            Id = 518,
                             Description = "うでの さきから せっし2000どの ひのたまを はっしゃする。かざんの かこうを すみかにする。",
                             IndexId = "0467",
                             Name = "ブーバーン",
@@ -3788,7 +4199,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 468,
+                            Id = 519,
                             Description = "もめごとの おこる ばしょには けっして あらわれない。ちかごろは すがたを みかけなくなった。",
                             IndexId = "0468",
                             Name = "トゲキッス",
@@ -3796,7 +4207,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 469,
+                            Id = 520,
                             Description = "はばたいたときの しょうげきはで あいての からだの うちがわに ちめいてきな ダメージを あたえる。",
                             IndexId = "0469",
                             Name = "メガヤンマ",
@@ -3804,7 +4215,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 470,
+                            Id = 521,
                             Description = "しょくぶつのように こうごうせいを するため リーフィアの まわりは すんだ くうきに つつまれている。",
                             IndexId = "0470",
                             Name = "リーフィア",
@@ -3812,7 +4223,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 471,
+                            Id = 522,
                             Description = "ぜんしんの たいもうを こおらせて ハリのように するどく とがらせる。 てきから みを まもる しゅだん。",
                             IndexId = "0471",
                             Name = "グレイシア",
@@ -3820,7 +4231,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 472,
+                            Id = 523,
                             Description = "しっぽで きのえだに ぶらさがり えものを かんさつする。 すきを みて じょうくうから おそいかかる。",
                             IndexId = "0472",
                             Name = "グライオン",
@@ -3828,7 +4239,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 473,
+                            Id = 524,
                             Description = "こおりで できた りっぱな キバ。ひょうがきが おわり あたたかく なったため かずが へってしまった。",
                             IndexId = "0473",
                             Name = "マンムー",
@@ -3836,7 +4247,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 474,
+                            Id = 525,
                             Description = "より すぐれた ポケモンに するため プログラムを ついかしたが なぜか おかしな こうどうを はじめた。",
                             IndexId = "0474",
                             Name = "ポリゴンZ",
@@ -3844,7 +4255,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 475,
+                            Id = 526,
                             Description = "のびちぢみする ひじの かたなで たたかう。 いあいの めいしゅ。 れいぎ ただしい ポケモン。",
                             IndexId = "0475",
                             Name = "エルレイド",
@@ -3852,7 +4263,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 476,
+                            Id = 527,
                             Description = "ぜんしんから つよい じりょくを だしている。3この チビノーズと よばれる ユニットを あやつる。",
                             IndexId = "0476",
                             Name = "ダイノーズ",
@@ -3860,7 +4271,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 477,
+                            Id = 528,
                             Description = "あたまの アンテナで れいかいからの でんぱを じゅしん。 しじを うけて ひとを れいかいへ つれていくのだ。",
                             IndexId = "0477",
                             Name = "ヨノワール",
@@ -3868,7 +4279,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 478,
+                            Id = 529,
                             Description = "マイナス50どの れいきを はいて あいてを こおらせる。 どうたいに みえる ぶぶんは じつは くうどう。",
                             IndexId = "0478",
                             Name = "ユキメノコ",
@@ -3876,7 +4287,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 479,
+                            Id = 530,
                             Description = "プラズマで できた からだを もつ。でんかせいひんに もぐりこみ わるさを することで しられている。",
                             IndexId = "0479",
                             Name = "ロトム\n(ロトムのすがた)",
@@ -3884,7 +4295,47 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 480,
+                            Id = 531,
+                            Description = "プラズマで できた からだを もつ。でんかせいひんに もぐりこみ わるさを することで しられている。",
+                            IndexId = "0479",
+                            Name = "ロトム\n(ヒートロトム)",
+                            Type = "でんき, ほのお"
+                        },
+                        new
+                        {
+                            Id = 532,
+                            Description = "プラズマで できた からだを もつ。でんかせいひんに もぐりこみ わるさを することで しられている。",
+                            IndexId = "0479",
+                            Name = "ロトム\n(ウォッシュロトム)",
+                            Type = "でんき, みず"
+                        },
+                        new
+                        {
+                            Id = 533,
+                            Description = "プラズマで できた からだを もつ。でんかせいひんに もぐりこみ わるさを することで しられている。",
+                            IndexId = "0479",
+                            Name = "ロトム\n(フロストロトム)",
+                            Type = "でんき, こおり"
+                        },
+                        new
+                        {
+                            Id = 534,
+                            Description = "プラズマで できた からだを もつ。でんかせいひんに もぐりこみ わるさを することで しられている。",
+                            IndexId = "0479",
+                            Name = "ロトム\n(スピンロトム)",
+                            Type = "でんき, ひこう"
+                        },
+                        new
+                        {
+                            Id = 535,
+                            Description = "プラズマで できた からだを もつ。でんかせいひんに もぐりこみ わるさを することで しられている。",
+                            IndexId = "0479",
+                            Name = "ロトム\n(カットロトム)",
+                            Type = "でんき, くさ"
+                        },
+                        new
+                        {
+                            Id = 536,
                             Description = "ちしきのかみと よばれている。 めを あわせた ものの きおくを けしてしまう ちからを もつという。",
                             IndexId = "0480",
                             Name = "ユクシー",
@@ -3892,7 +4343,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 481,
+                            Id = 537,
                             Description = "かなしみの くるしさと よろこびの とうとさを ひとびとに おしえた。 かんじょうのかみと よばれている。",
                             IndexId = "0481",
                             Name = "エムリット",
@@ -3900,7 +4351,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 482,
+                            Id = 538,
                             Description = "いしのかみと よばれている。 みずうみの そこで ねむりつづけ せかいの バランスを とっている。",
                             IndexId = "0482",
                             Name = "アグノム",
@@ -3908,7 +4359,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 483,
+                            Id = 539,
                             Description = "じかんを あやつる ちからを もつ。 シンオウちほうでは かみさまと よばれ しんわに とうじょうする。",
                             IndexId = "0483",
                             Name = "ディアルガ",
@@ -3916,7 +4367,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 484,
+                            Id = 540,
                             Description = "くうかんを ゆがめる のうりょくを もち シンオウちほうの しんわでは かみさまとして えがかれている。",
                             IndexId = "0484",
                             Name = "パルキア",
@@ -3924,7 +4375,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 485,
+                            Id = 541,
                             Description = "かざんの ほらあなに せいそく。じゅうじの ツメを くいこませて カベや てんじょうを はいまわる。",
                             IndexId = "0485",
                             Name = "ヒードラン",
@@ -3932,7 +4383,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 486,
+                            Id = 542,
                             Description = "なわで しばった たいりくを ひっぱって うごかしたという でんせつが のこされている。",
                             IndexId = "0486",
                             Name = "レジギガス",
@@ -3940,7 +4391,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 487,
+                            Id = 543,
                             Description = "このよの うらがわにある せかいに すんでいると いわれる ポケモン。こだいの はかばに あらわれる。",
                             IndexId = "0487",
                             Name = "ギラティナ",
@@ -3948,7 +4399,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 488,
+                            Id = 544,
                             Description = "ひこうするときは ベールのような はねから ひかる りゅうしを だす。 みかづきのけしんと よばれている。",
                             IndexId = "0488",
                             Name = "クレセリア",
@@ -3956,7 +4407,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 489,
+                            Id = 545,
                             Description = "あたたかい うみに すむ ポケモン。 あたまの うきぶくろを ふくらませて なみまを ただよい えさを さがす。",
                             IndexId = "0489",
                             Name = "フィオネ",
@@ -3964,7 +4415,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 490,
+                            Id = 546,
                             Description = "つめたい うみの そこで うまれた。じぶんが うまれた うみの そこへ ながい きょりを およいで かえる。",
                             IndexId = "0490",
                             Name = "マナフィ",
@@ -3972,7 +4423,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 491,
+                            Id = 547,
                             Description = "ひとびとを ふかい ねむりに さそい ゆめを みせる のうりょくを もつ。しんげつの よるに かつどうする。",
                             IndexId = "0491",
                             Name = "ダークライ",
@@ -3980,7 +4431,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 492,
+                            Id = 548,
                             Description = "はなばたけの なかで くらしているが からだを まるめると はなのように みえるため だれも きづかないのだ。",
                             IndexId = "0492",
                             Name = "シェイミ\n(ランドフォルム)",
@@ -3988,7 +4439,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 493,
+                            Id = 549,
+                            Description = "はなばたけの なかで くらしているが からだを まるめると はなのように みえるため だれも きづかないのだ。",
+                            IndexId = "0492",
+                            Name = "シェイミ\n(スカイフォルム)",
+                            Type = "くさ, ひこう"
+                        },
+                        new
+                        {
+                            Id = 550,
                             Description = "1000ぼんの うでで うちゅうを つくった ポケモンとして しんわに えがかれている。",
                             IndexId = "0493",
                             Name = "アルセウス",
@@ -3996,7 +4455,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 494,
+                            Id = 551,
                             Description = "しょうりを もたらす ポケモン。 ビクティニを つれた トレーナーは どんな しょうぶにも かてるという。",
                             IndexId = "0494",
                             Name = "ビクティニ",
@@ -4004,7 +4463,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 495,
+                            Id = 552,
                             Description = "ちのうが たかく とても れいせい。 たいようの ひかりを たっぷり あびると うごきが するどくなる。",
                             IndexId = "0495",
                             Name = "ツタージャ",
@@ -4012,7 +4471,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 496,
+                            Id = 553,
                             Description = "じめんを すべるように はしる。 すばやい うごきで てきを まどわせ つるのムチで しとめるのだ。",
                             IndexId = "0496",
                             Name = "ジャノビー",
@@ -4020,7 +4479,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 497,
+                            Id = 554,
                             Description = "にらむだけで あいての うごきを とめてしまう。 たいようエネルギーを たいないで ぞうふくさせる。",
                             IndexId = "0497",
                             Name = "ジャローダ",
@@ -4028,7 +4487,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 498,
+                            Id = 555,
                             Description = "てきの こうげきを みがるに よけて はなから ひのたまを うちだす。 ほのおで きのみを やいて たべる。",
                             IndexId = "0498",
                             Name = "ポカブ",
@@ -4036,7 +4495,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 499,
+                            Id = 556,
                             Description = "たいないの ほのおが もえあがると うごきの キレと スピードが ます。 ピンチになると けむりを ふきだす。",
                             IndexId = "0499",
                             Name = "チャオブー",
@@ -4044,7 +4503,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 500,
+                            Id = 557,
                             Description = "アゴの ほのおで こぶしを もやして ほのおの パンチを くりだす。 とても なかまおもいの ポケモン。",
                             IndexId = "0500",
                             Name = "エンブオー",
@@ -4052,7 +4511,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 501,
+                            Id = 558,
                             Description = "おなかの ホタチで たたかう。こうげきを うけとめてから すかさず きりつけて はんげき するのだ。",
                             IndexId = "0501",
                             Name = "ミジュマル",
@@ -4060,7 +4519,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 502,
+                            Id = 559,
                             Description = "ながれるような たちさばきで 2まいの ホタチを あつかう わざは きびしい しゅぎょうによって みにつける。",
                             IndexId = "0502",
                             Name = "フタチマル",
@@ -4068,7 +4527,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 503,
+                            Id = 560,
                             Description = "よろいに しこまれた けんの ひとふりで あいてを たおす。ひとにらみで てきを だまらせる。",
                             IndexId = "0503",
                             Name = "ダイケンキ",
@@ -4076,7 +4535,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 504,
+                            Id = 561,
+                            Description = "よろいに しこまれた けんの ひとふりで あいてを たおす。ひとにらみで てきを だまらせる。",
+                            IndexId = "0503",
+                            Name = "ダイケンキ\n(ヒスイのすがた)",
+                            Type = "みず, あく"
+                        },
+                        new
+                        {
+                            Id = 562,
                             Description = "ほほの ふくろに エサを ためこみ なんにちも みはりを つづける。 しっぽで なかまに あいずする。",
                             IndexId = "0504",
                             Name = "ミネズミ",
@@ -4084,7 +4551,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 505,
+                            Id = 563,
                             Description = "ほほぶくろに ためた きのみの タネを とばして こうげき。 てきを はっけんすると しっぽを たてる。",
                             IndexId = "0505",
                             Name = "ミルホッグ",
@@ -4092,7 +4559,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 506,
+                            Id = 564,
                             Description = "つよい あいてにも ゆうかんに たちむかうが ふりな たたかいを さける ちのうの たかい ポケモン。",
                             IndexId = "0506",
                             Name = "ヨーテリー",
@@ -4100,7 +4567,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 507,
+                            Id = 565,
                             Description = "マントのように からだを おおう くろい たいもうは とても かたい。 うけた ダメージを へらしてくれる。",
                             IndexId = "0507",
                             Name = "ハーデリア",
@@ -4108,7 +4575,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 508,
+                            Id = 566,
                             Description = "ふぶきで とざされた やまに はいり そうなんした ひとを たすける。ながい けが さむさを ふせぐ。",
                             IndexId = "0508",
                             Name = "ムーランド",
@@ -4116,7 +4583,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 509,
+                            Id = 567,
                             Description = "ひとの ものを あそびで ぬすむ。ぬすまれた ひとも あいくるしい しぐさに つい ゆるしてしまうのだ。",
                             IndexId = "0509",
                             Name = "チョロネコ",
@@ -4124,7 +4591,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 510,
+                            Id = 568,
                             Description = "しんしゅつきぼつな ポケモン。 うつくしい スタイルと けなみが おおくの トレーナーを ひきつける。",
                             IndexId = "0510",
                             Name = "レパルダス",
@@ -4132,7 +4599,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 511,
+                            Id = 569,
                             Description = "ふかい もりで くらす ポケモン。あたまに はえた はっぱを たべると つかれが うそのように きえる。",
                             IndexId = "0511",
                             Name = "ヤナップ",
@@ -4140,7 +4607,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 512,
+                            Id = 570,
                             Description = "きしょうが はげしく トゲの ついた しっぽを ふりまわして たたかう。あたまの はっぱは とても にがい。",
                             IndexId = "0512",
                             Name = "ヤナッキー",
@@ -4148,7 +4615,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 513,
+                            Id = 571,
                             Description = "あたまの ふさは おこると おんどが あがり 300ど いじょうになる。きのみを ふさで やいて たべる。",
                             IndexId = "0513",
                             Name = "バオップ",
@@ -4156,7 +4623,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 514,
+                            Id = 572,
                             Description = "あまいものが だいこうぶつ。たいないの ほのおを もやす エネルギーに なるのだ。",
                             IndexId = "0514",
                             Name = "バオッキー",
@@ -4164,7 +4631,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 515,
+                            Id = 573,
                             Description = "あたまの ふさに ためた みずは えいよう たっぷり。しょくぶつに かけると おおきく そだつのだ。",
                             IndexId = "0515",
                             Name = "ヒヤップ",
@@ -4172,7 +4639,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 516,
+                            Id = 574,
                             Description = "あたまの ふさに みずを ためる。ちょすいりょうが へると しっぽで みずを すいあげて ほきゅうする。",
                             IndexId = "0516",
                             Name = "ヒヤッキー",
@@ -4180,7 +4647,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 517,
+                            Id = 575,
                             Description = "ムンナに ゆめを たべらてしまうと ゆめの ないようを わすれてしまう。つねに くうちゅうに うかんでいる。",
                             IndexId = "0517",
                             Name = "ムンナ",
@@ -4188,7 +4655,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 518,
+                            Id = 576,
                             Description = "おでこから でている けむりの なかには ひとや ポケモンの みた ゆめが たくさん つまっているのだ。",
                             IndexId = "0518",
                             Name = "ムシャーナ",
@@ -4196,7 +4663,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 519,
+                            Id = 577,
                             Description = "トレーナーの めいれいを よく きく せいかくだが むずかしい しじは りかい できない こともある。",
                             IndexId = "0519",
                             Name = "マメパト",
@@ -4204,7 +4671,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 520,
+                            Id = 578,
                             Description = "どんなに とおく はなれても トレーナーの もとに かならず もどってくる ことが できる。",
                             IndexId = "0520",
                             Name = "ハトーボー",
@@ -4212,7 +4679,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 521,
+                            Id = 579,
                             Description = "オスは あたまの かざりを ゆらして あいてを いかくする。 メスの ひこうのうりょくは オスを うわまわる。",
                             IndexId = "0521",
                             Name = "ケンホロウ",
@@ -4220,7 +4687,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 522,
+                            Id = 580,
                             Description = "ほうでんすると たてがみが ひかる。たてがみの ひかりかたで なかまと コミュニケーションを とっている。",
                             IndexId = "0522",
                             Name = "シママ",
@@ -4228,7 +4695,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 523,
+                            Id = 581,
                             Description = "いなずまのような しゅんぱつりょく。ゼブライカが ぜんそくりょくで はしると らいめいが ひびきわたる。",
                             IndexId = "0523",
                             Name = "ゼブライカ",
@@ -4236,7 +4703,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 524,
+                            Id = 582,
                             Description = "6かくけいの みみを もつ。ちていで あっしゅくされた からだは てつに まけないくらい かたい。",
                             IndexId = "0524",
                             Name = "ダンゴロ",
@@ -4244,7 +4711,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 525,
+                            Id = 583,
                             Description = "パワーが みなぎると オレンジいろの けっしょうが ひかり かがやく。ほらあなで ちかすいを さがす。",
                             IndexId = "0525",
                             Name = "ガントル",
@@ -4252,7 +4719,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 526,
+                            Id = 584,
                             Description = "たいないの コアで エネルギーを あっしゅくして うちだす こうげきは やまを ふきとばす いりょく。",
                             IndexId = "0526",
                             Name = "ギガイアス",
@@ -4260,7 +4727,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 527,
+                            Id = 585,
                             Description = "くらい もりや ほらあなで くらす。はなの あなから ちょうおんぱを だして あたりの ようすを さぐる。",
                             IndexId = "0527",
                             Name = "コロモリ",
@@ -4268,7 +4735,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 528,
+                            Id = 586,
                             Description = "いろいろな しゅうはすうの おんぱを はなの あなから はっしゃする。いわを はかいする おんぱも だす。",
                             IndexId = "0528",
                             Name = "ココロモリ",
@@ -4276,7 +4743,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 529,
+                            Id = 587,
                             Description = "ちちゅうを ほりすすむ スピードは じそく50キロいじょう。ちじょうを はしる じどうしゃと いいしょうぶ。",
                             IndexId = "0529",
                             Name = "モグリュー",
@@ -4284,7 +4751,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 530,
+                            Id = 588,
                             Description = "はがねに しんかした ドリルは てっぱんを つらぬく はかいりょく。 トンネルこうじで だいかつやくする。",
                             IndexId = "0530",
                             Name = "ドリュウズ",
@@ -4292,7 +4759,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 531,
+                            Id = 589,
                             Description = "みみの しょっかくで あいてに ふれると しんぞうの おとで たいちょうや きもちが わかるのだ。",
                             IndexId = "0531",
                             Name = "タブンネ",
@@ -4300,7 +4767,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 532,
+                            Id = 590,
                             Description = "かくざいを ふりまわして たたかう。おもい かくざいを くも なく もつようになると しんかは ちかい。",
                             IndexId = "0532",
                             Name = "ドッコラー",
@@ -4308,7 +4775,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 533,
+                            Id = 591,
                             Description = "きたえあげた きんにくの からだは プロレスラーが たばに なって こうげきしても びくとも しない。",
                             IndexId = "0533",
                             Name = "ドテッコツ",
@@ -4316,7 +4783,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 534,
+                            Id = 592,
                             Description = "コンクリートを つくる ぎじゅつは 2000ねんまえに ローブシンから おそわったと かんがえられている。",
                             IndexId = "0534",
                             Name = "ローブシン",
@@ -4324,7 +4791,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 535,
+                            Id = 593,
                             Description = "かんだかい けいかいおんを ほほの しんどうで はっせいさせて なかまに きけんを しらせる。",
                             IndexId = "0535",
                             Name = "オタマロ",
@@ -4332,7 +4799,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 536,
+                            Id = 594,
                             Description = "あたまの コブを しんどうさせると すいちゅうが なみたつ だけでなく じめんも じしんのように ゆれる。",
                             IndexId = "0536",
                             Name = "ガマガル",
@@ -4340,7 +4807,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 537,
+                            Id = 595,
                             Description = "あたまの コブから しんけいを マヒさせる えきたいを とばす。しんどうで あいてを くるしめる。",
                             IndexId = "0537",
                             Name = "ガマゲロゲ",
@@ -4348,7 +4815,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 538,
+                            Id = 596,
                             Description = "おびを しめると パワーアップする。やせいの ナゲキは つるくさを あんで じぶんの おびを つくる。",
                             IndexId = "0538",
                             Name = "ナゲキ",
@@ -4356,7 +4823,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 539,
+                            Id = 597,
                             Description = "ダゲキが しゅぎょうする やまから おおいわや たいぼくに こぶしを うちつける おとが きこえてくる。",
                             IndexId = "0539",
                             Name = "ダゲキ",
@@ -4364,7 +4831,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 540,
+                            Id = 598,
                             Description = "タマゴから かえると ハハコモリに ふくを つくってもらい きせられる。フードで あたまを かくして ねる。",
                             IndexId = "0540",
                             Name = "クルミル",
@@ -4372,7 +4839,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 541,
+                            Id = 599,
                             Description = "クルマユの すむ もりは くさきが よく そだつ。クルマユが おちばを えいようぶんに かえているのだ。",
                             IndexId = "0541",
                             Name = "クルマユ",
@@ -4380,7 +4847,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 542,
+                            Id = 600,
                             Description = "ちいさい ポケモンを みつけると うでの カッターと ねんちゃくいとで はっぱの ふくを ぬう しゅうせい。",
                             IndexId = "0542",
                             Name = "ハハコモリ",
@@ -4388,7 +4855,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 543,
+                            Id = 601,
                             Description = "かみついて もうどくを あたえる。てんてきの おおきな とりポケモンも からだが しびれて うごけなくなる。",
                             IndexId = "0543",
                             Name = "フシデ",
@@ -4396,7 +4863,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 544,
+                            Id = 602,
                             Description = "かたい カラに まもられている。タイヤのように かいてんして てきに はげしく たいあたりする。",
                             IndexId = "0544",
                             Name = "ホイーガ",
@@ -4404,7 +4871,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 545,
+                            Id = 603,
                             Description = "すばやい うごきで てきを おいつめ あたまの ツノで こうげきする。 とどめを さすまで ようしゃしない。",
                             IndexId = "0545",
                             Name = "ペンドラー",
@@ -4412,7 +4879,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 546,
+                            Id = 604,
                             Description = "おそわれると からだから わたを とばす。てきが わたを モンメンと まちがえている すきに にげるのだ。",
                             IndexId = "0546",
                             Name = "モンメン",
@@ -4420,7 +4887,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 547,
+                            Id = 605,
                             Description = "どんなに ほそい すきまでも かぜのように くぐりぬけてしまう。 しろい けだまを のこしていく。",
                             IndexId = "0547",
                             Name = "エルフーン",
@@ -4428,7 +4895,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 548,
+                            Id = 606,
                             Description = "あたまの はっぱを かじると とても にがいが つかれた からだを げんきにする こうかが あるのだ。",
                             IndexId = "0548",
                             Name = "チュリネ",
@@ -4436,7 +4903,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 549,
+                            Id = 607,
                             Description = "うつくしい はなを さかせるのは ベテラントレーナーでも むずかしい。セレブに にんきの ポケモン。",
                             IndexId = "0549",
                             Name = "ドレディア",
@@ -4444,7 +4911,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 550,
+                            Id = 608,
+                            Description = "うつくしい はなを さかせるのは ベテラントレーナーでも むずかしい。セレブに にんきの ポケモン。",
+                            IndexId = "0549",
+                            Name = "ドレディア\n(ヒスイのすがた)",
+                            Type = "くさ, かくとう"
+                        },
+                        new
+                        {
+                            Id = 609,
                             Description = "あかと あおの バスラオは すぐに ケンカするほど なかが わるい。とても らんぼうな ポケモン。",
                             IndexId = "0550",
                             Name = "バスラオ",
@@ -4452,7 +4927,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 551,
+                            Id = 610,
                             Description = "さばくの すなの なかで せいかつ。たいように あたためられた すなが たいおんの ていかを ふせぐのだ。",
                             IndexId = "0551",
                             Name = "メグロコ",
@@ -4460,7 +4935,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 552,
+                            Id = 611,
                             Description = "すうひきで むれを つくる。がんきゅうを カバーする まくが すなあらしから めを まもる。",
                             IndexId = "0552",
                             Name = "ワルビル",
@@ -4468,7 +4943,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 553,
+                            Id = 612,
                             Description = "であった えものは にがさない。じどうしゃの ボディを くいちぎる きょうりょくな あごを もつ。",
                             IndexId = "0553",
                             Name = "ワルビアル",
@@ -4476,7 +4951,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 554,
+                            Id = 613,
                             Description = "たいないで ほのおが もえていると おちつかなく はしりまわっている。ほのおが ちいさくなると ねむる。",
                             IndexId = "0554",
                             Name = "ダルマッカ",
@@ -4484,7 +4959,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 555,
+                            Id = 614,
+                            Description = "たいないで ほのおが もえていると おちつかなく はしりまわっている。ほのおが ちいさくなると ねむる。",
+                            IndexId = "0554",
+                            Name = "ダルマッカ\n(ガラルのすがた)",
+                            Type = "こおり"
+                        },
+                        new
+                        {
+                            Id = 615,
                             Description = "たいないで 1400どの ほのおを もやすことで ダンプカーを パンチで はかいするほどの パワーを つくる。",
                             IndexId = "0555",
                             Name = "ヒヒダルマ",
@@ -4492,7 +4975,31 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 556,
+                            Id = 616,
+                            Description = "たいないで 1400どの ほのおを もやすことで ダンプカーを パンチで はかいするほどの パワーを つくる。",
+                            IndexId = "0555",
+                            Name = "ヒヒダルマ\n(ダルマモード)",
+                            Type = "ほのお, エスパー"
+                        },
+                        new
+                        {
+                            Id = 617,
+                            Description = "たいないで 1400どの ほのおを もやすことで ダンプカーを パンチで はかいするほどの パワーを つくる。",
+                            IndexId = "0555",
+                            Name = "ヒヒダルマ\n(ガラルのすがた)",
+                            Type = "こおり"
+                        },
+                        new
+                        {
+                            Id = 618,
+                            Description = "たいないで 1400どの ほのおを もやすことで ダンプカーを パンチで はかいするほどの パワーを つくる。",
+                            IndexId = "0555",
+                            Name = "ヒヒダルマ\n(ガラルのすがた)\n(ダルマモード)",
+                            Type = "こおり, ほのお"
+                        },
+                        new
+                        {
+                            Id = 619,
                             Description = "アップテンポの おどりと おとで はなの タネを ねらう てんてきの とりポケモンを おいはらうのだ。",
                             IndexId = "0556",
                             Name = "マラカッチ",
@@ -4500,7 +5007,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 557,
+                            Id = 620,
                             Description = "いしを とかす えきたいを くちから ぶんぴつするので かたい いしでも かんたんに あなを あけられるのだ。",
                             IndexId = "0557",
                             Name = "イシズマイ",
@@ -4508,7 +5015,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 558,
+                            Id = 621,
                             Description = "なわばりを とりあって イワパレス どうしが はげしく たたかう。 いわを こわされた ほうが まけ。",
                             IndexId = "0558",
                             Name = "イワパレス",
@@ -4516,7 +5023,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 559,
+                            Id = 622,
                             Description = "かわを くびまで ひきあげて ぼうぎょの しせい。ゴムのような だんりょくで ダメージを へらす。",
                             IndexId = "0559",
                             Name = "ズルッグ",
@@ -4524,7 +5031,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 560,
+                            Id = 623,
                             Description = "なわばりに はいってきた あいてを しゅうだんで たたきのめす。くちから さんせいの たいえきを とばす。",
                             IndexId = "0560",
                             Name = "ズルズキン",
@@ -4532,7 +5039,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 561,
+                            Id = 624,
                             Description = "こだいとしを まもっていた きおくを のこしているため いつも おなじ ルートを とんでいるらしい。",
                             IndexId = "0561",
                             Name = "シンボラー",
@@ -4540,7 +5047,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 562,
+                            Id = 625,
                             Description = "もっている マスクは デスマスが にんげんだった ときの かお。たまに みつめては ないている。",
                             IndexId = "0562",
                             Name = "デスマス",
@@ -4548,7 +5055,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 563,
+                            Id = 626,
+                            Description = "もっている マスクは デスマスが にんげんだった ときの かお。たまに みつめては ないている。",
+                            IndexId = "0562",
+                            Name = "デスマス\n(ガラルのすがた)",
+                            Type = "じめん, ゴースト"
+                        },
+                        new
+                        {
+                            Id = 627,
                             Description = "ちかづいた にんげんを のみこんで ミイラに してしまうという ウワサ。きんかいを このんで たべる。",
                             IndexId = "0563",
                             Name = "デスカーン",
@@ -4556,7 +5071,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 564,
+                            Id = 628,
                             Description = "こだいの かせきから ふっかつした。ふかさ 1000メートルまで せんすいすることが できる。",
                             IndexId = "0564",
                             Name = "プロトーガ",
@@ -4564,7 +5079,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 565,
+                            Id = 629,
                             Description = "うみと りくちで せいかつする。 はりてで タンカーの ふなぞこに あなを あける パワーの もちぬし。",
                             IndexId = "0565",
                             Name = "アバゴーラ",
@@ -4572,7 +5087,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 566,
+                            Id = 630,
                             Description = "とりポケモンの そせんと いわれる。とぶことは できず えだから えだへ とびうつり せいかつしていたらしい。",
                             IndexId = "0566",
                             Name = "アーケン",
@@ -4580,7 +5095,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 567,
+                            Id = 631,
                             Description = "ちじょうで じょそうを つけてから とびたつ。なかまと きょうりょくして えものを しとめる ちのうを もつ。",
                             IndexId = "0567",
                             Name = "アーケオス",
@@ -4588,7 +5103,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 568,
+                            Id = 632,
                             Description = "ふえいせいな ばしょを このむ。ゲップのように はきだす ガスを すいこむと 1しゅうかん ねこむ。",
                             IndexId = "0568",
                             Name = "ヤブクロン",
@@ -4596,7 +5111,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 569,
+                            Id = 633,
                             Description = "ひだりうでで あいてを しめつけて くちから はきだす あくしゅうの どくガスで とどめを さすのだ。",
                             IndexId = "0569",
                             Name = "ダストダス",
@@ -4604,7 +5119,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 570,
+                            Id = 634,
                             Description = "あいての すがたに ばけてみせて おどろかせる。むくちな こどもに ばけている ことが おおいらしい。",
                             IndexId = "0570",
                             Name = "ゾロア",
@@ -4612,7 +5127,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 571,
+                            Id = 635,
+                            Description = "あいての すがたに ばけてみせて おどろかせる。むくちな こどもに ばけている ことが おおいらしい。",
+                            IndexId = "0570",
+                            Name = "ゾロア\n(ヒスイのすがた)",
+                            Type = "ノーマル, ゴースト"
+                        },
+                        new
+                        {
+                            Id = 636,
                             Description = "あいてを ばかす ことで むれの あんぜんを まもってきた ポケモン。なかまどうしの けっそくが かたい。",
                             IndexId = "0571",
                             Name = "ゾロアーク",
@@ -4620,7 +5143,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 572,
+                            Id = 637,
+                            Description = "あいてを ばかす ことで むれの あんぜんを まもってきた ポケモン。なかまどうしの けっそくが かたい。",
+                            IndexId = "0571",
+                            Name = "ゾロアーク\n(ヒスイのすがた)",
+                            Type = "ノーマル, ゴースト"
+                        },
+                        new
+                        {
+                            Id = 638,
                             Description = "しっぽで おたがいの からだを なでて あいさつ。しっぽの ていれを かかさず いつも きれいにしている。",
                             IndexId = "0572",
                             Name = "チラーミィ",
@@ -4628,7 +5159,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 573,
+                            Id = 639,
                             Description = "しろい たいもうは とくべつな あぶらで コーティングされているので てきの こうげきを うけながすのだ。",
                             IndexId = "0573",
                             Name = "チラチーノ",
@@ -4636,7 +5167,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 574,
+                            Id = 640,
                             Description = "リボンのような しょっかくで サイコパワーを ぞうふくさせる。 なにかを じっと みつめている。",
                             IndexId = "0574",
                             Name = "ゴチム",
@@ -4644,7 +5175,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 575,
+                            Id = 641,
                             Description = "さいみんじゅつで ポケモンや ひとを あやつる。ねむったまま ゴチミルに つれさられる むかしばなしも ある。",
                             IndexId = "0575",
                             Name = "ゴチミル",
@@ -4652,7 +5183,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 576,
+                            Id = 642,
                             Description = "きょうりょくな サイコパワーの えいきょうで くうかんが ねじれて しゅういに ほしぞらが うつるのだ。",
                             IndexId = "0576",
                             Name = "ゴチルゼル",
@@ -4660,7 +5191,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 577,
+                            Id = 643,
                             Description = "サイコパワーを ほうしゅつして おそってきた てきを げきたい。 テレパシーで なかまと かいわする。",
                             IndexId = "0577",
                             Name = "ユニラン",
@@ -4668,7 +5199,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 578,
+                            Id = 644,
                             Description = "2つに ぶんれつした のうみそを もっているため いきなり ちがう こうどうを とることが あるのだ。",
                             IndexId = "0578",
                             Name = "ダブラン",
@@ -4676,7 +5207,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 579,
+                            Id = 645,
                             Description = "ランクルス どうしが あくしゅすると のうみそが ネットワークで つながり サイコパワーが ぞうふくされるのだ。",
                             IndexId = "0579",
                             Name = "ランクルス",
@@ -4684,7 +5215,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 580,
+                            Id = 646,
                             Description = "せんすいが とくいな とりポケモン。こうぶつの みずゴケを たべるため すいちゅうを およぎまわる。",
                             IndexId = "0580",
                             Name = "コアルヒー",
@@ -4692,7 +5223,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 581,
+                            Id = 647,
                             Description = "よあけと ともに スワンナたちは おどりはじめる。まんなかで おどる スワンナが むれの リーダー。",
                             IndexId = "0581",
                             Name = "スワンナ",
@@ -4700,7 +5231,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 582,
+                            Id = 648,
                             Description = "マイナス50どの いきを はく。ゆきの けっしょうを つくって あたりに ゆきを ふらせる。",
                             IndexId = "0582",
                             Name = "バニプッチ",
@@ -4708,7 +5239,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 583,
+                            Id = 649,
                             Description = "ゆきやまに せいそくする ポケモン。おおむかし ひょうがきの ときに みなみの とちに いどうしてきた。",
                             IndexId = "0583",
                             Name = "バニリッチ",
@@ -4716,7 +5247,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 584,
+                            Id = 650,
                             Description = "みずを たいりょうに のみこんで たいないで ゆきぐもを つくる。もうふぶきで てきを くるしめる。",
                             IndexId = "0584",
                             Name = "バイバニラ",
@@ -4724,7 +5255,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 585,
+                            Id = 651,
                             Description = "たいもうが のやまの くさと おなじ いろと かおりに かわる。てきいを かんじると くさむらに かくれる。",
                             IndexId = "0585",
                             Name = "シキジカ",
@@ -4732,7 +5263,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 586,
+                            Id = 652,
                             Description = "きせつに よって すみかを かえる。ひとびとは メブキジカの ツノで きせつの うつりかわりを かんじる。",
                             IndexId = "0586",
                             Name = "メブキジカ",
@@ -4740,7 +5271,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 587,
+                            Id = 653,
                             Description = "ほほの でんきぶくろで つくった でんきを まくの うちがわに ためて かっくう しながら でんきを はなつ。",
                             IndexId = "0587",
                             Name = "エモンガ",
@@ -4748,7 +5279,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 588,
+                            Id = 654,
                             Description = "チョボマキと いっしょに いるときに でんきてきな しげきを うけると しんかする ふしぎな ポケモンだ。",
                             IndexId = "0588",
                             Name = "カブルモ",
@@ -4756,7 +5287,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 589,
+                            Id = 655,
                             Description = "こうそくで とびまわり するどい やりで あいてを つく。ふりな あいてにも ゆうかんに たちむかう。",
                             IndexId = "0589",
                             Name = "シュバルゴ",
@@ -4764,7 +5295,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 590,
+                            Id = 656,
                             Description = "モンスターボールに にた もようで さそい どくほうしを ふきかける。なぜ にているかは なぞである。",
                             IndexId = "0590",
                             Name = "タマゲタケ",
@@ -4772,7 +5303,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 591,
+                            Id = 657,
                             Description = "りょううでの モンスターボールに にた カサを ゆらゆらと うごかして えものを さそう ダンスを おどる。",
                             IndexId = "0591",
                             Name = "モロバレル",
@@ -4780,7 +5311,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 592,
+                            Id = 658,
                             Description = "うすい ベールのような うでで あいての からだを しばりつけたまま うみの そこへ しずんでいくのだ。",
                             IndexId = "0592",
                             Name = "プルリル",
@@ -4788,7 +5319,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 593,
+                            Id = 659,
                             Description = "ブルンゲルの すみかに まよいこんだ ふねは しずめられて のりくみいんの いのちは すいとられて しまうのだ。",
                             IndexId = "0593",
                             Name = "ブルンゲル",
@@ -4796,7 +5327,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 594,
+                            Id = 660,
                             Description = "ママンボウの からだを おおう とくしゅな ねんまくには きずを なおす こうかが ある。",
                             IndexId = "0594",
                             Name = "ママンボウ",
@@ -4804,7 +5335,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 595,
+                            Id = 661,
                             Description = "まちなかで くらす バチュルは みんかの コンセントから でんきを すいとる すべを おぼえている。",
                             IndexId = "0595",
                             Name = "バチュル",
@@ -4812,7 +5343,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 596,
+                            Id = 662,
                             Description = "てきに おそわれると でんきを おびた いとを たくさん はきだして でんきの バリアを つくる。",
                             IndexId = "0596",
                             Name = "デンチュラ",
@@ -4820,7 +5351,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 597,
+                            Id = 663,
                             Description = "きけんを さっちすると トゲを いっせいに はっしゃして はんげき。その すきに ころがって にげる。",
                             IndexId = "0597",
                             Name = "テッシード",
@@ -4828,7 +5359,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 598,
+                            Id = 664,
                             Description = "3ほんの トゲつきの しょくしゅを ふりまわして たたかう。 おおいわを ふんさいする はかいりょくだ。",
                             IndexId = "0598",
                             Name = "ナットレイ",
@@ -4836,7 +5367,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 599,
+                            Id = 665,
                             Description = "2つの からだは くみあわせが きまっている。べつの からだとは かみあわずに はなれてしまう。",
                             IndexId = "0599",
                             Name = "ギアル",
@@ -4844,7 +5375,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 600,
+                            Id = 666,
                             Description = "かいてんを かえることで なかまに きもちを つたえている。おこるほど かいてんすうが はやくなる。",
                             IndexId = "0600",
                             Name = "ギギアル",
@@ -4852,7 +5383,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 601,
+                            Id = 667,
                             Description = "あかい コアは エネルギータンクの やくわり。チャージした エネルギーを トゲから しゅういに うちだす。",
                             IndexId = "0601",
                             Name = "ギギギアル",
@@ -4860,7 +5391,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 602,
+                            Id = 668,
                             Description = "1ぴきの でんりょくは ちいさいが たくさんの シビシラスが つながると カミナリと おなじ いりょくになる。",
                             IndexId = "0602",
                             Name = "シビシラス",
@@ -4868,7 +5399,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 603,
+                            Id = 669,
                             Description = "まるい もようが はつでん きかん。あいてに まきついてから もようを おしつけて でんきを ながすのだ。",
                             IndexId = "0603",
                             Name = "シビビール",
@@ -4876,7 +5407,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 604,
+                            Id = 670,
                             Description = "うでの ちからで うみから はいだし みずべの えものに おそいかかる。いっしゅんで うみへ ひきずりこむ。",
                             IndexId = "0604",
                             Name = "シビルドン",
@@ -4884,7 +5415,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 605,
+                            Id = 671,
                             Description = "つよい サイコパワーを あやつる。サイコパワーで あいての のうみそを しめつけて ずつうを おこさせる。",
                             IndexId = "0605",
                             Name = "リグレー",
@@ -4892,7 +5423,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 606,
+                            Id = 672,
                             Description = "あいての きおくを そうさする。3しょくの ゆびを てんめつさせて なかまと かいわしている らしい。",
                             IndexId = "0606",
                             Name = "オーベム",
@@ -4900,7 +5431,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 607,
+                            Id = 673,
                             Description = "ヒトモシの ともす あかりは ひとや ポケモンの せいめいりょくを すいとって もえているのだ。",
                             IndexId = "0607",
                             Name = "ヒトモシ",
@@ -4908,7 +5439,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 608,
+                            Id = 674,
                             Description = "ふきつな ポケモンと こわがられている。ししゃの たましいを もとめて まちなかを フラフラと さまよう。",
                             IndexId = "0608",
                             Name = "ランプラー",
@@ -4916,7 +5447,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 609,
+                            Id = 675,
                             Description = "たましいを すいとって もやす。 ほのおを ゆらして あいてを さいみんじょうたいに する。",
                             IndexId = "0609",
                             Name = "シャンデラ",
@@ -4924,7 +5455,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 610,
+                            Id = 676,
                             Description = "きのみを キバで くだいて たべる。なんかいも はえかわることで つよく するどい キバに なる。",
                             IndexId = "0610",
                             Name = "キバゴ",
@@ -4932,7 +5463,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 611,
+                            Id = 677,
                             Description = "おれた キバは はえかわらないので たたかいが おわると かわらの いわで キバを たんねんに みがく。",
                             IndexId = "0611",
                             Name = "オノンド",
@@ -4940,7 +5471,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 612,
+                            Id = 678,
                             Description = "やさしい せいかくだが なわばりを あらす ものには ようしゃしない。 てつを きる キバで いどみかかる。",
                             IndexId = "0612",
                             Name = "オノノクス",
@@ -4948,7 +5479,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 613,
+                            Id = 679,
                             Description = "ぐあいが わるくなると はなみずが みずっぽくなり こおりわざの いりょくが おちてしまうのだ。",
                             IndexId = "0613",
                             Name = "クマシュン",
@@ -4956,7 +5487,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 614,
+                            Id = 680,
                             Description = "はく いきを じざいに こおらせる。およぎが とくいで きたの うみを およぎまわり えものを つかまえる。",
                             IndexId = "0614",
                             Name = "ツンベアー",
@@ -4964,7 +5495,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 615,
+                            Id = 681,
                             Description = "たいおんが あがると すいじょうきに なって すがたを けす。たいおんが さがると もとの こおりに もどる。",
                             IndexId = "0615",
                             Name = "フリージオ",
@@ -4972,7 +5503,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 616,
+                            Id = 682,
                             Description = "てきに おそわれると カラの ふたを とじて ぼうぎょ。ふたの すきまから ベトベトした どくえきを とばす。",
                             IndexId = "0616",
                             Name = "チョボマキ",
@@ -4980,7 +5511,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 617,
+                            Id = 683,
                             Description = "からだが かわくと よわってしまう。うすい まくを なんじゅうも まいて かんそうを ふせいでいるのだ。",
                             IndexId = "0617",
                             Name = "アギルダー",
@@ -4988,7 +5519,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 618,
+                            Id = 684,
                             Description = "ひふが かたいので すもうとりに ふまれても へいき。でんきを ながすとき わらいがおに なる。",
                             IndexId = "0618",
                             Name = "マッギョ",
@@ -4996,7 +5527,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 619,
+                            Id = 685,
+                            Description = "ひふが かたいので すもうとりに ふまれても へいき。でんきを ながすとき わらいがおに なる。",
+                            IndexId = "0618",
+                            Name = "マッギョ\n(ガラルのすがた)",
+                            Type = "じめん, はがね"
+                        },
+                        new
+                        {
+                            Id = 686,
                             Description = "ながれるような れんぞく こうげきを くりだして てきを あっとうする。するどいツメで てきを きりさく。",
                             IndexId = "0619",
                             Name = "コジョフー",
@@ -5004,7 +5543,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 620,
+                            Id = 687,
                             Description = "うでの たいもうを ムチのように あつかう。りょううでの こうげきは めにも とまらぬ はやさ。",
                             IndexId = "0620",
                             Name = "コジョンド",
@@ -5012,7 +5551,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 621,
+                            Id = 688,
                             Description = "にっこうを つばさで うけて からだを あたためる。たいおんが さがると うごけなくなってしまう。",
                             IndexId = "0621",
                             Name = "クリムガン",
@@ -5020,7 +5559,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 622,
+                            Id = 689,
                             Description = "たいないで もえる エネルギーに よって かつどうしているが どんな エネルギーなのかは ふめいである。",
                             IndexId = "0622",
                             Name = "ゴビット",
@@ -5028,7 +5567,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 623,
+                            Id = 690,
                             Description = "マッハの スピードで そらを とぶ。むねの ふういんを はがすと エネルギーが ぼうそうしてしまう。",
                             IndexId = "0623",
                             Name = "ゴルーグ",
@@ -5036,7 +5575,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 624,
+                            Id = 691,
                             Description = "ぜんしんが はものの ポケモン。たたかいで はこぼれすると かわらの てごろな いしで はを とぐ。",
                             IndexId = "0624",
                             Name = "コマタナ",
@@ -5044,7 +5583,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 625,
+                            Id = 692,
                             Description = "コマタナの むれを ひきいている。ボスの ざを うばいあい たたかう。やぶれると むれを おいだされる。",
                             IndexId = "0625",
                             Name = "キリキザン",
@@ -5052,7 +5591,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 626,
+                            Id = 693,
                             Description = "はげしい ずつきを くらわせても ふさふさの たいもうが ダメージを きゅうしゅうして くれるのだ。",
                             IndexId = "0626",
                             Name = "バッフロン",
@@ -5060,7 +5599,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 627,
+                            Id = 694,
                             Description = "きゃくりょくで きのみを くだく。どんなに つよい あいてでも ゆうかんに たちむかう しゅうせい。",
                             IndexId = "0627",
                             Name = "ワシボン",
@@ -5068,7 +5607,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 628,
+                            Id = 695,
                             Description = "なかまのため きけんを かえりみず たたかう。じどうしゃを つかんだまま おおぞらを まう ことが できる。",
                             IndexId = "0628",
                             Name = "ウォーグル",
@@ -5076,7 +5615,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 629,
+                            Id = 696,
+                            Description = "なかまのため きけんを かえりみず たたかう。じどうしゃを つかんだまま おおぞらを まう ことが できる。",
+                            IndexId = "0628",
+                            Name = "ウォーグル\n(ヒスイのすがた)",
+                            Type = "エスパー, ひこう"
+                        },
+                        new
+                        {
+                            Id = 697,
                             Description = "つばさが ちいさいため とべない。しんかの ときが ちかづくと じぶんから ガイコツを ぬぎすてる。",
                             IndexId = "0629",
                             Name = "バルチャイ",
@@ -5084,7 +5631,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 630,
+                            Id = 698,
                             Description = "ほねを ひろい あつめて すづくり。よわった えものを あしで つかみ ほねの すまで かるがると はこぶ。",
                             IndexId = "0630",
                             Name = "バルジーナ",
@@ -5092,7 +5639,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 631,
+                            Id = 699,
                             Description = "しっぽの あなから くうきを すって たいないで ほのおを もやす。アイアントの てんてき。",
                             IndexId = "0631",
                             Name = "クイタラン",
@@ -5100,7 +5647,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 632,
+                            Id = 700,
                             Description = "はがねの よろいを みにまとう。てんてきの クイタランの こうげきを しゅうだんで ふせぎ はんげきする。",
                             IndexId = "0632",
                             Name = "アイアント",
@@ -5108,7 +5655,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 633,
+                            Id = 701,
                             Description = "なんにでも かみつく しゅうせい。 たべられるものは なんでも たべる。 うかつに ちかよると きけんだ。",
                             IndexId = "0633",
                             Name = "モノズ",
@@ -5116,7 +5663,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 634,
+                            Id = 702,
                             Description = "なわばりの エサを たべつくすと ほかの とちへ いどうする。2つの あたまは なかが わるい。",
                             IndexId = "0634",
                             Name = "ジヘッド",
@@ -5124,7 +5671,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 635,
+                            Id = 703,
                             Description = "6まいの はねで そらを とびつづけ うごくものを てきと おもいこみ おそう きょうぼうな ポケモン。",
                             IndexId = "0635",
                             Name = "サザンドラ",
@@ -5132,7 +5679,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 636,
+                            Id = 704,
                             Description = "たいようから うまれた ポケモンと しんじられてきた。しんかするとき ぜんしんが ほのおに つつまれる。",
                             IndexId = "0636",
                             Name = "メラルバ",
@@ -5140,7 +5687,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 637,
+                            Id = 705,
                             Description = "かざんばいで ちじょうが まっくらに なったとき ウルガモスの ほのおが たいようの かわりに なったという。",
                             IndexId = "0637",
                             Name = "ウルガモス",
@@ -5148,7 +5695,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 638,
+                            Id = 706,
                             Description = "ポケモンを まもるため にんげんと あらそった でんせつの ポケモン。ちんちゃく れいせいな せいかく。",
                             IndexId = "0638",
                             Name = "コバルオン",
@@ -5156,7 +5703,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 639,
+                            Id = 707,
                             Description = "にんげん どうしの せんそうによって すみかを うしなった ポケモンたちを まもるため にんげんと たたかった。",
                             IndexId = "0639",
                             Name = "テラキオン",
@@ -5164,7 +5711,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 640,
+                            Id = 708,
                             Description = "なかまを まもるため にんげんに たたかいを いどんだ ポケモン。でんせつで かたりつがれている。",
                             IndexId = "0640",
                             Name = "ビリジオン",
@@ -5172,7 +5719,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 641,
+                            Id = 709,
                             Description = "くものような エネルギーたいに かはんしんが つつまれている。じそく300キロで そらを とぶ。",
                             IndexId = "0641",
                             Name = "トルネロス",
@@ -5180,7 +5727,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 642,
+                            Id = 710,
                             Description = "ボルトロスが とおりすぎた とちには カミナリの おちた むすうの あとが やけこげとなって のこっている。",
                             IndexId = "0642",
                             Name = "ボルトロス",
@@ -5188,7 +5735,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 643,
+                            Id = 711,
                             Description = "しんわに とうじょうする ポケモン。しっぽから ほのおを ふきあげて すべての ものを やきつくす。",
                             IndexId = "0643",
                             Name = "レシラム",
@@ -5196,7 +5743,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 644,
+                            Id = 712,
                             Description = "しっぽで でんきを つくりだす。ぜんしんを らいうんに かくして イッシュちほうの そらを とぶ。",
                             IndexId = "0644",
                             Name = "ゼクロム",
@@ -5204,7 +5751,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 645,
+                            Id = 713,
                             Description = "ランドロスが おとずれる とちは さくもつが たくさん みのるため はたけのかみさまと いわれている。",
                             IndexId = "0645",
                             Name = "ランドロス",
@@ -5212,7 +5759,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 646,
+                            Id = 714,
                             Description = "きょうりょくな れいとうエネルギーを たいないで つくりだすが もれだした れいきで からだが こおっている。",
                             IndexId = "0646",
                             Name = "キュレム",
@@ -5220,7 +5767,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 647,
+                            Id = 715,
                             Description = "ひづめから みずを ふきだすことで すいめんを すべるように いどう。とくいの あしわざで たたかう。",
                             IndexId = "0647",
                             Name = "ケルディオ",
@@ -5228,7 +5775,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 648,
+                            Id = 716,
                             Description = "とくしゅな はっせいほうで うたう メロディは きいたものの かんじょうを じざいに あやつる。",
                             IndexId = "0648",
                             Name = "メロエッタ\n(ボイスフォルム)",
@@ -5236,7 +5783,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 649,
+                            Id = 717,
+                            Description = "とくしゅな はっせいほうで うたう メロディは きいたものの かんじょうを じざいに あやつる。",
+                            IndexId = "0648",
+                            Name = "メロエッタ\n(ステップフォルム)",
+                            Type = "ノーマル, かくとう"
+                        },
+                        new
+                        {
+                            Id = 718,
                             Description = "3おくねんまえに さいきょうの ハンターとして おそれられていた。 プラズマだんに かいぞうされた。",
                             IndexId = "0649",
                             Name = "ゲノセクト",
@@ -5244,7 +5799,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 650,
+                            Id = 719,
                             Description = "ふだん やわらかい あたまの とげは ちからを こめると するどく とがり いわも つらぬけるほど かたくなる。",
                             IndexId = "0650",
                             Name = "ハリマロン",
@@ -5252,7 +5807,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 651,
+                            Id = 720,
                             Description = "からだを おおう がんじょうな からが てきの こうげきを はじきかえし するどい トゲで はんげきする",
                             IndexId = "0651",
                             Name = "ハリボーグ",
@@ -5260,7 +5815,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 652,
+                            Id = 721,
                             Description = "たいあたりで 50トンの せんしゃを ひっくりかえす パワー。じぶんが たてとなって なかまを まもる。",
                             IndexId = "0652",
                             Name = "ブリガロン",
@@ -5268,7 +5823,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 653,
+                            Id = 722,
                             Description = "こえだを たべると げんきになって せっし200どを こえる ねっきを おおきな みみから ふきだす。",
                             IndexId = "0653",
                             Name = "フォッコ",
@@ -5276,7 +5831,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 654,
+                            Id = 723,
                             Description = "きのえだを しっぽに さしている。しっぽの けの まさつねつで ひをつけて たたかう。",
                             IndexId = "0654",
                             Name = "テールナー",
@@ -5284,7 +5839,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 655,
+                            Id = 724,
                             Description = "つえの せんたんで もえる ほのおを みつめて せいしんとういつすると みらいの できごとを みとおせる。",
                             IndexId = "0655",
                             Name = "マフォクシー",
@@ -5292,7 +5847,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 656,
+                            Id = 725,
                             Description = "むねと せなかから あわを だす。だんりょくのある あわで こうげきを うけとめてダメージを へらす。",
                             IndexId = "0656",
                             Name = "ケロマツ",
@@ -5300,7 +5855,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 657,
+                            Id = 726,
                             Description = "あわで つつんだ こいしを なげる わざを つかう。30メートル さきの あきかんに あてる コントロール。",
                             IndexId = "0657",
                             Name = "ゲコガシラ",
@@ -5308,7 +5863,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 658,
+                            Id = 727,
                             Description = "みずを あっしゅくして しゅりけんを つくりだす。こうそくかいてんさせて とばすと きんぞくも まっぷたつ。",
                             IndexId = "0658",
                             Name = "ゲッコウガ",
@@ -5316,7 +5871,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 659,
+                            Id = 728,
                             Description = "おおきな みみで じめんを ほって すあなを つくる。ひとばんじゅう やすまずに ほりつづけられる。",
                             IndexId = "0659",
                             Name = "ホルビー",
@@ -5324,7 +5879,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 660,
+                            Id = 729,
                             Description = "おおきな みみは 1トンを こえる いわを らくに もちあげる パワー。こうじげんばで だいかつやくする。",
                             IndexId = "0660",
                             Name = "ホルード",
@@ -5332,7 +5887,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 661,
+                            Id = 730,
                             Description = "ひとなつっこい せいかく。うつくしい さえずりと しっぽを ふる うごきで なかまに あいずを おくる。",
                             IndexId = "0661",
                             Name = "ヤヤコマ",
@@ -5340,7 +5895,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 662,
+                            Id = 731,
                             Description = "ひのこを クチバシから とばして くさむらを こがし おどろいて とびだした えものを つかまえる。",
                             IndexId = "0662",
                             Name = "ヒノヤコマ",
@@ -5348,7 +5903,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 663,
+                            Id = 732,
                             Description = "はげしい たたかいで こうふんすると ぜんしんの うもうの すきまから ひのこを ふきだして ひこうする。",
                             IndexId = "0663",
                             Name = "ファイアロー",
@@ -5356,7 +5911,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 664,
+                            Id = 733,
                             Description = "とりポケモンに おそわれると くろい こなを まきちらす。ふれると マヒする どくのこなだ。",
                             IndexId = "0664",
                             Name = "コフキムシ",
@@ -5364,7 +5919,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 665,
+                            Id = 734,
                             Description = "しげみの かげに かくれて くらす。 てきに おそわれると からだの けを するどく さかだてて いかくする。",
                             IndexId = "0665",
                             Name = "コフーライ",
@@ -5372,7 +5927,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 666,
+                            Id = 735,
                             Description = "せかいには さまざまな はねもようの ビビヨンがいる。すんでいる とちの きこうが えいきょうしているようだ。",
                             IndexId = "0666",
                             Name = "ビビヨン",
@@ -5380,7 +5935,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 667,
+                            Id = 736,
                             Description = "つよい あいてに たちむかうときほど たてがみが こうおんになり ぜんしんに ちからが みなぎるのだ。",
                             IndexId = "0667",
                             Name = "シシコ",
@@ -5388,7 +5943,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 668,
+                            Id = 737,
                             Description = "むれの なかで いちばん おおきな ほのおの たてがみを もつ オスが リーダーとして なかまを ひきいる。",
                             IndexId = "0668",
                             Name = "カエンジシ",
@@ -5396,7 +5951,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 669,
+                            Id = 738,
                             Description = "はなの ひめた ちからを ひきだして じざいに あやつる。フラベベが もつ はなは もはや からだの いちぶだ。",
                             IndexId = "0669",
                             Name = "フラベベ",
@@ -5404,7 +5959,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 670,
+                            Id = 739,
                             Description = "はなばたけを とびまわり かれかけた はなを せわする。 はなの ひめられた ちからを ひきだして たたかう。",
                             IndexId = "0670",
                             Name = "フラエッテ",
@@ -5412,7 +5967,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 671,
+                            Id = 740,
                             Description = "テリトリーは みごとな はなぞの。くさばなの はなつ エネルギーを あびて じぶんの パワーにするのだ。",
                             IndexId = "0671",
                             Name = "フラージェス",
@@ -5420,7 +5975,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 672,
+                            Id = 741,
                             Description = "ひとと くらすようになった さいしょの ポケモンと いわれる。おだやかな せいかくの ポケモン。",
                             IndexId = "0672",
                             Name = "メェークル",
@@ -5428,7 +5983,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 673,
+                            Id = 742,
                             Description = "ツノを にぎる わずかな ちがいから トレーナーの きもちを よみとるので いったいとなって はしれるのだ。",
                             IndexId = "0673",
                             Name = "ゴーゴート",
@@ -5436,7 +5991,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 674,
+                            Id = 743,
                             Description = "てきに なめられないよう がんばって にらみつけるが こうかは うすい。くわえた はっぱが トレードマーク。",
                             IndexId = "0674",
                             Name = "ヤンチャム",
@@ -5444,7 +5999,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 675,
+                            Id = 744,
                             Description = "きしょうが あらく ケンカっぱやいが よわいものいじめは ゆるさない。はっぱで てきの うごきを よむ。",
                             IndexId = "0675",
                             Name = "ゴロンダ",
@@ -5452,7 +6007,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 676,
+                            Id = 745,
                             Description = "ボサボサの たいもうを かりこむと すがたが うつくしくなる だけでなく からだの キレが よくなるのだ。",
                             IndexId = "0676",
                             Name = "トリミアン",
@@ -5460,7 +6015,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 677,
+                            Id = 746,
                             Description = "きょうりょくな サイコパワーが もれださないように ほうしゅつする きかんを みみで ふさいでいるのだ。",
                             IndexId = "0677",
                             Name = "ニャスパー",
@@ -5468,7 +6023,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 678,
+                            Id = 747,
                             Description = "きけんが せまると みみを もちあげ 10トン トラックを ひねりつぶす サイコパワーを かいほうする。",
                             IndexId = "0678",
                             Name = "ニャオニクス",
@@ -5476,7 +6031,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 679,
+                            Id = 748,
                             Description = "ししゃの たましいが こだいの つるぎに やどって うまれたらしい。 ひとに とりつき いのちを すう。",
                             IndexId = "0679",
                             Name = "ヒトツキ",
@@ -5484,7 +6039,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 680,
+                            Id = 749,
                             Description = "しんかして 2本に ぶんれつした。テレパシーで かいわして れんぞくこうげきで てきを きりきざむ。",
                             IndexId = "0680",
                             Name = "ニダンギル",
@@ -5492,7 +6047,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 681,
+                            Id = 750,
                             Description = "れきだいの おうが つれていた。 れいりょくで ひとや ポケモンの こころを あやつり したがわせる。",
                             IndexId = "0681",
                             Name = "ギルガルド",
@@ -5500,7 +6055,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 682,
+                            Id = 751,
                             Description = "かいだ ものを うっとりさせる かおりを からだから ただよわせる たべた もので かおりが かわる。",
                             IndexId = "0682",
                             Name = "シュシュプ",
@@ -5508,7 +6063,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 683,
+                            Id = 752,
                             Description = "さまざまな においを つくりだす。あいての いやがる においを だして たたかいを ゆうりに すすめるのだ。",
                             IndexId = "0683",
                             Name = "フレフワン",
@@ -5516,7 +6071,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 684,
+                            Id = 753,
                             Description = "わたあめのような あまくて ベタつく しろい いとを だして あいてを からめとり うごきを ふうじる。",
                             IndexId = "0684",
                             Name = "ペロッパフ",
@@ -5524,7 +6079,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 685,
+                            Id = 754,
                             Description = "わずかな においでも かぎわける びんかんな きゅうかくを いかして パティシエの てつだいを している。",
                             IndexId = "0685",
                             Name = "ペロリーム",
@@ -5532,7 +6087,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 686,
+                            Id = 755,
                             Description = "はっこうたいの てんめつを みつめた あいては めが くらみ たたかう きもちが なくなってしまうのだ。",
                             IndexId = "0686",
                             Name = "マーイーカ",
@@ -5540,7 +6095,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 687,
+                            Id = 756,
                             Description = "ポケモンで いちばん きょうりょくな さいみんじゅつを つかう。あいてを いのままに あやつってしまうのだ。",
                             IndexId = "0687",
                             Name = "カラマネロ",
@@ -5548,7 +6103,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 688,
+                            Id = 757,
                             Description = "2ひきの カメテテが ひとつの いわで くらす。ケンカすると どちらかが ほかの いわに うつる。",
                             IndexId = "0688",
                             Name = "カメテテ",
@@ -5556,7 +6111,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 689,
+                            Id = 758,
                             Description = "しんかのとき 2ひきの カメテテが 7ひきに ぶんれつした ポケモン。 7ひきぶんの パワーで たたかう。",
                             IndexId = "0689",
                             Name = "ガメノデス",
@@ -5564,7 +6119,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 690,
+                            Id = 759,
                             Description = "くさった かいそうに ぎたいする。きづかずに ちかよってきた えものに どくえきを あびせて しとめる。",
                             IndexId = "0690",
                             Name = "クズモー",
@@ -5572,7 +6127,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 691,
+                            Id = 760,
                             Description = "タンカーの せんたいを くさらせる もうどくを なわばりに はいりこんだ ものに みさかいなく はきかける。",
                             IndexId = "0691",
                             Name = "ドラミドロ",
@@ -5580,7 +6135,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 692,
+                            Id = 761,
                             Description = "おおきな ハサミから あっしゅくした みずを ピストルのように うちだし とんでいる えものを うちおとす。",
                             IndexId = "0692",
                             Name = "ウデッポウ",
@@ -5588,7 +6143,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 693,
+                            Id = 762,
                             Description = "みずの ほうだんを はっしゃする うでを もつ。タンカーの せんたいを うちぬくぞ。",
                             IndexId = "0693",
                             Name = "ブロスター",
@@ -5596,7 +6151,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 694,
+                            Id = 763,
                             Description = "さばくで せいかつする。たいようの ひかりを あびて はつでんすれば エサを たべなくても へいきなのだ。",
                             IndexId = "0694",
                             Name = "エリキテル",
@@ -5604,7 +6159,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 695,
+                            Id = 764,
                             Description = "エリマキを ひろげて はつでんする。 エレザード 1ぴきで こうそうビルで ひつような でんきを つくれるのだ。",
                             IndexId = "0695",
                             Name = "エレザード",
@@ -5612,7 +6167,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 696,
+                            Id = 765,
                             Description = "かせきから ふっかつした ポケモン。きにいらない ことが あると かんしゃくを おこして おおあばれ。",
                             IndexId = "0696",
                             Name = "チゴラス",
@@ -5620,7 +6175,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 697,
+                            Id = 766,
                             Description = "ぶあつい てっぱんを かみのように かみちぎる おおあごで こだいの せかいでは むてきを ほこった。",
                             IndexId = "0697",
                             Name = "ガチゴラス",
@@ -5628,7 +6183,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 698,
+                            Id = 767,
                             Description = "1おくねんまえから こおりづけに なっていた からだの いちぶから ふっかつした こだいの ポケモン。",
                             IndexId = "0698",
                             Name = "アマルス",
@@ -5636,7 +6191,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 699,
+                            Id = 768,
                             Description = "マイナス150どの れいきを ひしがたの けっしょうから だして てきを つつみ こおりづけにする。",
                             IndexId = "0699",
                             Name = "アマルルガ",
@@ -5644,7 +6199,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 700,
+                            Id = 769,
                             Description = "リボンのような しょっかくから きもちを やわらげる はどうを おくりこみ たたかいを やめさせる。",
                             IndexId = "0700",
                             Name = "ニンフィア",
@@ -5652,7 +6207,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 701,
+                            Id = 770,
                             Description = "たいかくは こがらだが カイリキーや ハリテヤマなど おおきな ポケモンと ごかくに たたかう テクニシャン。",
                             IndexId = "0701",
                             Name = "ルチャブル",
@@ -5660,7 +6215,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 702,
+                            Id = 771,
                             Description = "ヒゲが アンテナの やくわり。でんぱを そうじゅしんして とおくの なかまと れんらくを とりあうのだ。",
                             IndexId = "0702",
                             Name = "デデンネ",
@@ -5668,7 +6223,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 703,
+                            Id = 772,
                             Description = "ちかふかくの こうおん こうあつな かんきょうで うまれた。 あたまの いしから エネルギーを はなつ。",
                             IndexId = "0703",
                             Name = "メレシー",
@@ -5676,7 +6231,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 704,
+                            Id = 773,
                             Description = "いちばん よわい ドラゴンポケモン。ヌメヌメの からだが かわかないように ジメジメした ひかげで くらす。",
                             IndexId = "0704",
                             Name = "ヌメラ",
@@ -5684,7 +6239,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 705,
+                            Id = 774,
                             Description = "なんでも とかしてしまう ねんえきを ぶんぴつして てきを げきたいする。めだまは たいかして みえていない。",
                             IndexId = "0705",
                             Name = "ヌメイル",
@@ -5692,7 +6247,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 706,
+                            Id = 775,
+                            Description = "なんでも とかしてしまう ねんえきを ぶんぴつして てきを げきたいする。めだまは たいかして みえていない。",
+                            IndexId = "0705",
+                            Name = "ヌメイル\n(ヒスイのすがた)",
+                            Type = "はがね, ドラゴン"
+                        },
+                        new
+                        {
+                            Id = 776,
                             Description = "ひとなっつこい ドラゴンポケモン。 だいすきな トレーナーに だきついて ねんえきで ヌルヌルにしてしまう。",
                             IndexId = "0706",
                             Name = "ヌメルゴン",
@@ -5700,7 +6263,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 707,
+                            Id = 777,
+                            Description = "ひとなっつこい ドラゴンポケモン。 だいすきな トレーナーに だきついて ねんえきで ヌルヌルにしてしまう。",
+                            IndexId = "0706",
+                            Name = "ヌメルゴン\n(ヒスイのすがた)",
+                            Type = "はがね, ドラゴン"
+                        },
+                        new
+                        {
+                            Id = 778,
                             Description = "カギを あつめる しゅうせい。てきに おそわれると ジャラジャラと カギを うちならして いかくする。",
                             IndexId = "0707",
                             Name = "クレッフィ",
@@ -5708,7 +6279,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 708,
+                            Id = 779,
                             Description = "くさった きりかぶに たましいが やどり ポケモンになった。ひとの よりつかない もりに すむ。",
                             IndexId = "0708",
                             Name = "ボクレー",
@@ -5716,7 +6287,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 709,
+                            Id = 780,
                             Description = "ほかの きぎを じざいに あやつる。もりを あらす にんげんは しぬまで もりから でられないようにするのだ。",
                             IndexId = "0709",
                             Name = "オーロット",
@@ -5724,7 +6295,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 710,
+                            Id = 781,
                             Description = "じょうぶつできない たましいを カボチャの からだに いれている。ひぐれと ともに うごきはじめる。",
                             IndexId = "0710",
                             Name = "バケッチャ",
@@ -5732,7 +6303,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 711,
+                            Id = 782,
                             Description = "しんげつの よるに ぶきみな こえで うたいながら まちなかを さまよう。そのうたを きくと のろわれる。",
                             IndexId = "0711",
                             Name = "パンプジン",
@@ -5740,7 +6311,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 712,
+                            Id = 783,
                             Description = "からだを おおう こおりが てきの こうげきを ふせぐ。わられても れいきで すぐに こおりを はる。",
                             IndexId = "0712",
                             Name = "カチコール",
@@ -5748,7 +6319,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 713,
+                            Id = 784,
                             Description = "こおりついた からだは こうてつのように かたい。 たちふさがる ものを きょたいで おしつぶし いどうする。",
                             IndexId = "0713",
                             Name = "クレベース",
@@ -5756,7 +6327,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 714,
+                            Id = 785,
+                            Description = "こおりついた からだは こうてつのように かたい。 たちふさがる ものを きょたいで おしつぶし いどうする。",
+                            IndexId = "0713",
+                            Name = "クレベース\n(ヒスイのすがた)",
+                            Type = "こおり, いわ"
+                        },
+                        new
+                        {
+                            Id = 786,
                             Description = "まっくらな どうくつで くらす。20まんヘルツの ちょうおんぱを おおきな みみから はっしゃする。",
                             IndexId = "0714",
                             Name = "オンバット",
@@ -5764,7 +6343,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 715,
+                            Id = 787,
                             Description = "つきあかりすら ない やみよを とび ゆだんしている えものを おそう。くらやみの たたかいでは むてきだ。",
                             IndexId = "0715",
                             Name = "オンバーン",
@@ -5772,7 +6351,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 716,
+                            Id = 788,
                             Description = "えいえんの いのちを わけあたえると いわれている。 じゅもくの すがたで 1000ねん ねむり ふっかつする。",
                             IndexId = "0716",
                             Name = "ゼルネアス",
@@ -5780,7 +6359,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 717,
+                            Id = 789,
                             Description = "つばさと おばねを ひろげて あかく かがやくとき いきものの いのちを すいとる でんせつの ポケモン。",
                             IndexId = "0717",
                             Name = "イベルタル",
@@ -5788,7 +6367,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 718,
+                            Id = 790,
                             Description = "カロスちほうの せいたいけいが くずれると すがたをあらわして ひめた ちからを はっきするらしい。",
                             IndexId = "0718",
                             Name = "ジガルデ",
@@ -5796,7 +6375,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 719,
+                            Id = 791,
                             Description = "メレシーの とつぜんへんい。ピンクいろに かがやく からだは せかいいち うつくしいと いわれている。",
                             IndexId = "0719",
                             Name = "ディアンシー",
@@ -5804,7 +6383,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 720,
+                            Id = 792,
                             Description = "くうかんを ゆがめる リングで あらゆる ものを はなれた ばしょへ とばしてしまう トラブルメーカー。",
                             IndexId = "0720",
                             Name = "フーパ\n(いましめられしフーパ)",
@@ -5812,7 +6391,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 721,
+                            Id = 793,
+                            Description = "くうかんを ゆがめる リングで あらゆる ものを はなれた ばしょへ とばしてしまう トラブルメーカー。",
+                            IndexId = "0720",
+                            Name = "フーパ\n(ときはなたれしフーパ)",
+                            Type = "エスパー, あく"
+                        },
+                        new
+                        {
+                            Id = 794,
                             Description = "すいじょうきを ふきだして じぶんの すがたを のうむで かくす。ひとの たちいらない やまに すむと いう。",
                             IndexId = "0721",
                             Name = "ボルケニオン",
@@ -5820,7 +6407,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 722,
+                            Id = 795,
                             Description = "けいかいしんが つよい。 ひるは こうごうせいで ちからを ためて よるになったら かつどうかいし。",
                             IndexId = "0722",
                             Name = "モクロー",
@@ -5828,7 +6415,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 723,
+                            Id = 796,
                             Description = "きどりやで ひまが あれば つばさの ていれ。 うもうの よごれが きに なりすぎて たたかえないことも。",
                             IndexId = "0723",
                             Name = "フクスロー",
@@ -5836,7 +6423,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 724,
+                            Id = 797,
                             Description = "つばさに しこまれた やばねを つがえてはなつ。 100メートルさきの こいしも つらぬく せいど。",
                             IndexId = "0724",
                             Name = "ジュナイパー",
@@ -5844,7 +6431,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 725,
+                            Id = 798,
+                            Description = "つばさに しこまれた やばねを つがえてはなつ。 100メートルさきの こいしも つらぬく せいど。",
+                            IndexId = "0724",
+                            Name = "ジュナイパー\n(ヒスイのすがた)",
+                            Type = "くさ, かくとう"
+                        },
+                        new
+                        {
+                            Id = 799,
                             Description = "けづくろいで おなかに たまった ぬけげを もやして ひを ふく。 けの はきかたで ほのおも へんか。",
                             IndexId = "0725",
                             Name = "ニャビー",
@@ -5852,7 +6447,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 726,
+                            Id = 800,
                             Description = "くびの つけねに ほのおの スズが ある。 ほのおが ふきだすとき リンリンと たかいおとが なる。",
                             IndexId = "0726",
                             Name = "ニャヒート",
@@ -5860,7 +6455,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 727,
+                            Id = 801,
                             Description = "そぼうで みがってな せいかく。 きぶんが のらなければ トレーナーの めいれいも へいきで むしするぞ。",
                             IndexId = "0727",
                             Name = "ガオガエン",
@@ -5868,7 +6463,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 728,
+                            Id = 802,
                             Description = "がんばりやな せいしつで ゆうめい。 たいえきを はなで ふくらませた バルーンを てきに ぶつける。",
                             IndexId = "0728",
                             Name = "アシマリ",
@@ -5876,7 +6471,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 729,
+                            Id = 803,
                             Description = "ダンスが とくいで おどりながら つぎつぎに みずの バルーンを つくりだし てきに ぶつけるぞ。",
                             IndexId = "0729",
                             Name = "オシャマリ",
@@ -5884,7 +6479,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 730,
+                            Id = 804,
                             Description = "みずのバルーンを うたで あやつる。そのメロディは なかまに まなび だいだい むれに うけつがれていく。",
                             IndexId = "0730",
                             Name = "アシレーヌ",
@@ -5892,7 +6487,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 731,
+                            Id = 805,
                             Description = "びょうかん16れんだ で きを つつき あなを ほる。 あけた あなは エサを しまう ちょぞうこや すに つかう。",
                             IndexId = "0731",
                             Name = "ツツケラ",
@@ -5900,7 +6495,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 732,
+                            Id = 806,
                             Description = "クチバシに くった きのみの タネを ためこむ。 てきや えものに であうと いっきに はっしゃする。",
                             IndexId = "0732",
                             Name = "ケララッパ",
@@ -5908,7 +6503,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 733,
+                            Id = 807,
                             Description = "クチバシを はつねつさせ たたかう。 そのおんどは 100どを ゆうに こえ つつかれるだけで おおやけど。",
                             IndexId = "0733",
                             Name = "ドデカバシ",
@@ -5916,7 +6511,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 734,
+                            Id = 808,
                             Description = "するどいキバで なんにでも かみつく。もともと アローラには すんでおらず ほかのちほうから つれてこられた。",
                             IndexId = "0734",
                             Name = "ヤングース",
@@ -5924,7 +6519,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 735,
+                            Id = 809,
                             Description = "えものの こんせきを みつけると ねばりづよく そのばに はりこむが ひぐれには うつらうつら している。",
                             IndexId = "0735",
                             Name = "デカグース",
@@ -5932,7 +6527,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 736,
+                            Id = 810,
                             Description = "じょうぶな アゴで じゅもくを けずり じゅえきを すする。 ふだんは じめんの なかで くらす。",
                             IndexId = "0736",
                             Name = "アゴジムシ",
@@ -5940,7 +6535,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 737,
+                            Id = 811,
                             Description = "たいないに ちくでんきのうを もつ。 キャンプの ときなど 1ぴき いると とても ありがたい ポケモンだ。",
                             IndexId = "0737",
                             Name = "デンヂムシ",
@@ -5948,7 +6543,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 738,
+                            Id = 812,
                             Description = "とびまわって スキを うかがう。 でんきエネルギーを おおきなアゴで しゅうそくさせ てきに はっしゃ。",
                             IndexId = "0738",
                             Name = "クワガノン",
@@ -5956,7 +6551,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 739,
+                            Id = 813,
                             Description = "ハサミで じゃくてんを ガードしつつ すきを うかがい パンチを はなつ。 まけたほうは アワを ふいて ダウン。",
                             IndexId = "0739",
                             Name = "マケンカニ",
@@ -5964,7 +6559,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 740,
+                            Id = 814,
                             Description = "トップを めざすはずが ゆきやまに まよいのぼり さむさに たえるうちに けが はえてきて しんかしていた。",
                             IndexId = "0740",
                             Name = "ケケンカニ",
@@ -5972,7 +6567,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 741,
+                            Id = 815,
                             Description = "はねを うちあわせて はっか。 かれいな ステップを ふみながら はげしい ほのおを あびせかけるぞ。",
                             IndexId = "0741",
                             Name = "オドリドリ\n(めらめらスタイル)",
@@ -5980,7 +6575,31 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 742,
+                            Id = 816,
+                            Description = "はねを うちあわせて はっか。 かれいな ステップを ふみながら はげしい ほのおを あびせかけるぞ。",
+                            IndexId = "0741",
+                            Name = "オドリドリ\n(ぱちぱちスタイル)",
+                            Type = "でんき, ひこう"
+                        },
+                        new
+                        {
+                            Id = 817,
+                            Description = "はねを うちあわせて はっか。 かれいな ステップを ふみながら はげしい ほのおを あびせかけるぞ。",
+                            IndexId = "0741",
+                            Name = "オドリドリ\n(ふらふらスタイル)",
+                            Type = "エスパー, ひこう"
+                        },
+                        new
+                        {
+                            Id = 818,
+                            Description = "はねを うちあわせて はっか。 かれいな ステップを ふみながら はげしい ほのおを あびせかけるぞ。",
+                            IndexId = "0741",
+                            Name = "オドリドリ\n(まいまいスタイル)",
+                            Type = "ゴースト, ひこう"
+                        },
+                        new
+                        {
+                            Id = 819,
                             Description = "はなのミツや かふんが えさ。オーラを かんじる ちからを もち さきそうな はなを みわけている。",
                             IndexId = "0742",
                             Name = "アブリー",
@@ -5988,7 +6607,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 743,
+                            Id = 820,
                             Description = "かふんを まるめ だんごを つくる。 しょくよう から せんとうよう まで たくさんの しゅるいが あるよ。",
                             IndexId = "0743",
                             Name = "アブリボン",
@@ -5996,7 +6615,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 744,
+                            Id = 821,
                             Description = "よく なつくので しょしんしゃに おすすめのポケモンと いわれるが そだつと きしょうは あらくなる。",
                             IndexId = "0744",
                             Name = "イワンコ",
@@ -6004,7 +6623,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 745,
+                            Id = 822,
                             Description = "すばやく うごき てきを まどわす。 ツメや キバの ほか タテガミの とがった いわも ぶきの ひとつ。",
                             IndexId = "0745",
                             Name = "ルガルガン",
@@ -6012,7 +6631,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 746,
+                            Id = 823,
                             Description = "たんどくのすがた",
                             IndexId = "0746",
                             Name = "ヨワシ",
@@ -6020,7 +6639,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 747,
+                            Id = 824,
                             Description = "あたまに ある どくトゲで えものを ズブリ。 よわったところを 10ぽんの しょくしゅで とらえ とどめを さす。",
                             IndexId = "0747",
                             Name = "ヒドイデ",
@@ -6028,7 +6647,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 748,
+                            Id = 825,
                             Description = "12ほんのあしで かいていを はう。 ドヒドイデの はったあとには サニーゴのカスが ちらばっている。",
                             IndexId = "0748",
                             Name = "ドヒドイデ",
@@ -6036,7 +6655,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 749,
+                            Id = 826,
                             Description = "あしに まとわりついた ドロが グリップに なり ちからづよい はしりを じつげんしているのだ。",
                             IndexId = "0749",
                             Name = "ドロバンコ",
@@ -6044,7 +6663,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 750,
+                            Id = 827,
                             Description = "くちから はく ドロは かたまると あめかぜにも つよいので むかしの いえの かべには よくぬられている。",
                             IndexId = "0750",
                             Name = "バンバドロ",
@@ -6052,7 +6671,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 751,
+                            Id = 828,
                             Description = "えさを もとめ ちじょうに あがる。すいほうを かぶるのは こきゅうと やわらかい あたまを まもるため。",
                             IndexId = "0751",
                             Name = "シズクモ",
@@ -6060,7 +6679,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 752,
+                            Id = 829,
                             Description = "とうぶの すいほうで ヘッドバット。 ちいさなポケモンで あれば そのまま すいほうに とりこまれ おぼれしぬ。",
                             IndexId = "0752",
                             Name = "オニシズクモ",
@@ -6068,7 +6687,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 753,
+                            Id = 830,
                             Description = "ひるまは ひかりをあびて ねむり よるに なると より あんぜんな ねどこを さがし あるきだす。",
                             IndexId = "0753",
                             Name = "カリキリ",
@@ -6076,7 +6695,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 754,
+                            Id = 831,
                             Description = "あざやかな たいしょくを たもつには ひじょうに てまが かかるが それを しゅみにする こうずかも いるのだ。",
                             IndexId = "0754",
                             Name = "ラランテス",
@@ -6084,7 +6703,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 755,
+                            Id = 832,
                             Description = "てんめつしながら ひかる ほうしを あたりに ばらまく。 そのひかりを みたものは ふかいねむりに おちる。",
                             IndexId = "0755",
                             Name = "ネマシュ",
@@ -6092,7 +6711,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 756,
+                            Id = 833,
                             Description = "よなかに マシェードのすむ もりに いくのは きけん。 あやしいひかりに まどわされ にどと かえれなくなる。",
                             IndexId = "0756",
                             Name = "マシェード",
@@ -6100,7 +6719,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 757,
+                            Id = 834,
                             Description = "たいえきを もやし どくガスを たく。 ガスを すった てきが フラフラに なったあと おそいかかるのだ。",
                             IndexId = "0757",
                             Name = "ヤトウモリ",
@@ -6108,7 +6727,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 758,
+                            Id = 835,
                             Description = "なぜか ♀しか みつかっていない。 ヤトウモリの ♂を ひきつれて ぎゃくハーレムを つくって くらす。",
                             IndexId = "0758",
                             Name = "エンニュート",
@@ -6116,7 +6735,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 759,
+                            Id = 836,
                             Description = "あいくるしい みためだが おこって ジタバタする てあしに ぶつかると プロレスラーでも ふっとばされる。",
                             IndexId = "0759",
                             Name = "ヌイコグマ",
@@ -6124,7 +6743,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 760,
+                            Id = 837,
                             Description = "あっとうてきな きんりょくを もつ ひじょうに きけんな ポケモン。 せいそくちは きほん たちいりきんし。",
                             IndexId = "0760",
                             Name = "キテルグマ",
@@ -6132,7 +6751,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 761,
+                            Id = 838,
                             Description = "おいしそうな かおりが からだから もれだしている。においに さそわれた ドデカバシに まるのみに される。",
                             IndexId = "0761",
                             Name = "アマカジ",
@@ -6140,7 +6759,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 762,
+                            Id = 839,
                             Description = "みを まもるため ヘタが はったつ。 かなりの かたさで とりポケモンに つつかれても ぜんぜん へいきだ。",
                             IndexId = "0762",
                             Name = "アママイコ",
@@ -6148,7 +6767,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 763,
+                            Id = 840,
                             Description = "あしを いかした けりが とくい。 たおした あいてを あしげに して たかわらいで しょうりを アピール。",
                             IndexId = "0763",
                             Name = "アマージョ",
@@ -6156,7 +6775,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 764,
+                            Id = 841,
                             Description = "えいようまんてんの ツルに はなを くっつける。 はなは かっせいかし かぐわしい アロマが ただよいだす。",
                             IndexId = "0764",
                             Name = "キュワワー",
@@ -6164,7 +6783,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 765,
+                            Id = 842,
                             Description = "ひじょうに かしこいことで しられる。 みじゅくな トレーナーは みくだす ベテランむけの ポケモンだぞ。",
                             IndexId = "0765",
                             Name = "ヤレユータン",
@@ -6172,7 +6791,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 766,
+                            Id = 843,
                             Description = "20ぴきぜんごの グループを つくる。 そのけっそくは ひじょうに かたく ぜったい なかまを みすてない。",
                             IndexId = "0766",
                             Name = "ナゲツケサル",
@@ -6180,7 +6799,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 767,
+                            Id = 844,
                             Description = "おくびょうで たくさんの あしを ばたつかせ ひっしに にげまわる。 にげたあとは ピカピカ きれい。",
                             IndexId = "0767",
                             Name = "コソクムシ",
@@ -6188,7 +6807,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 768,
+                            Id = 845,
                             Description = "するどく きょだいな ツメで いっせん。 くうきや かいすいさえ いっとうりょうだんの うでまえ。",
                             IndexId = "0768",
                             Name = "グソクムシャ",
@@ -6196,7 +6815,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 769,
+                            Id = 846,
                             Description = "いきだおれたものの おんねんが こどもが つくった すなやまに とりつき たんじょう したのだ。",
                             IndexId = "0769",
                             Name = "スナバァ",
@@ -6204,7 +6823,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 770,
+                            Id = 847,
                             Description = "ひとを あやつり すなのやまを すなのしろまで しんか させた。 のろいの ちからも あがっている。",
                             IndexId = "0770",
                             Name = "シロデスナ",
@@ -6212,7 +6831,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 771,
+                            Id = 848,
                             Description = "ビーチなど あさい うみに すむ。 からだから たいないきかんを だして エサを とったり てきと たたかう。",
                             IndexId = "0771",
                             Name = "ナマコブシ",
@@ -6220,7 +6839,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 772,
+                            Id = 849,
                             Description = "おもい せいぎょマスクを つけており ほんらいの のうりょくを だせない。 とくべつな ちからを ひめている。",
                             IndexId = "0772",
                             Name = "タイプ:ヌル",
@@ -6228,7 +6847,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 773,
+                            Id = 850,
                             Description = "タイプ:ノーマル",
                             IndexId = "0773",
                             Name = "シルヴァディ",
@@ -6236,7 +6855,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 774,
+                            Id = 851,
                             Description = "もともと オゾンそうに すんでおり からだの カラが おもくなると ちじょうに むかって おちてくる。",
                             IndexId = "0774",
                             Name = "メテノ",
@@ -6244,7 +6863,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 775,
+                            Id = 852,
                             Description = "ねたまま うまれ ねたまま しぬ。すべての こうどうは みている ゆめに よる ねぞう らしい。",
                             IndexId = "0775",
                             Name = "ネッコアラ",
@@ -6252,7 +6871,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 776,
+                            Id = 853,
                             Description = "せなかの こうらは ばくはつぶつ。 うっかり なぐれば だいばくはつ。 おなかの あなが じゃくてん。",
                             IndexId = "0776",
                             Name = "バクガメス",
@@ -6260,7 +6879,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 777,
+                            Id = 854,
                             Description = "せなかの ハリの けは ふだんは ねている。 こうふんすると さかだち おそってくる てきを つきさすのだ。",
                             IndexId = "0777",
                             Name = "トゲデマル",
@@ -6268,7 +6887,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 778,
+                            Id = 855,
                             Description = "人や他のポケモンと仲良くなりたいのか ピカチュウに似せた ボロ布をかぶっているミミッキュ。 いつでもピカチュウの真似をしているからか 眠っている姿が ピカチュウに似ていることもあるよ。",
                             IndexId = "0778",
                             Name = "ミミッキュ",
@@ -6276,7 +6895,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 779,
+                            Id = 856,
                             Description = "あたまの とっきから サイコパワーを はなつとき とても みみざわりな はぎしりの おとが あたりに ひびく。",
                             IndexId = "0779",
                             Name = "ハギギシリ",
@@ -6284,7 +6903,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 780,
+                            Id = 857,
                             Description = "こころやさしい せいしつ。 だが いちど いかりに かられると はげしい いぶきで あたりを はかい しつくす。",
                             IndexId = "0780",
                             Name = "ジジーロン",
@@ -6292,7 +6911,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 781,
+                            Id = 858,
                             Description = "でかい イカリを ブンブン ふりまわし ホエルオーさえ いちげきで KO。 みどりの モズクが ほんたいだ。",
                             IndexId = "0781",
                             Name = "ダダリン",
@@ -6300,7 +6919,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 782,
+                            Id = 859,
                             Description = "ウロコを たたき きもちを つたえる。 ジャラコの すむ こうざんでは きんぞくおんが こだまする。",
                             IndexId = "0782",
                             Name = "ジャラコ",
@@ -6308,7 +6927,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 783,
+                            Id = 860,
                             Description = "おたけびと ともに えものに とびかかる。 ウロコの パンチは あいてを ズタズタに ひきさくぞ。",
                             IndexId = "0783",
                             Name = "ジャランゴ",
@@ -6316,7 +6935,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 784,
+                            Id = 861,
                             Description = "てきを みると しっぽの ウロコを ジャラジャラ ならして いかく。 よわいものは あわてて にげだす。",
                             IndexId = "0784",
                             Name = "ジャラランガ",
@@ -6324,7 +6943,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 785,
+                            Id = 862,
                             Description = "こうきしんおうせいな メレメレの まもりがみ。 かみなりぐもを よび いかずちを からだに ためこむ。",
                             IndexId = "0785",
                             Name = "カプ・コケコ",
@@ -6332,7 +6951,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 786,
+                            Id = 863,
                             Description = "むじゃきで ざんこくな アーカラの まもりがみ。 はなの かぐわしい かおりが エネルギーの みなもと。",
                             IndexId = "0786",
                             Name = "カプ・テテフ",
@@ -6340,7 +6959,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 787,
+                            Id = 864,
                             Description = "たいぼくを ひきぬき ブンブン ふりまわす。 くさきを しげらせて そのエネルギーを きゅうしゅうする。",
                             IndexId = "0787",
                             Name = "カプ・ブルル",
@@ -6348,7 +6967,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 788,
+                            Id = 865,
                             Description = "ふかいきりで てきを まどわせ じめつさせる おそろしさを もつ。 かいりゅうが エネルギーの みなもと。",
                             IndexId = "0788",
                             Name = "カプ・レヒレ",
@@ -6356,7 +6975,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 789,
+                            Id = 866,
                             Description = "はかない ガスじょうの からだ。 たいきの チリを あつめながら ゆっくりと せいちょうしていく。",
                             IndexId = "0789",
                             Name = "コスモッグ",
@@ -6364,7 +6983,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 790,
+                            Id = 867,
                             Description = "しんだように まったく うごかないが ふれると ほのかに あたたかい。 おおむかしは ほしのマユと よばれた。",
                             IndexId = "0790",
                             Name = "コスモウム",
@@ -6372,7 +6991,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 791,
+                            Id = 868,
                             Description = "べつせかいに すむと いわれる。  ぜんしんから はげしいひかりを はなち やみよも まひるのように てらすのだ。",
                             IndexId = "0791",
                             Name = "ソルガレオ",
@@ -6380,7 +6999,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 792,
+                            Id = 869,
                             Description = "コスモッグが しんかした ♀だと いわれる。 だい3の めが うかぶとき べつせかいへと とびさっていく。",
                             IndexId = "0792",
                             Name = "ルナアーラ",
@@ -6388,7 +7007,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 793,
+                            Id = 870,
                             Description = "なぞに つつまれた UBの いっしゅ。まちゆく ひとが きせいされ あばれだす すがたが もくげきされた。",
                             IndexId = "0793",
                             Name = "ウツロイド",
@@ -6396,7 +7015,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 794,
+                            Id = 871,
                             Description = "べつせかいから あらわれた UB。みずからの からだを みせつけてくるが じまんなのか いかくなのか ふめい。",
                             IndexId = "0794",
                             Name = "マッシブーン",
@@ -6404,7 +7023,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 795,
+                            Id = 872,
                             Description = "きけんなUBの いっしゅ。 すさまじい そくどで だいちを しっそうする すがたが もくげき されている。",
                             IndexId = "0795",
                             Name = "フェローチェ",
@@ -6412,7 +7031,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 796,
+                            Id = 873,
                             Description = "ぜんしんから すさまじい でんげきを ほとばしらせる こうけいを もくげき。なぞの せいぶつ UBの いっしゅだ。",
                             IndexId = "0796",
                             Name = "デンジュモク",
@@ -6420,7 +7039,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 797,
+                            Id = 874,
                             Description = "ウルトラホールから あらわれた。 こうそくで そらを とぶ すがたが もくげき された ウルトラビースト。",
                             IndexId = "0797",
                             Name = "テッカグヤ",
@@ -6428,7 +7047,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 798,
+                            Id = 875,
                             Description = "ウルトラホールから あらわれた UB。 みずから てきを おそわないようだが するどい ぜんしんは きょうきだ。",
                             IndexId = "0798",
                             Name = "カミツルギ",
@@ -6436,7 +7055,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 799,
+                            Id = 876,
                             Description = "やまを くらい けずり ビルを のみこむ すがたが ほうこく された。 ウルトラビーストの いっしゅ。",
                             IndexId = "0799",
                             Name = "アクジキング",
@@ -6444,7 +7063,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 800,
+                            Id = 877,
                             Description = "ちかで ねむりに ついていたようだ。 たいこに べつせかいから やってきたと おもわれる UBらしき せいぶつ。",
                             IndexId = "0800",
                             Name = "ネクロズマ",
@@ -6452,7 +7071,31 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 801,
+                            Id = 878,
+                            Description = "ちかで ねむりに ついていたようだ。 たいこに べつせかいから やってきたと おもわれる UBらしき せいぶつ。",
+                            IndexId = "0800",
+                            Name = "ネクロズマ\n(たそがれのたてがみ)",
+                            Type = "エスパー, はがね"
+                        },
+                        new
+                        {
+                            Id = 879,
+                            Description = "ちかで ねむりに ついていたようだ。 たいこに べつせかいから やってきたと おもわれる UBらしき せいぶつ。",
+                            IndexId = "0800",
+                            Name = "ネクロズマ\n(あかつきのつばさ)",
+                            Type = "エスパー, ゴースト"
+                        },
+                        new
+                        {
+                            Id = 880,
+                            Description = "ちかで ねむりに ついていたようだ。 たいこに べつせかいから やってきたと おもわれる UBらしき せいぶつ。",
+                            IndexId = "0800",
+                            Name = "ネクロズマ\n(ウルトラネクロズマ)",
+                            Type = "エスパー, ドラゴン"
+                        },
+                        new
+                        {
+                            Id = 881,
                             Description = "500ねんいじょうまえに つくられた じんぞうポケモン。 ひとの ことばを りかいするが しゃべれない。",
                             IndexId = "0801",
                             Name = "マギアナ",
@@ -6460,7 +7103,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 802,
+                            Id = 882,
                             Description = "かげのなかに ひそむことが でき ひとまえに すがたを みせないので そのそんざいは まぼろし だった。",
                             IndexId = "0802",
                             Name = "マーシャドー",
@@ -6468,7 +7111,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 803,
+                            Id = 883,
                             Description = "いせかいに おいては たびだちの パートナーに えらばれるほど したしまれている ウルトラビースト。",
                             IndexId = "0803",
                             Name = "ベベノム",
@@ -6476,7 +7119,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 804,
+                            Id = 884,
                             Description = "たいないに すうひゃくリットルの どくえきを ためている。 UBと よばれる せいぶつの いっしゅ。",
                             IndexId = "0804",
                             Name = "アーゴヨン",
@@ -6484,7 +7127,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 805,
+                            Id = 885,
                             Description = "ウルトラホールから しゅつげんした。 ふくすうの せいめいが つみあがり 1ぴきを けいせいしている ようだ。",
                             IndexId = "0805",
                             Name = "ツンデツンデ",
@@ -6492,7 +7135,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 806,
+                            Id = 886,
                             Description = "クネクネうごいて ひとに ちかづくと とつぜん あたまを ばくはつさせた。 ウルトラビーストの いっしゅらしい。",
                             IndexId = "0806",
                             Name = "ズガドーン",
@@ -6500,7 +7143,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 807,
+                            Id = 887,
                             Description = "りょうてあしの ツメを たいでんさせ あいてを やつざき。 かわされても とびちる でんげきで かんでんさせる。",
                             IndexId = "0807",
                             Name = "ゼラオラ",
@@ -6508,7 +7151,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 808,
+                            Id = 888,
                             Description = "とろりと とけた はがねの からだ。 ちちゅうの てつぶんや きんぞくを とかして きゅうしゅうする。",
                             IndexId = "0808",
                             Name = "メルタン",
@@ -6516,7 +7159,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 809,
+                            Id = 889,
                             Description = "てつを うみだす ちからを もつと あがめられていた。 3000ねんの ときを へて なぜか よみがえった。",
                             IndexId = "0809",
                             Name = "メルメタル",
@@ -6524,7 +7167,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 810,
+                            Id = 890,
                             Description = "とくべつな スティックで リズムを きざむと くさばなを げんきにする パワーが おんぱになって ひろがる。",
                             IndexId = "0810",
                             Name = "サルノリ",
@@ -6532,7 +7175,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 811,
+                            Id = 891,
                             Description = "2ほんの スティックで はげしい ビートを きざめる バチンキーほど なかまたちの そんけいを あつめる。",
                             IndexId = "0811",
                             Name = "バチンキー",
@@ -6540,7 +7183,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 812,
+                            Id = 892,
                             Description = "とくべつな きりかぶの パワーを ドラミングで コントロール。 ねっこを あやつって たたかう。",
                             IndexId = "0812",
                             Name = "ゴリランダー",
@@ -6548,7 +7191,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 813,
+                            Id = 893,
                             Description = "はしりまわって たいおんを あげると ほのおエネルギーが からだを めぐり ほんらいの ちからを はっきできる。",
                             IndexId = "0813",
                             Name = "ヒバニー",
@@ -6556,7 +7199,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 814,
+                            Id = 894,
                             Description = "ふかふかの たいもうで さむさに つよくなり さらに こうおんの ほのおわざを だせるようになった。",
                             IndexId = "0814",
                             Name = "ラビフット",
@@ -6564,7 +7207,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 815,
+                            Id = 895,
                             Description = "こいしを リフティングして ほのおの サッカーボールを つくる。 するどい シュートで あいてを もやす。",
                             IndexId = "0815",
                             Name = "エースバーン",
@@ -6572,7 +7215,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 816,
+                            Id = 896,
                             Description = "おびえると タマネギ100コぶんの さいるいせいぶんを もつ なみだを ながして もらいなき させる。",
                             IndexId = "0816",
                             Name = "メッソン",
@@ -6580,7 +7223,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 817,
+                            Id = 897,
                             Description = "ての ひらから でる すいぶんを まるめて つくった みずの たまを つかい ずのうせんを くりひろげる。",
                             IndexId = "0817",
                             Name = "ジメレオン",
@@ -6588,7 +7231,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 818,
+                            Id = 898,
                             Description = "たさいな きのうを かくしもつ。 ゆびから みずを ふんしゃして せなかの ひまくで かぜに のる。",
                             IndexId = "0818",
                             Name = "インテレオン",
@@ -6596,7 +7239,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 819,
+                            Id = 899,
                             Description = "ガラルの いたるところに いる。 さゆうの ほっぺに きのみを たくわえていないと ふあん。",
                             IndexId = "0819",
                             Name = "ホシガリス",
@@ -6604,7 +7247,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 820,
+                            Id = 900,
                             Description = "しっぽに きのみを ためこむ。 ためこみすぎて ポロポロ こぼすが にぶいので きがつかない。",
                             IndexId = "0820",
                             Name = "ヨクバリス",
@@ -6612,7 +7255,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 821,
+                            Id = 901,
                             Description = "どんな きょうてきにも いどみかかる ゆうかんな せいしつ。かえりうちに あいながらも きたえられていく。",
                             IndexId = "0821",
                             Name = "ココガラ",
@@ -6620,7 +7263,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 822,
+                            Id = 902,
                             Description = "あしで こいしを つかんで なげたり ロープを てきに まきつけるなど どうぐを あつかう ちえを もつ。",
                             IndexId = "0822",
                             Name = "アオガラス",
@@ -6628,7 +7271,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 823,
+                            Id = 903,
                             Description = "ガラルちほうの そらでは てきなし。 くろびかりする はがねの すがたは あいてを いあつし おそれさせる。",
                             IndexId = "0823",
                             Name = "アーマーガア",
@@ -6636,7 +7279,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 824,
+                            Id = 904,
                             Description = "いつも せっせと じょうほうを あつめているので かしこい。 ただし ちからは いまいちだ。",
                             IndexId = "0824",
                             Name = "サッチムシ",
@@ -6644,7 +7287,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 825,
+                            Id = 905,
                             Description = "ほぼ うごかないが いきている。 のまずくわずで からに こもるうち ちょうのうりょくに めざめたらしい。",
                             IndexId = "0825",
                             Name = "レドームシ",
@@ -6652,7 +7295,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 826,
+                            Id = 906,
                             Description = "かしこい ポケモンとして ゆうめい。 おおきな のうみそは きょうりょくな サイコパワーを もつ あかし。",
                             IndexId = "0826",
                             Name = "イオルブ",
@@ -6660,7 +7303,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 827,
+                            Id = 907,
                             Description = "ほかの ポケモンが みつけた エサを かすめて くらしている。 ふかふかの にくきゅうは あしおとを たてない。",
                             IndexId = "0827",
                             Name = "クスネ",
@@ -6668,7 +7311,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 828,
+                            Id = 908,
                             Description = "ねらった エモノは こっそり マーキング。 においを たどって ゆだん したころ ぬすみに くるぞ。",
                             IndexId = "0828",
                             Name = "フォクスライ",
@@ -6676,7 +7319,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 829,
+                            Id = 909,
                             Description = "いっぽんあしを じめんに さして ひのひかりを たっぷり あびると はなびらが あざやかに いろづく。",
                             IndexId = "0829",
                             Name = "ヒメンカ",
@@ -6684,7 +7327,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 830,
+                            Id = 910,
                             Description = "わたげの タネは えいようまんてん。かぜに のせて とばして くさきや ポケモンたちを げんきにさせる。",
                             IndexId = "0830",
                             Name = "ワタシラガ",
@@ -6692,7 +7335,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 831,
+                            Id = 911,
                             Description = "パーマの かかった たいもうは たかい クッションせいが ある。 がけから おちても へっちゃら。",
                             IndexId = "0831",
                             Name = "ウールー",
@@ -6700,7 +7343,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 832,
+                            Id = 912,
                             Description = "だんりょくの ある けで おった カーペットは トランポリンみたいで のれば ピョンピョン はねるのだ。",
                             IndexId = "0832",
                             Name = "バイウールー",
@@ -6708,7 +7351,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 833,
+                            Id = 913,
                             Description = "めのまえの ものに すぐに かみつく しゅうせい。 はえかけの まえばが かゆいので かみついてしまうらしい。",
                             IndexId = "0833",
                             Name = "カムカメ",
@@ -6716,7 +7359,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 834,
+                            Id = 914,
                             Description = "きょうぼうな せいしつ。 てつぼうを かみちぎる ほどの アゴの ちからで えものに ばくりと かみつく。",
                             IndexId = "0834",
                             Name = "カジリガメ",
@@ -6724,7 +7367,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 835,
+                            Id = 915,
                             Description = "はしる ときに しっぽの ねもとから でんきを うみだす。 ガラルでは ぼくようけん として にんき。",
                             IndexId = "0835",
                             Name = "ワンパチ",
@@ -6732,7 +7375,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 836,
+                            Id = 916,
                             Description = "でんきを つくって あしに おくり はしりを アシスト。 みっかみばん やすまず はしれるのだ。",
                             IndexId = "0836",
                             Name = "パルスワン",
@@ -6740,7 +7383,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 837,
+                            Id = 917,
                             Description = "およそ400ねんまえに たんこうで みつかった。 からだの ほとんどが せきたんと おなじ せいぶん。",
                             IndexId = "0837",
                             Name = "タンドン",
@@ -6748,7 +7391,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 838,
+                            Id = 918,
                             Description = "たいないで せきたんを つくりだす。 むかしの ガラルでは おとした せきたんを せいかつに りようした。",
                             IndexId = "0838",
                             Name = "トロッゴン",
@@ -6756,7 +7399,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 839,
+                            Id = 919,
                             Description = "ふだんは おだやかだが にんげんが こうざんを あらすと いかりくるい 1500どの ほのおで やきつくす。",
                             IndexId = "0839",
                             Name = "セキタンザン",
@@ -6764,7 +7407,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 840,
+                            Id = 920,
                             Description = "いっしょう りんごの なかで くらし てんてきの とりポケモンに であうと りんごの ふりをして みをまもる。",
                             IndexId = "0840",
                             Name = "カジッチュ",
@@ -6772,7 +7415,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 841,
+                            Id = 921,
                             Description = "すっぱい りんごを たべて しんか。 やけどする ほど きょうさんせいの えきたいを ほほぶくろに ためる。",
                             IndexId = "0841",
                             Name = "アップリュー",
@@ -6780,7 +7423,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 842,
+                            Id = 922,
                             Description = "あまい りんごを たべて しんか。 からだから あまい においを だして エサの むしポケモンを ひきよせる。",
                             IndexId = "0842",
                             Name = "タルップル",
@@ -6788,7 +7431,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 843,
+                            Id = 923,
                             Description = "あなを ほりながら たべた すなを くびの ふくろに ためている。 8キロもの すなが はいるのだ。",
                             IndexId = "0843",
                             Name = "スナヘビ",
@@ -6796,7 +7439,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 844,
+                            Id = 924,
                             Description = "ぜんしんを ちぢめ 100キロの すなを はなの あなから ふんしゃ。 すなが ないと よわきに なるぞ。",
                             IndexId = "0844",
                             Name = "サダイジャ",
@@ -6804,7 +7447,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 845,
+                            Id = 925,
                             Description = "あいてを いちげきで うちまかすほど パワフルだが わすれっぽいので たたかっている あいてを わすれる。",
                             IndexId = "0845",
                             Name = "ウッウ",
@@ -6812,7 +7455,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 846,
+                            Id = 926,
                             Description = "するどく とがった あごが じまん。 すこしでも うごくものを みつけると いっちょくせんに とつげきする。",
                             IndexId = "0846",
                             Name = "サシカマス",
@@ -6820,7 +7463,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 847,
+                            Id = 927,
                             Description = "やりの ように とがった あごは はがねの かたさ。 その みは おどろくほど おいしい らしい。",
                             IndexId = "0847",
                             Name = "カマスジョー",
@@ -6828,7 +7471,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 848,
+                            Id = 928,
                             Description = "たいないの どくぶくろに ためた どくそを ひふから ぶんぴつ。 さわると ピリピリと しびれる。",
                             IndexId = "0848",
                             Name = "エレズン",
@@ -6836,7 +7479,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 849,
+                            Id = 929,
                             Description = "むねの とっきを かきむしり でんきを おこすとき あたりに ギターのような おとが ひびく。",
                             IndexId = "0849",
                             Name = "ストリンダー",
@@ -6844,7 +7487,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 850,
+                            Id = 930,
                             Description = "からだに ためた かねんガスで はつねつ。 とくに おなかの きいろい ぶぶんが あついのだ。",
                             IndexId = "0850",
                             Name = "ヤクデ",
@@ -6852,7 +7495,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 851,
+                            Id = 931,
                             Description = "はつねつじの たいおんは およそ 800ど。 からだを ムチのように しならせて とびかかってくるぞ。",
                             IndexId = "0851",
                             Name = "マルヤクデ",
@@ -6860,7 +7503,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 852,
+                            Id = 932,
                             Description = "えさを もとめ ちじょうに あがる。 こうきしんおうせいで めにしたものは とりあえず しょくしゅで なぐる。",
                             IndexId = "0852",
                             Name = "タタッコ",
@@ -6868,7 +7511,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 853,
+                            Id = 933,
                             Description = "ぜんしんが きんにくの かたまり。 しょくしゅを つかって くりだす しめわざの いりょくは すさまじい。",
                             IndexId = "0853",
                             Name = "オトスパス",
@@ -6876,7 +7519,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 854,
+                            Id = 934,
                             Description = "のこされ ひえきった こうちゃに さみしがりやな たましいが やどり ポケモンに なったと いわれている。",
                             IndexId = "0854",
                             Name = "ヤバチャ",
@@ -6884,7 +7527,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 855,
+                            Id = 935,
                             Description = "アンティークの ポットに すみつく。 ほとんどが がんさくだが ごくまれに しんさくが みつかる ことも。",
                             IndexId = "0855",
                             Name = "ポットデス",
@@ -6892,7 +7535,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 856,
+                            Id = 936,
                             Description = "あたまの とっきで せいぶつの きもちを かんじとる。 おだやかな ものにしか こころを ひらかない。",
                             IndexId = "0856",
                             Name = "ミブリム",
@@ -6900,7 +7543,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 857,
+                            Id = 937,
                             Description = "つよい かんじょうを もつ ものは それが だれであれ だまらせる。 そのしゅだんは じつに らんぼう。",
                             IndexId = "0857",
                             Name = "テブリム",
@@ -6908,7 +7551,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 858,
+                            Id = 938,
                             Description = "ずつうになるほどの サイコパワーを しゅういに はなって ほかの せいぶつを とおざけているのだ。",
                             IndexId = "0858",
                             Name = "ブリムオン",
@@ -6916,7 +7559,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 859,
+                            Id = 939,
                             Description = "ひとや ポケモンが いやがる ときに はっする マイナスエネルギーを はなから すいこみ げんきになる。",
                             IndexId = "0859",
                             Name = "ベロバー",
@@ -6924,7 +7567,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 860,
+                            Id = 940,
                             Description = "どげざして あやまる ふりをして やりのように とがった うしろがみで つきさしてくる せんぽうを つかう。",
                             IndexId = "0860",
                             Name = "ギモー",
@@ -6932,7 +7575,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 861,
+                            Id = 941,
                             Description = "かみのけを ぜんしんに まきつけると きんりょくが アップ。 カイリキーを ねじふせる パワーを はっきする。",
                             IndexId = "0861",
                             Name = "オーロンゲ",
@@ -6940,7 +7583,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 862,
+                            Id = 942,
                             Description = "すさまじい せいりょうを もつ。 シャウトとともに いかくするさまは ブロッキングと よばれている。",
                             IndexId = "0862",
                             Name = "タチフサグマ",
@@ -6948,7 +7591,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 863,
+                            Id = 943,
                             Description = "あたまの たいもうが こうしつかして てつの ヘルメットのように なった。 とても こうせんてきな せいしつ。",
                             IndexId = "0863",
                             Name = "ニャイキング",
@@ -6956,7 +7599,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 864,
+                            Id = 944,
                             Description = "れいりょくが たかまり カラから ときはなたれた。 れいたいで かくの たましいを まもっている。",
                             IndexId = "0864",
                             Name = "サニゴーン",
@@ -6964,7 +7607,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 865,
+                            Id = 945,
                             Description = "れきせんを いきぬいた ものが このすがたに しんかする。 ネギが かれるとき せんじょうを さる。",
                             IndexId = "0865",
                             Name = "ネギガナイト",
@@ -6972,7 +7615,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 866,
+                            Id = 946,
                             Description = "タップダンスの たつじん。 こおりで できた ステッキを ふり かろやかな ステップを ひろうする。",
                             IndexId = "0866",
                             Name = "バリコオル",
@@ -6980,7 +7623,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 867,
+                            Id = 947,
                             Description = "つよい のろいを こめて かかれた こだいの えが デスマスの たましいを とりこみ うごきだした。",
                             IndexId = "0867",
                             Name = "デスバーン",
@@ -6988,7 +7631,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 868,
+                            Id = 948,
                             Description = "クリームで できた からだを もつ。 くうきちゅうの あまい かおりの せいぶんが あつまって うまれた。",
                             IndexId = "0868",
                             Name = "マホミル",
@@ -6996,7 +7639,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 869,
+                            Id = 949,
                             Description = "しんらいする トレーナーには クリームで デコレーションした きのみを ふるまって くれるのだ。",
                             IndexId = "0869",
                             Name = "マホイップ",
@@ -7004,7 +7647,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 870,
+                            Id = 950,
                             Description = "ヘイチョーと よばれる 1ぴきと ヘイと よばれる 5ひきで ひとつ。ヘイチョーの めいれいは ぜったい。",
                             IndexId = "0870",
                             Name = "タイレーツ",
@@ -7012,7 +7655,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 871,
+                            Id = 951,
                             Description = "トゲの さきから でんきを はなつ。 するどい はで いわに ついた かいそうを こそいで たべる。",
                             IndexId = "0871",
                             Name = "バチンウニ",
@@ -7020,7 +7663,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 872,
+                            Id = 952,
                             Description = "れいきの まざった いとを はく。 いとで からだを えだに まきつけ つららの ふりをして ねむるのだ。",
                             IndexId = "0872",
                             Name = "ユキハミ",
@@ -7028,7 +7671,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 873,
+                            Id = 953,
                             Description = "はねの おんどは マイナス180ど。 れいきを こめた りんぷんを ゆきの ように ふりまき のやまを とぶ。",
                             IndexId = "0873",
                             Name = "モスノウ",
@@ -7036,7 +7679,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 874,
+                            Id = 954,
                             Description = "だいそうげんの なかで たたずみ ひの かたむきを ながめて くらす。 ダイナミックな けりわざが とくい。",
                             IndexId = "0874",
                             Name = "イシヘンジン",
@@ -7044,7 +7687,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 875,
+                            Id = 955,
                             Description = "とても さむい ばしょから ながれ ながされ やってきた。 こおりで かおを つねに ひやして いるのだ。",
                             IndexId = "0875",
                             Name = "コオリッポ",
@@ -7052,7 +7695,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 876,
+                            Id = 956,
                             Description = "あたまの ツノで あいての きもちを かんじとる。 オスは じゅうしゃの ように あるじのそばで せわをやく。",
                             IndexId = "0876",
                             Name = "イエッサン",
@@ -7060,7 +7703,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 877,
+                            Id = 957,
                             Description = "いつも おなかを すかせている。 ポケットの ような ふくろに いれた タネを たべて でんきを つくる。",
                             IndexId = "0877",
                             Name = "モルペコ",
@@ -7068,7 +7711,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 878,
+                            Id = 958,
                             Description = "5トンの にもつを もっても へいきな ちからもち ポケモン。 はなを つかって つちを ほる。",
                             IndexId = "0878",
                             Name = "ゾウドウ",
@@ -7076,7 +7719,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 879,
+                            Id = 959,
                             Description = "みどりのひふは みずにも つよい。 むかし ほかのとちから やってきて ひとと いっしょに はたらいた。",
                             IndexId = "0879",
                             Name = "ダイオウドウ",
@@ -7084,7 +7727,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 880,
+                            Id = 960,
                             Description = "こだいでは たくましい かはんしんで むてきだったが エサの しょくぶつを たべつくしてしまい ぜつめつした。",
                             IndexId = "0880",
                             Name = "パッチラゴン",
@@ -7092,7 +7735,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 881,
+                            Id = 961,
                             Description = "こおりづけの じょうはんしんが ふるえると でんきが つくられる。 あるくことが ひじょうに にがて。",
                             IndexId = "0881",
                             Name = "パッチルドン",
@@ -7100,7 +7743,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 882,
+                            Id = 962,
                             Description = "ずばぬけた きゃくりょくと アゴの ちからで こだいでは むてきだったが えものを とりつくし ぜつめつした。",
                             IndexId = "0882",
                             Name = "ウオノラゴン",
@@ -7108,7 +7751,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 883,
+                            Id = 963,
                             Description = "しゅういを こおりつかせて えものを つかまえるが くちが あたまの うえに あるので たべづらい。",
                             IndexId = "0883",
                             Name = "ウオチルドン",
@@ -7116,7 +7759,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 884,
+                            Id = 964,
                             Description = "みがき あげた きんぞくの ような からだは かるいうえに かたいが さびやすいのが けってんなのだ。",
                             IndexId = "0884",
                             Name = "ジュラルドン",
@@ -7124,7 +7767,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 885,
+                            Id = 965,
                             Description = "こだいの うみで くらしていた。 ゴーストポケモンとして よみがえり かつての すみかを さまよっている。",
                             IndexId = "0885",
                             Name = "ドラメシヤ",
@@ -7132,7 +7775,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 886,
+                            Id = 966,
                             Description = "ひこう そくどは じそく200キロ。 ドラメシヤと いっしょに たたかい ぶじに しんかするまで せわをする。",
                             IndexId = "0886",
                             Name = "ドロンチ",
@@ -7140,7 +7783,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 887,
+                            Id = 967,
                             Description = "ツノの あなに ドラメシヤを いれて くらす。 たたかいになると マッハの スピードで ドラメシヤを とばす。",
                             IndexId = "0887",
                             Name = "ドラパルト",
@@ -7148,7 +7791,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 888,
+                            Id = 968,
                             Description = "でんせつの えいゆうと よばれる ポケモン。 きんぞくを とりこみ ぶぐに へんかさせ たたかう。",
                             IndexId = "0888",
                             Name = "ザシアン\n(れきせんのゆうしゃ)",
@@ -7156,7 +7799,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 889,
+                            Id = 969,
+                            Description = "でんせつの えいゆうと よばれる ポケモン。 きんぞくを とりこみ ぶぐに へんかさせ たたかう。",
+                            IndexId = "0888",
+                            Name = "ザシアン\n(けんのおう)",
+                            Type = "フェアリー, はがね"
+                        },
+                        new
+                        {
+                            Id = 970,
                             Description = "ひとのおうと ちからを あわせ ガラルを すくった ポケモン。 きんぞくを とりこみ たたかう。",
                             IndexId = "0889",
                             Name = "ザマゼンタ\n(れきせんのゆうしゃ)",
@@ -7164,7 +7815,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 890,
+                            Id = 971,
+                            Description = "ひとのおうと ちからを あわせ ガラルを すくった ポケモン。 きんぞくを とりこみ たたかう。",
+                            IndexId = "0889",
+                            Name = "ザマゼンタ\n(たてのおう)",
+                            Type = "かくとう, はがね"
+                        },
+                        new
+                        {
+                            Id = 972,
                             Description = "むねの コアが ガラルちほうの だいちから わきだす エネルギーを きゅうしゅうして かつどうしている。",
                             IndexId = "0890",
                             Name = "ムゲンダイナ",
@@ -7172,7 +7831,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 891,
+                            Id = 973,
                             Description = "きびしい たんれんを つみ わざを みがく。 たいとくした わざによって しんかしたときの すがたが かわる。",
                             IndexId = "0891",
                             Name = "ダクマ",
@@ -7180,7 +7839,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 892,
+                            Id = 974,
                             Description = "いちげきひっさつが しんじょう。 あいての ふところに とびこみ きたえられた こぶしを たたきこむ。",
                             IndexId = "0892",
                             Name = "ウーラオス\n(いちげきのかた)",
@@ -7188,7 +7847,15 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 893,
+                            Id = 975,
+                            Description = "いちげきひっさつが しんじょう。 あいての ふところに とびこみ きたえられた こぶしを たたきこむ。",
+                            IndexId = "0892",
+                            Name = "ウーラオス\n(れんげきのかた)",
+                            Type = "かくとう, みず"
+                        },
+                        new
+                        {
+                            Id = 976,
                             Description = "むれを つくり みつりんで くらす。 とても こうげきてきで もりにすむ ポケモンたちから おそれられている。",
                             IndexId = "0893",
                             Name = "ザルード",
@@ -7196,7 +7863,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 894,
+                            Id = 977,
                             Description = "でんきエネルギーの かたまり。 からだの リングを はずすと ひめた ちからが ときはなたれるらしい。",
                             IndexId = "0894",
                             Name = "レジエレキ",
@@ -7204,7 +7871,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 895,
+                            Id = 978,
                             Description = "うでの かたちは こだいの ドラゴン ポケモンの あたまという がくせつも あるが しょうめいされてない。",
                             IndexId = "0895",
                             Name = "レジドラゴ",
@@ -7212,7 +7879,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 896,
+                            Id = 979,
                             Description = "ひづめから きょうりょくな れいきを はなつ。 ほしいものは なんでも ちからずくで うばう あばれんぼう。",
                             IndexId = "0896",
                             Name = "ブリザポス",
@@ -7220,7 +7887,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 897,
+                            Id = 980,
                             Description = "しかく いがいの ごかんを つかい ようすを さぐる。 けられたものは たましいを ぬかれてしまうという。",
                             IndexId = "0897",
                             Name = "レイスポス",
@@ -7228,7 +7895,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 898,
+                            Id = 981,
                             Description = "いやしと めぐみの ちからを もつ じあいに みちた ポケモン。 はるか むかし ガラルに くんりんしていた。",
                             IndexId = "0898",
                             Name = "バドレックス",
@@ -7236,7 +7903,23 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 899,
+                            Id = 982,
+                            Description = "いやしと めぐみの ちからを もつ じあいに みちた ポケモン。 はるか むかし ガラルに くんりんしていた。",
+                            IndexId = "0898",
+                            Name = "バドレックス\n(はくばじょうのすがた)",
+                            Type = "エスパー, こおり"
+                        },
+                        new
+                        {
+                            Id = 983,
+                            Description = "いやしと めぐみの ちからを もつ じあいに みちた ポケモン。 はるか むかし ガラルに くんりんしていた。",
+                            IndexId = "0898",
+                            Name = "バドレックス\n(こくばじょうのすがた)",
+                            Type = "エスパー, ゴースト"
+                        },
+                        new
+                        {
+                            Id = 984,
                             Description = "目に見えぬ 壁を作りしとき 黒き珠 妖しく 輝きたり。 抜け落ちし 髭は 温かく 冬衣の 原料に 重宝す。",
                             IndexId = "0899",
                             Name = "アヤシシ",
@@ -7244,7 +7927,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 900,
+                            Id = 985,
                             Description = "硬き岩で 身を守り 無骨な 斧は 大木を 切り倒す。気性 荒々しく 荒地にて 遭遇しときは 逃げの一手。",
                             IndexId = "0900",
                             Name = "バサギリ",
@@ -7252,7 +7935,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 901,
+                            Id = 986,
                             Description = "ヒスイの地に 敷かれし 湿地の土こそ 頑丈なる体躯と 泥炭を 自在に 扱う 新たな 器量 もたらしたと 考察す。",
                             IndexId = "0901",
                             Name = "ガチグマ",
@@ -7260,7 +7943,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 902,
+                            Id = 987,
                             Description = "遡上の旅路にて 志半ばに 散った 輩の魂を まとう。 ヒスイ 流れし 河川においては 敵うもの 皆無なり。",
                             IndexId = "0902",
                             Name = "イダイトウ",
@@ -7268,7 +7951,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 903,
+                            Id = 988,
                             Description = "他種圧倒する 身体能力と 猛毒 有し 寒冷なる 高地においては 敵なし。 群れ成さず 単独を良しとする 性質。",
                             IndexId = "0903",
                             Name = "オオニューラ",
@@ -7276,7 +7959,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 904,
+                            Id = 989,
                             Description = "槍の如き 針と 凶暴なる 気質にて 海鬼の 異名を 持つ ポケモン。 毒を すすりて 己の 糧とす。",
                             IndexId = "0904",
                             Name = "ハリーマン",
@@ -7284,7 +7967,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 905,
+                            Id = 990,
                             Description = "海を越えて 飛来したらば 厳しき冬の 終わりを知る。 慈愛が ヒスイの地に 新しき命 芽吹かせるとの 伝承あり。",
                             IndexId = "0905",
                             Name = "ラブトロス",
@@ -7292,7 +7975,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 906,
+                            Id = 991,
                             Description = "フワフワの 体毛は 植物に 近い 成分。 こまめに 顔を 洗って 乾燥を 防ぐ。",
                             IndexId = "0906",
                             Name = "ニャオハ",
@@ -7300,7 +7983,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 907,
+                            Id = 992,
                             Description = "長い 体毛の下に 隠した ツタを 器用に 操り 硬い つぼみを 敵に 叩きつける。",
                             IndexId = "0907",
                             Name = "ニャローテ",
@@ -7308,7 +7991,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 908,
+                            Id = 993,
                             Description = "浮いているように 見える 花は マント裏の 毛の 反射で 茎を カモフラージュしているのだ。",
                             IndexId = "0908",
                             Name = "マスカーニャ",
@@ -7316,7 +7999,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 909,
+                            Id = 994,
                             Description = "温かい 岩の上で 寝転び 四角い うろこから 取り込んだ 熱で 炎エネルギーを 作る。",
                             IndexId = "0909",
                             Name = "ホゲータ",
@@ -7324,7 +8007,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 910,
+                            Id = 995,
                             Description = "炎エネルギーと 有り余る 生命力が 交じり 頭上に タマゴ型の 火玉が 現れた。",
                             IndexId = "0910",
                             Name = "アチゲータ",
@@ -7332,7 +8015,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 911,
+                            Id = 996,
                             Description = "歌声で 姿かたちを 変える 炎の鳥は 頭上の 火玉に 魂が 宿ったもの だという。",
                             IndexId = "0911",
                             Name = "ラウドボーン",
@@ -7340,7 +8023,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 912,
+                            Id = 997,
                             Description = "昔 遠い 土地から やって来て 棲みついた。 羽から 分泌する ジェルは 水と 汚れを 弾く。",
                             IndexId = "0912",
                             Name = "クワッス",
@@ -7348,7 +8031,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 913,
+                            Id = 998,
                             Description = "ひたすらに 浅瀬を 走り込んで 足腰を 鍛え 仲間同士で 足技の 華麗さを 競いあう。",
                             IndexId = "0913",
                             Name = "ウェルカモ",
@@ -7356,7 +8039,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 914,
+                            Id = 999,
                             Description = "ひと蹴りで トラックを 転がす 強靭な 脚力を 駆使し エキゾチックな 踊りを みせる。",
                             IndexId = "0914",
                             Name = "ウェーニバル",
@@ -7364,7 +8047,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 915,
+                            Id = 1000,
                             Description = "一日中 エサを 探す。 優れた 嗅覚を 持つが エサ探し 以外に 使わない。",
                             IndexId = "0915",
                             Name = "グルトン",
@@ -7372,7 +8055,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 916,
+                            Id = 1001,
                             Description = "きめ細かく 艶やかな 肌が 自慢。 尻尾の 先端から 凝縮した 香りを 放つ。",
                             IndexId = "0916",
                             Name = "パフュートン",
@@ -7380,7 +8063,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 917,
+                            Id = 1002,
                             Description = "体を 包みこむ 糸玉は 天敵の ストライクの カマを はね返す 弾力性を 持つ。",
                             IndexId = "0917",
                             Name = "タマンチュラ",
@@ -7388,7 +8071,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 918,
+                            Id = 1003,
                             Description = "木の枝や 天井に 糸で 張りつき 音もなく 行動する。 獲物に 気づかれる前に 倒す。",
                             IndexId = "0918",
                             Name = "ワナイダー",
@@ -7396,7 +8079,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 919,
+                            Id = 1004,
                             Description = "第3の脚が 畳まれている。 ピンチになると 10メートル以上 ジャンプする 脚力を 持つ。",
                             IndexId = "0919",
                             Name = "マメバッタ",
@@ -7404,7 +8087,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 920,
+                            Id = 1005,
                             Description = "本気になると 畳んでいた 脚で 立ち上がり 決戦モードになる。 短時間で 敵を 制圧する。",
                             IndexId = "0920",
                             Name = "エクスレッグ",
@@ -7412,7 +8095,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 921,
+                            Id = 1006,
                             Description = "頬の 電気袋は 未発達。 前脚の 肉球で 懸命に 擦ると ようやく 発電できる。",
                             IndexId = "0921",
                             Name = "パモ",
@@ -7420,7 +8103,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 922,
+                            Id = 1007,
                             Description = "群れが 襲われたときは 電撃を 駆使した 格闘技で 真っ先に 戦いを 挑み 敵を 倒す。",
                             IndexId = "0922",
                             Name = "パモット",
@@ -7428,7 +8111,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 923,
+                            Id = 1008,
                             Description = "普段は おっとりしているが いざ 戦いになると 電光石火の 身のこなしで 敵を 叩きのめす。",
                             IndexId = "0923",
                             Name = "パーモット",
@@ -7436,7 +8119,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 924,
+                            Id = 1009,
                             Description = "息の合った コンビネーションで 巣の 材料に なりそうなものを 前歯で 切り出して 運び去る。",
                             IndexId = "0924",
                             Name = "ワッカネズミ",
@@ -7444,7 +8127,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 925,
+                            Id = 1010,
                             Description = "寝床や エサを 食べる 場所など 用途に 合わせて いくつも 部屋が 分かれた 大きな 巣を 作る。",
                             IndexId = "0925",
                             Name = "イッカネズミ",
@@ -7452,7 +8135,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 926,
+                            Id = 1011,
                             Description = "しっとり すべすべの 触り心地。 吐息に 含まれている 酵母で まわりのものを 発酵させる。",
                             IndexId = "0926",
                             Name = "パピモッチ",
@@ -7460,7 +8143,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 927,
+                            Id = 1012,
                             Description = "体から 放つ 良い香りが 小麦の 成長を 助けるため 農村で 大切にされてきた。",
                             IndexId = "0927",
                             Name = "バウッツェル",
@@ -7468,7 +8151,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 928,
+                            Id = 1013,
                             Description = "頭の 実から オイルを 出して 敵から 身を 守る。 オイルは とびあがるほど 苦くて 渋い。",
                             IndexId = "0928",
                             Name = "ミニーブ",
@@ -7476,7 +8159,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 929,
+                            Id = 1014,
                             Description = "フレッシュな 香りの 美味しい オイルを 分けてくれる。 古くから 人間と 共存してきた。",
                             IndexId = "0929",
                             Name = "オリーニョ",
@@ -7484,7 +8167,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 930,
+                            Id = 1015,
                             Description = "穏やかで とても 慈悲深い。 栄養豊富な 美味しい オイルを 弱った ポケモンに 分け与える。",
                             IndexId = "0930",
                             Name = "オリーヴァ",
@@ -7492,7 +8175,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 931,
+                            Id = 1016,
                             Description = "街中で 暮らすことを 好む。 羽の 色で グループを 作り 縄張り争いを 繰り広げる。",
                             IndexId = "0931",
                             Name = "イキリンコ",
@@ -7500,7 +8183,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 932,
+                            Id = 1017,
                             Description = "地底の 岩塩層で 生まれた。 貴重な 塩を 分けてくれるため 昔は とくに 大事にされた。",
                             IndexId = "0932",
                             Name = "コジオ",
@@ -7508,7 +8191,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 933,
+                            Id = 1018,
                             Description = "塩を 噴き出して 獲物に 浴びせ 塩漬けにしてしまう。 体内の 水分を 奪ってしまうのだ。",
                             IndexId = "0933",
                             Name = "ジオヅム",
@@ -7516,7 +8199,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 934,
+                            Id = 1019,
                             Description = "指先を 擦りあわせて 塩を ケガした ポケモンに 振りかけると ひどい 傷も たちまち 治る。",
                             IndexId = "0934",
                             Name = "キョジオーン",
@@ -7524,7 +8207,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 935,
+                            Id = 1020,
                             Description = "焼けた 木炭に 命が 宿り ポケモンになった。 燃える 闘志で 強敵にも 戦いを 挑む。",
                             IndexId = "0935",
                             Name = "カルボウ",
@@ -7532,7 +8215,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 936,
+                            Id = 1021,
                             Description = "多くの 武勲を 立てた 戦士の 鎧によって 進化した 姿。 忠誠心の 厚い ポケモン。",
                             IndexId = "0936",
                             Name = "グレンアルマ",
@@ -7540,7 +8223,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 937,
+                            Id = 1022,
                             Description = "両腕の 炎の剣は 志半ばで 力つきた 剣士の 怨念で 燃え上がる。",
                             IndexId = "0937",
                             Name = "ソウブレイズ",
@@ -7548,7 +8231,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 938,
+                            Id = 1023,
                             Description = "尻尾を 振って 発電する。 危険を 感じると 頭を 点滅させて 仲間に 伝える。",
                             IndexId = "0938",
                             Name = "ズピカ",
@@ -7556,7 +8239,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 939,
+                            Id = 1024,
                             Description = "ブヨンブヨンの 体を 伸び縮み させると お腹の へそダイナモが 大電力を 発生させる。",
                             IndexId = "0939",
                             Name = "ハラバリー",
@@ -7564,7 +8247,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 940,
+                            Id = 1025,
                             Description = "翼の 骨は 風を 受けると 電気を 作る。 海に 飛び込み 獲物を 感電させて 捕らえる。",
                             IndexId = "0940",
                             Name = "カイデン",
@@ -7572,7 +8255,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 941,
+                            Id = 1026,
                             Description = "のど袋を ふくらませて 電気を 増幅させる。 風に 乗って 1日で 700キロを 飛行する。",
                             IndexId = "0941",
                             Name = "タイカイデン",
@@ -7580,7 +8263,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 942,
+                            Id = 1027,
                             Description = "相手に 嘗められないように いつも しかめっ面をしているが 泣いている 子どもは その顔で 笑いだす。",
                             IndexId = "0942",
                             Name = "オラチフ",
@@ -7588,7 +8271,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 943,
+                            Id = 1028,
                             Description = "大きな のど袋に エネルギーを 蓄えることができる。 一気に 放出して 敵を 吹き飛ばす。",
                             IndexId = "0943",
                             Name = "マフィティフ",
@@ -7596,7 +8279,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 944,
+                            Id = 1029,
                             Description = "温厚だが 怒らせると 毒が 染みこんだ 鋭い 前歯で 咬みつき 痺れさせてくるぞ。",
                             IndexId = "0944",
                             Name = "シルシュルー",
@@ -7604,7 +8287,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 945,
+                            Id = 1030,
                             Description = "エサによって 色が 変化する 毒の 唾液を 指に 塗して 森の 木々に 模様を 描く。",
                             IndexId = "0945",
                             Name = "タギングル",
@@ -7612,7 +8295,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 946,
+                            Id = 1031,
                             Description = "成仏できない 魂が 風に 吹かれているうち 枯草を 巻き込んで ポケモンになった。",
                             IndexId = "0946",
                             Name = "アノクサ",
@@ -7620,7 +8303,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 947,
+                            Id = 1032,
                             Description = "頭の 枝を 開いて 獲物を 飲みこむ。 生気を 存分に 吸い取ると 吐き出して 捨てるのだ。",
                             IndexId = "0947",
                             Name = "アノホラグサ",
@@ -7628,7 +8311,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 948,
+                            Id = 1033,
                             Description = "じめじめした 森の中で 暮らす。 剥がれ落ちた 体の ヒラヒラは 歯ごたえがあって とても 美味しい。",
                             IndexId = "0948",
                             Name = "ノノクラゲ",
@@ -7636,7 +8319,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 949,
+                            Id = 1034,
                             Description = "森の奥に 集団で 暮らす コロニーを 作る。 よそ者が 近寄ることを ひどく 嫌う。",
                             IndexId = "0949",
                             Name = "リククラゲ",
@@ -7644,7 +8327,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 950,
+                            Id = 1035,
                             Description = "逆さまになって 崖の 上から 獲物を 狙うが 頭に 血が上るので 長くは 待てない。",
                             IndexId = "0950",
                             Name = "ガケガニ",
@@ -7652,7 +8335,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 951,
+                            Id = 1036,
                             Description = "太陽の 光を 浴びるほど 体内で 辛み成分が 増えて 技が どんどん 辛くなるのだ。",
                             IndexId = "0951",
                             Name = "カプサイジ",
@@ -7660,7 +8343,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 952,
+                            Id = 1037,
                             Description = "レッドヘッドは 辛み成分を 炎エネルギーに 変え 激辛の 火炎放射を まき散らす。",
                             IndexId = "0952",
                             Name = "スコヴィラン",
@@ -7668,7 +8351,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 953,
+                            Id = 1038,
                             Description = "エスパーエネルギーを 混ぜこみながら 土と 砂で 泥玉を 作る。 泥玉は 命より 大切。",
                             IndexId = "0953",
                             Name = "シガロコ",
@@ -7676,7 +8359,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 954,
+                            Id = 1039,
                             Description = "玉を 支える 体は ほとんど 動かないため 本体は 玉の中にいると 考えられている。",
                             IndexId = "0954",
                             Name = "ベラカス",
@@ -7684,7 +8367,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 955,
+                            Id = 1040,
                             Description = "お腹の ヒラヒラから 放射する サイコパワーで わずか 1センチだけ つま先が 地面から 浮いている。",
                             IndexId = "0955",
                             Name = "ヒラヒナ",
@@ -7692,7 +8375,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 956,
+                            Id = 1041,
                             Description = "大きな 瞳から サイコパワーを 浴びせて 相手を 動けなくする。 見かけによらず 気性は 荒い。",
                             IndexId = "0956",
                             Name = "クエスパトラ",
@@ -7700,7 +8383,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 957,
+                            Id = 1042,
                             Description = "手作りの ハンマーを 振りまわして 身を 守るが 金属を 食べる ポケモンには よく 奪われる。",
                             IndexId = "0957",
                             Name = "カヌチャン",
@@ -7708,7 +8391,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 958,
+                            Id = 1043,
                             Description = "大きくて 頑丈な ハンマーを 作るために キリキザンの 群れを 襲って 金属を 集める。",
                             IndexId = "0958",
                             Name = "ナカヌチャン",
@@ -7716,7 +8399,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 959,
+                            Id = 1044,
                             Description = "知能が 高く とても 豪快。 ハンマーで 岩を 殴り飛ばして 空飛ぶ アーマーガアを 狙う。",
                             IndexId = "0959",
                             Name = "デカヌチャン",
@@ -7724,7 +8407,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 960,
+                            Id = 1045,
                             Description = "20メートル先の ミガルーサが 放つ 匂いも 嗅ぎとって 砂の中に 身を 隠すのだ。",
                             IndexId = "0960",
                             Name = "ウミディグダ",
@@ -7732,7 +8415,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 961,
+                            Id = 1046,
                             Description = "見かけによらず 気性が 荒い。 長い 体で 獲物を 締め上げ 巣穴に 引きずりこむぞ。",
                             IndexId = "0961",
                             Name = "ウミトリオ",
@@ -7740,7 +8423,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 962,
+                            Id = 1047,
                             Description = "胸の 羽毛と 抜け落ちた 羽根で 作った 袋に 物を 入れて 高いところから 落として 遊ぶ。",
                             IndexId = "0962",
                             Name = "オトシドリ",
@@ -7748,7 +8431,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 963,
+                            Id = 1048,
                             Description = "尾びれの 水のリングで 仲間と 遊ぶのが 好き。 超音波で 生き物の 気持ちを 察知する。",
                             IndexId = "0963",
                             Name = "ナミイルカ",
@@ -7756,7 +8439,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 964,
+                            Id = 1049,
                             Description = "助けを 求める 仲間の 声を 聞くと 姿を 変える。 その 瞬間は だれにも 見せない。",
                             IndexId = "0964",
                             Name = "イルカマン",
@@ -7764,7 +8447,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 965,
+                            Id = 1050,
                             Description = "スクラップ工場に 放置された エンジンに 謎の 毒ポケモンが 入り込んで 生まれたと 言われる。",
                             IndexId = "0965",
                             Name = "ブロロン",
@@ -7772,7 +8455,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 966,
+                            Id = 1051,
                             Description = "毒素と 岩の 成分を 混ぜた ガスを 8つに 増えた シリンダーで 爆発させ エネルギーを 作る。",
                             IndexId = "0966",
                             Name = "ブロロローム",
@@ -7780,7 +8463,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 967,
+                            Id = 1052,
                             Description = "大昔から 人を 背中に 乗せていたらしい。 1万年前の 壁画に 様子が 描かれている。",
                             IndexId = "0967",
                             Name = "モトトカゲ",
@@ -7788,7 +8471,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 968,
+                            Id = 1053,
                             Description = "敵に 襲われると 体毛を こぶしのように 使い パンチの 嵐を お見舞いするのだ。",
                             IndexId = "0968",
                             Name = "ミミズズ",
@@ -7796,7 +8479,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 969,
+                            Id = 1054,
                             Description = "洞窟の 壁から 栄養分を 吸収。 毒の 結晶で できた 花びらを 身にまとう。",
                             IndexId = "0969",
                             Name = "キラーメ",
@@ -7804,7 +8487,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 970,
+                            Id = 1055,
                             Description = "危険を 察知すると 結晶の 花びらを 開いて 円錐形の 体から ビームを 発射する。",
                             IndexId = "0970",
                             Name = "キラフロル",
@@ -7812,7 +8495,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 971,
+                            Id = 1056,
                             Description = "人と 関わることなく 命を 落とした 野良の 犬ポケモンが 生まれ変わったと 言われている。",
                             IndexId = "0971",
                             Name = "ボチ",
@@ -7820,7 +8503,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 972,
+                            Id = 1057,
                             Description = "普段は 墓場で 眠っている。 数いる 犬ポケモンの中でも もっとも 主に 忠実だ。",
                             IndexId = "0972",
                             Name = "ハカドッグ",
@@ -7828,7 +8511,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 973,
+                            Id = 1058,
                             Description = "お腹に 溜めた エネルギーが くちばしから 漏れないように 首を 根元で 結んでいるらしい。",
                             IndexId = "0973",
                             Name = "カラミンゴ",
@@ -7836,7 +8519,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 974,
+                            Id = 1059,
                             Description = "遥か 昔に 海から 上がって 陸地で 暮らすようになった。 ホエルコに 近い 種類らしい。",
                             IndexId = "0974",
                             Name = "アルクジラ",
@@ -7844,7 +8527,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 975,
+                            Id = 1060,
                             Description = "氷雪地帯を 回遊する。 強靭な 筋肉と ぶ厚い 皮下脂肪で 体を 守る。",
                             IndexId = "0975",
                             Name = "ハルクジラ",
@@ -7852,7 +8535,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 976,
+                            Id = 1061,
                             Description = "無駄な 肉を 捨て去ると 心が 研ぎ澄まされ サイコパワーが 上がる。 贅肉は 淡白だが 美味しい。",
                             IndexId = "0976",
                             Name = "ミガルーサ",
@@ -7860,7 +8543,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 977,
+                            Id = 1062,
                             Description = "大食らいだが エサを 取るのは 苦手。 シャリタツと コンビを 組んで 獲物を 捕らえるのだ。",
                             IndexId = "0977",
                             Name = "ヘイラッシャ",
@@ -7868,7 +8551,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 978,
+                            Id = 1063,
                             Description = "小型の ドラゴンポケモン。 ヘイラッシャの 口の中に 棲み 外敵から 身を 守っている。",
                             IndexId = "0978",
                             Name = "シャリタツ",
@@ -7876,7 +8559,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 979,
+                            Id = 1064,
                             Description = "怒りのボルテージが 臨界点を 超えたとき 肉体という 枠に 縛られない パワーを 手に入れた。",
                             IndexId = "0979",
                             Name = "コノヨザル",
@@ -7884,7 +8567,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 980,
+                            Id = 1065,
                             Description = "敵に 襲われると 太い 棘を 胴体から 突き出して 反撃。 身を切る 覚悟の 危険な 技。",
                             IndexId = "0980",
                             Name = "ドオー",
@@ -7892,7 +8575,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 981,
+                            Id = 1066,
                             Description = "頭と 尻尾の 2つの 脳波が 同期したことで エスパーパワーは キリンリキの 10倍 アップした。",
                             IndexId = "0981",
                             Name = "リキキリン",
@@ -7900,7 +8583,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 982,
+                            Id = 1067,
                             Description = "硬い 尻尾で 地中 深くの 岩盤を くり抜き 巣を 作る。 巣穴は 長さ10キロに およぶ。",
                             IndexId = "0982",
                             Name = "ノココッチ",
@@ -7908,7 +8591,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 983,
+                            Id = 1068,
                             Description = "ドドゲザンに 進化できるのは 大軍勢の 頂点に 立った 1匹の キリキザンだけなのだ。",
                             IndexId = "0983",
                             Name = "ドドゲザン",
@@ -7916,7 +8599,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 984,
+                            Id = 1069,
                             Description = "近年 目撃例が ある。 イダイナキバという 名は ある本に 記された 生物から 取られた。",
                             IndexId = "0984",
                             Name = "イダイナキバ",
@@ -7924,7 +8607,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 985,
+                            Id = 1070,
                             Description = "目撃例は 過去 1件のみ。 古い 探検記に 記された 謎の 生物に 似た ポケモン。",
                             IndexId = "0985",
                             Name = "サケブシッポ",
@@ -7932,7 +8615,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 986,
+                            Id = 1071,
                             Description = "ある本の中で アラブルタケと 記されていた 生物は このポケモンの 可能性がある。",
                             IndexId = "0986",
                             Name = "アラブルタケ",
@@ -7940,7 +8623,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 987,
+                            Id = 1072,
                             Description = "とある 書物に 登場する ハバタクカミという 生物と 似た 特徴を 持つ ポケモン。",
                             IndexId = "0987",
                             Name = "ハバタクカミ",
@@ -7948,7 +8631,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 988,
+                            Id = 1073,
                             Description = "古い 本で チヲハウハネと 紹介されている 生物に 似た点が ある 謎のポケモン。",
                             IndexId = "0988",
                             Name = "チヲハウハネ",
@@ -7956,7 +8639,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 989,
+                            Id = 1074,
                             Description = "捕獲例は ゼロ。 データ不足。 ある 探検記に 記された 生物と 特徴が 一致する。",
                             IndexId = "0989",
                             Name = "スナノケガワ",
@@ -7964,7 +8647,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 990,
+                            Id = 1075,
                             Description = "オカルト雑誌が 紹介した 宇宙人が 送り込んできた 科学兵器に よく 似ている。",
                             IndexId = "0990",
                             Name = "テツノワダチ",
@@ -7972,7 +8655,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 991,
+                            Id = 1076,
                             Description = "オカルト雑誌の 記事になった 太古の 文明が 生み出した ロボットに 形が 似ている。",
                             IndexId = "0991",
                             Name = "テツノツツミ",
@@ -7980,7 +8663,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 992,
+                            Id = 1077,
                             Description = "あるアスリートが 改造された 姿だと オカルト雑誌が スクープした サイボーグに 近い。",
                             IndexId = "0992",
                             Name = "テツノカイナ",
@@ -7988,7 +8671,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 993,
+                            Id = 1078,
                             Description = "ロボットに 恋した サザンドラの 子どもと オカルト雑誌が 取り上げた ポケモンに 似ている。",
                             IndexId = "0993",
                             Name = "テツノコウベ",
@@ -7996,7 +8679,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 994,
+                            Id = 1079,
                             Description = "人類を 監視する UFOだと オカルト雑誌が 紹介した 未知の 物体に 似ている。",
                             IndexId = "0994",
                             Name = "テツノドクガ",
@@ -8004,7 +8687,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 995,
+                            Id = 1080,
                             Description = "10億年後の バンギラスと 怪しい 雑誌が 取り上げていた ポケモンに 似た 部分が ある。",
                             IndexId = "0995",
                             Name = "テツノイバラ",
@@ -8012,7 +8695,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 996,
+                            Id = 1081,
                             Description = "背びれで 熱を 吸収して 氷エネルギーに 変換する。 高温ほど エネルギーが 溜まる。",
                             IndexId = "0996",
                             Name = "セビエ",
@@ -8020,7 +8703,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 997,
+                            Id = 1082,
                             Description = "まわりの 空気を 凍らせて 氷のマスクで 顔を 守り 背びれを 氷の剣に 変える。",
                             IndexId = "0997",
                             Name = "セゴール",
@@ -8028,7 +8711,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 998,
+                            Id = 1083,
                             Description = "極低温の 冷気を 口から 噴射。 灼熱の マグマでも 瞬時に 凍りつかせてしまう。",
                             IndexId = "0998",
                             Name = "セグレイブ",
@@ -8036,7 +8719,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 999,
+                            Id = 1084,
                             Description = "およそ1500年前 宝箱の中で 生まれた。 宝を 盗む 不埒者の 生気を 吸い取る。",
                             IndexId = "0999",
                             Name = "コレクレー",
@@ -8044,7 +8727,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 1000,
+                            Id = 1085,
                             Description = "1000枚の コインで 体が できているらしい。 人懐こく だれとでも すぐに 仲良くなれる。",
                             IndexId = "1000",
                             Name = "サーフゴー",
@@ -8052,7 +8735,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 1001,
+                            Id = 1086,
                             Description = "王の 悪事を 木簡に 記し 処罰された 人の 恨みが 枯葉を まとい ポケモンとなった。",
                             IndexId = "1001",
                             Name = "チオンジェン",
@@ -8060,7 +8743,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 1002,
+                            Id = 1087,
                             Description = "100トンの 積雪を 操る。 雪崩を 起こして その中を 出入りして 無邪気に 遊ぶ。",
                             IndexId = "1002",
                             Name = "パオジアン",
@@ -8068,7 +8751,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 1003,
+                            Id = 1088,
                             Description = "古の 儀式で 使われた 器に 注がれた 恐怖が 土石を まとい ポケモンとなった。",
                             IndexId = "1003",
                             Name = "ディンルー",
@@ -8076,7 +8759,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 1004,
+                            Id = 1089,
                             Description = "3000度の 炎を 操る。 岩や 砂利を 溶かして 作った マグマの海を ゆうゆうと 泳ぐ。",
                             IndexId = "1004",
                             Name = "イーユイ",
@@ -8084,7 +8767,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 1005,
+                            Id = 1090,
                             Description = "謎の 多い 探検記の中で トドロクツキという 名で 記された 生物の 可能性が ある。",
                             IndexId = "1005",
                             Name = "トドロクツキ",
@@ -8092,7 +8775,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 1006,
+                            Id = 1091,
                             Description = "オカルト雑誌の 記事に あった マッドサイエンティストの 発明と 近い 特徴が いくつかある。",
                             IndexId = "1006",
                             Name = "テツノブジン",
@@ -8100,7 +8783,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 1007,
+                            Id = 1092,
                             Description = "拳で 大地を 引き裂いたと 古い 探検記に 記された ツバサノオウの 正体らしい。",
                             IndexId = "1007",
                             Name = "コライドン",
@@ -8108,7 +8791,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 1008,
+                            Id = 1093,
                             Description = "詳細は よく わかっていない。 モトトカゲに 似た 印象だが はるかに 強く 冷酷なのだ。",
                             IndexId = "1008",
                             Name = "ミライドン",
@@ -8116,7 +8799,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 1009,
+                            Id = 1094,
                             Description = "謎多き 凶暴な 生物。 古い 探検記に 記された 水の 怪物から 名付けられた。",
                             IndexId = "1009",
                             Name = "ウネルミナモ",
@@ -8124,7 +8807,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 1010,
+                            Id = 1095,
                             Description = "オカルト雑誌が 取り上げた 未来の ビリジオンの 姿と 多くの 特徴が 一致する。",
                             IndexId = "1010",
                             Name = "テツノイサハ",
@@ -8132,7 +8815,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 1011,
+                            Id = 1096,
                             Description = "ある 地域だけで 栽培される 特別な りんごで 進化した。 2匹で 1匹の ポケモンなのだ。",
                             IndexId = "1011",
                             Name = "カミッチュ",
@@ -8140,7 +8823,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 1012,
+                            Id = 1097,
                             Description = "茶の道を 極めきれず 死んだ 茶道家の 無念が 抹茶に 宿り ポケモンになったらしい。",
                             IndexId = "1012",
                             Name = "チャデス",
@@ -8148,7 +8831,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 1013,
+                            Id = 1098,
                             Description = "お茶の ふりをして 間違えて 飲んでしまった 相手の 生気を 吸い取ろうとするが ばれがちだ。",
                             IndexId = "1013",
                             Name = "ヤバソチャ",
@@ -8156,7 +8839,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 1014,
+                            Id = 1099,
                             Description = "首に ついた 毒素の 鎖で 全身の 筋肉が 刺激され たくましい 体に 変貌した。",
                             IndexId = "1014",
                             Name = "イイネイヌ",
@@ -8164,7 +8847,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 1015,
+                            Id = 1100,
                             Description = "能力を 引き出す 毒素で できた 鎖に 脳を 刺激され サイコパワーが 開花した。",
                             IndexId = "1015",
                             Name = "マシマシラ",
@@ -8172,7 +8855,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 1016,
+                            Id = 1101,
                             Description = "体に 巻きついた 鎖から 出る 毒素の 刺激で 美しい 姿と 声を 手に入れた。",
                             IndexId = "1016",
                             Name = "キチキギス",
@@ -8180,7 +8863,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 1017,
+                            Id = 1102,
                             Description = "身に着ける 仮面によって タイプが 変わる。 俊敏な 身のこなしと 蹴り技で 敵を 翻弄する。",
                             IndexId = "1017",
                             Name = "オーガポン\n(みどりのめん)",
@@ -8188,7 +8871,31 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 1018,
+                            Id = 1103,
+                            Description = "身に着ける 仮面によって タイプが 変わる。 俊敏な 身のこなしと 蹴り技で 敵を 翻弄する。",
+                            IndexId = "1017",
+                            Name = "オーガポン\n(いどのめん)",
+                            Type = "くさ, みず"
+                        },
+                        new
+                        {
+                            Id = 1104,
+                            Description = "身に着ける 仮面によって タイプが 変わる。 俊敏な 身のこなしと 蹴り技で 敵を 翻弄する。",
+                            IndexId = "1017",
+                            Name = "オーガポン\n(かまどのめん)",
+                            Type = "くさ, ほのお"
+                        },
+                        new
+                        {
+                            Id = 1105,
+                            Description = "身に着ける 仮面によって タイプが 変わる。 俊敏な 身のこなしと 蹴り技で 敵を 翻弄する。",
+                            IndexId = "1017",
+                            Name = "オーガポン\n(いしずえのめん)",
+                            Type = "くさ, いわ"
+                        },
+                        new
+                        {
+                            Id = 1106,
                             Description = "まわりから 静電気を 集める。 四つん這いの 体勢で 撃ち出す ビームは 絶大な 威力。",
                             IndexId = "1018",
                             Name = "ブリジュラス",
@@ -8196,7 +8903,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 1019,
+                            Id = 1107,
                             Description = "7匹の オロチュが 蜜飴で 作った りんごのなかで 暮らす。 真ん中の オロチュが 司令塔。",
                             IndexId = "1019",
                             Name = "カミツオロチ",
@@ -8204,7 +8911,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 1020,
+                            Id = 1108,
                             Description = "目撃報告は ごくわずか。 火柱を 噴き 暴れる 姿の 短い 映像が 存在する。",
                             IndexId = "1020",
                             Name = "ウガツホムラ",
@@ -8212,7 +8919,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 1021,
+                            Id = 1109,
                             Description = "体毛から 放つ 雷で あたりを 焼きつくすと いわれる。 詳しいことは わかっていない。",
                             IndexId = "1021",
                             Name = "タケルライコ",
@@ -8220,7 +8927,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 1022,
+                            Id = 1110,
                             Description = "悪の 組織に 改造された テラキオン と 怪しい雑誌が とりあげた ポケモンに 似ている。",
                             IndexId = "1022",
                             Name = "テツノイワオ",
@@ -8228,7 +8935,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 1023,
+                            Id = 1111,
                             Description = "コバルオン型の 最新 兵器 と オカルト雑誌が 紹介した 謎の 物体に 似ている。",
                             IndexId = "1023",
                             Name = "テツノカシラ",
@@ -8236,7 +8943,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 1024,
+                            Id = 1112,
                             Description = "エネルギーを 硬い 結晶に 変える 能力で 身を 守る。 テラスタルの おおもとの ポケモン。",
                             IndexId = "1024",
                             Name = "テラパゴス",
@@ -8244,7 +8951,7 @@ namespace PokemonDex.Migrations
                         },
                         new
                         {
-                            Id = 1025,
+                            Id = 1113,
                             Description = "欲望と 能力を 引き出す 毒素の 餅を 食べさせて 食べた 相手を 鎖で 操るのだ。",
                             IndexId = "1025",
                             Name = "モモワロウ",

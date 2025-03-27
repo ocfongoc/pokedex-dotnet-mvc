@@ -6,6 +6,7 @@
 	<title>@ViewData["Title"] - PokemonDex</title>
 	<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 	<link rel="stylesheet" href="~/PokemonDex.styles.css" asp-append-version="true" />
+	@await RenderSectionAsync("Styles", required: false)
 </head>
 <body>
 
