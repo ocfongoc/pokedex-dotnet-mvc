@@ -1,277 +1,267 @@
 body {
-    margin: 0;
-    background-color: #c5293b;
-    background-image: linear-gradient( rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.05) ) !important;
-    font-family: sans-serif;
+  margin: 0;
+  background-color: #c5293b;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.05)
+  ) !important;
+  font-family: sans-serif;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .container {
-    margin: auto;
-    display: flex;
-    justify-content: center;
+  margin: auto;
+  display: flex;
+  justify-content: center;
 }
 
 .main {
-    background-color: #d2f9f9;
-    padding: 10px;
-    z-index: 2;
-    height: calc(100vh - 20px);
-    width: 1024px;
+  background-color: #d2f9f9;
+  padding: 10px;
+  z-index: 2;
+  height: calc(100vh - 20px);
+  width: 1024px;
 }
 
 .main-inner {
-    display: flex;
-    justify-content: center;
-    border-radius: 10px;
-    background-color: #95e7e7;
-    padding: 8px;
-    height: calc(100% - 16px);
-    box-shadow: 0 0 10px rgb(0 0 0 / 0.1), 0 0 10px rgb(0 0 0 / 0.1);
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #95e7e7;
+  padding: 8px;
+  height: calc(100% - 16px);
+  box-shadow: 0 0 10px rgb(0 0 0 / 0.1), 0 0 10px rgb(0 0 0 / 0.1);
 }
 
 .content {
-    padding: 10px;
-    width: 732px;
-    height: 100%;
-    overflow-y: auto;
+  padding: 10px;
+  width: 732px;
+  height: calc(100% - 2px);
+  overflow-y: auto;
 }
 
 .sidebar {
-    padding: 10px;
-    width: 292px;
-    overflow-y: auto;
-    height: calc(100% - 30px);
+  padding: 10px;
+  width: 292px;
+  overflow-y: auto;
+  height: calc(100% - 30px);
 }
 
 .border {
-    position: relative;
-    width: 424px;
+  position: relative;
+  width: 424px;
 }
 
-    .border.left {
-        border-right: 12px #c0c0c0 solid;
-    }
+.border.left {
+  border-right: 12px #c0c0c0 solid;
+}
 
-    .border.right {
-        border-left: 12px #c0c0c0 solid;
-    }
+.border.right {
+  border-left: 12px #c0c0c0 solid;
+}
 
 .ball-inner {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    z-index: 1;
-    height: 256px;
-    width: 256px;
-    border: 72px black solid;
-    border-radius: 50%;
-    /* background-color: #d2f9f9; */
-    background-color: #ececec;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  height: 256px;
+  width: 256px;
+  border: 72px black solid;
+  border-radius: 50%;
+  /* background-color: #d2f9f9; */
+  background-color: #ececec;
 }
 
-    .ball-inner.left {
-        transform: translateY(-200px) translateX(36px);
-    }
+.ball-inner.left {
+  transform: translateY(-200px) translateX(36px);
+}
 
-    .ball-inner.right {
-        transform: translateY(-200px) translateX(-436px);
-    }
+.ball-inner.right {
+  transform: translateY(-200px) translateX(-436px);
+}
 
 .ball-outer {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    height: 256px;
-    width: 256px;
-    border: 84px #c0c0c0 solid;
-    border-radius: 50%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  height: 256px;
+  width: 256px;
+  border: 84px #c0c0c0 solid;
+  border-radius: 50%;
 }
 
-    .ball-outer.left {
-        transform: translateY(-612px) translateX(24px);
-    }
+.ball-outer.left {
+  transform: translateY(-612px) translateX(24px);
+}
 
-    .ball-outer.right {
-        transform: translateY(-612px) translateX(-448px);
-    }
+.ball-outer.right {
+  transform: translateY(-612px) translateX(-448px);
+}
 
 .name {
-    cursor: pointer;
-    color: white;
-    border-radius: 10px;
-    background-color: #1e8fe7;
-    margin-bottom: 8px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    padding: 5px 10px;
-    font-size: 24px;
-    font-weight: bold;
-    border: 2px #d6d6d6 solid;
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  cursor: pointer;
+  color: white;
+  border-radius: 10px;
+  background-color: #1e8fe7;
+  margin-bottom: 8px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  font-size: 24px;
+  font-weight: bold;
+  border: 2px #d6d6d6 solid;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
 .name span {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .name:hover {
-    opacity: 0.9;
+  opacity: 0.9;
 }
 
 .pokemon-detail {
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-    border: 2px #d6d6d6 solid;
-    background-color: #1e8fe7;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    height: calc(100% - 20px);
-    margin: auto;
-    padding: 40px 20px;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    box-sizing: border-box;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  border: 2px #d6d6d6 solid;
+  background-color: #1e8fe7;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 20px);
+  margin: auto;
+  padding: 40px 20px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  box-sizing: border-box;
 }
 
 .pokemon-image {
-    width: 360px;
-    height: auto;
+  width: 360px;
+  height: auto;
 }
 
 .pokemon-info {
-    text-align: center;
-    width: 100%;
+  text-align: center;
+  width: 100%;
 }
 
 .pokemon-name {
-    font-size: 48px;
-    font-weight: bold;
-    margin: 20px 0;
+  font-size: 48px;
+  font-weight: bold;
+  margin: 20px 0;
 }
 
 .pokemon-type {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin: 10px 0;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 10px 0;
 }
 
 .type-badge {
-    padding: 8px 16px;
-    border-radius: 20px;
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
 }
 
 /* Pokemon type colors */
-.type-badge[data-type="ノーマル"] { background-color: #A8A878; }
-.type-badge[data-type="ほのお"] { background-color: #F08030; }
-.type-badge[data-type="みず"] { background-color: #6890F0; }
-.type-badge[data-type="でんき"] { background-color: #F8D030; }
-.type-badge[data-type="くさ"] { background-color: #78C850; }
-.type-badge[data-type="こおり"] { background-color: #98D8D8; }
-.type-badge[data-type="かくとう"] { background-color: #C03028; }
-.type-badge[data-type="どく"] { background-color: #A040A0; }
-.type-badge[data-type="じめん"] { background-color: #E0C068; }
-.type-badge[data-type="ひこう"] { background-color: #A890F0; }
-.type-badge[data-type="エスパー"] { background-color: #F85888; }
-.type-badge[data-type="むし"] { background-color: #A8B820; }
-.type-badge[data-type="いわ"] { background-color: #B8A038; }
-.type-badge[data-type="ゴースト"] { background-color: #705898; }
-.type-badge[data-type="ドラゴン"] { background-color: #7038F8; }
-.type-badge[data-type="あく"] { background-color: #705848; }
-.type-badge[data-type="はがね"] { background-color: #B8B8D0; }
-.type-badge[data-type="フェアリー"] { background-color: #EE99AC; }
+.type-badge[data-type="ノーマル"] {
+  background-color: #a8a878;
+}
+.type-badge[data-type="ほのお"] {
+  background-color: #f08030;
+}
+.type-badge[data-type="みず"] {
+  background-color: #6890f0;
+}
+.type-badge[data-type="でんき"] {
+  background-color: #f8d030;
+}
+.type-badge[data-type="くさ"] {
+  background-color: #78c850;
+}
+.type-badge[data-type="こおり"] {
+  background-color: #98d8d8;
+}
+.type-badge[data-type="かくとう"] {
+  background-color: #c03028;
+}
+.type-badge[data-type="どく"] {
+  background-color: #a040a0;
+}
+.type-badge[data-type="じめん"] {
+  background-color: #e0c068;
+}
+.type-badge[data-type="ひこう"] {
+  background-color: #a890f0;
+}
+.type-badge[data-type="エスパー"] {
+  background-color: #f85888;
+}
+.type-badge[data-type="むし"] {
+  background-color: #a8b820;
+}
+.type-badge[data-type="いわ"] {
+  background-color: #b8a038;
+}
+.type-badge[data-type="ゴースト"] {
+  background-color: #705898;
+}
+.type-badge[data-type="ドラゴン"] {
+  background-color: #7038f8;
+}
+.type-badge[data-type="あく"] {
+  background-color: #705848;
+}
+.type-badge[data-type="はがね"] {
+  background-color: #b8b8d0;
+}
+.type-badge[data-type="フェアリー"] {
+  background-color: #ee99ac;
+}
 
 .pokemon-description {
-    font-size: 18px;
-    line-height: 1.5;
-    text-align: center;
-    background-color: rgba(30, 143, 231, 0.7);
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 10px;
-    white-space: pre-wrap;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  background-color: rgba(30, 143, 231, 0.7);
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  white-space: pre-wrap;
 }
 
-/* General Reset for Inputs */
-input[type="text"] {
-    display: block;
-    width: 100%;
-    padding: 0.75rem 1rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: 0.375rem;
-    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+.search-button {
+  margin-left: 60px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-    input[type="text"]:focus {
-        border-color: #80bdff;
-        outline: 0;
-        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-    }
-
-/* Label Styling */
-label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: 600;
-    font-size: 0.875rem;
-    color: #212529;
+.search-button svg {
+  width: 48px;
+  height: 48px;
+  stroke: #c0c0c0;
 }
 
-/* Input Group Container */
-.input-group {
-    margin-bottom: 1.5rem;
-    position: relative;
-    width:100%
-}
-
-    /* Helper or Error Text */
-    .input-group .helper-text {
-        font-size: 0.875rem;
-        color: #6c757d;
-        margin-top: 0.25rem;
-    }
-
-    .input-group .error-text {
-        font-size: 0.875rem;
-        color: #dc3545;
-        margin-top: 0.25rem;
-    }
-
-    /* Optional Inline Icon */
-    .input-group .icon {
-        position: absolute;
-        top: 50%;
-        left: 1rem;
-        transform: translateY(-50%);
-        color: #6c757d;
-    }
-
-    .input-group .input-with-icon {
-        padding-left: 2.5rem;
-    }
-
-/* Example Hover Effects */
-input[type="text"]:hover {
-    border-color: #adb5bd;
-}
-
-/* Disabled State */
-input[type="text"][disabled] {
-    background-color: #e9ecef;
-    opacity: 1;
-    cursor: not-allowed;
+.search-button:hover svg {
+  opacity: 0.7;
 }

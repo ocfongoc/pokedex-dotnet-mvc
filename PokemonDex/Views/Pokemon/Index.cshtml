@@ -9,12 +9,5 @@
             <div>ポケモンずかん</div>
         </div>
     </div>
-    <div class="sidebar">
-        @foreach (var pokemon in Model)
-        {
-            <a asp-action="Detail" asp-route-id="@pokemon.IndexId">
-                <div class="name"><span>No.@pokemon.IndexId</span> @pokemon.Name</div>
-            </a>
-        }
-    </div>
+    @await Html.PartialAsync("_PokemonSidebar", Model)
 </div>

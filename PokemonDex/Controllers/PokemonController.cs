@@ -43,6 +43,40 @@ namespace PokemonDex.Controllers
             return View(pokemonDetailViewModel);
         }
 
+        public IActionResult Search()
+        {
+            List<Pokemon> pokemons = _db.Pokemons.ToList();
+            return View(new PokemonSearchViewModel { pokemons = pokemons });
+        }
+
+        [HttpPost]
+        public IActionResult Search(PokemonSearchViewModel model)
+        {
+            List<Pokemon> pokemons = _db.Pokemons.ToList();
+            model.pokemons = pokemons;
+
+            if (string.IsNullOrEmpty(model.SearchTerm))
+            {
+                return View(model);
+            }
+
+            var searchTerm = model.SearchTerm.ToLower();
+            var matchingPokemon = model.SearchType switch
+            {
+                "id" => pokemons.FirstOrDefault(p => p.IndexId.ToLower().Contains(searchTerm)),
+                "name" => pokemons.FirstOrDefault(p => p.Name.ToLower().Contains(searchTerm)),
+                "type" => pokemons.FirstOrDefault(p => p.Type.ToLower().Contains(searchTerm)),
+                _ => null
+            };
+
+            if (matchingPokemon != null)
+            {
+                return RedirectToAction("Detail", new { id = matchingPokemon.IndexId });
+            }
+
+            return View(model);
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
