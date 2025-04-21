@@ -20,20 +20,94 @@
 		</div>
 		<div class="border right">
 			<div class="ball-inner right">
-				<a href="@Url.Action("Search", "Pokemon")" class="search-button">
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search">
-						<circle cx="11" cy="11" r="8"/>
-						<path d="m21 21-4.3-4.3"/>
-					</svg>
-				</a>
+				<div class="side-buttons">
+					<a asp-action="Index" class="side-button">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu"><line x1="4" x2="20" y1="12" y2="12" /><line x1="4" x2="20" y1="6" y2="6" /><line x1="4" x2="20" y1="18" y2="18" /></svg>
+					</a>
+					<a asp-action="Search" class="side-button">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+							<circle cx="11" cy="11" r="8" />
+							<path d="m21 21-4.3-4.3" />
+						</svg>
+					</a>
+					<button class="side-button" onclick="openSearchModal()">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+							<circle cx="11" cy="11" r="8" />
+							<path d="m21 21-4.3-4.3" />
+						</svg>
+					</button>
+				</div>
+				
 			</div>
 			<div class="ball-outer right"></div>
+		</div>
+	</div>
+	
+	<!-- Search Modal -->
+	<div id="searchModal" class="modal">
+		<div class="modal-content">
+			<h2>ポケモン検索</h2>
+			<form id="searchForm" method="post" class="search-form">
+				<div class="form-group">
+					<input name="IndexId" class="form-control" placeholder="図鑑No." />
+				</div>
+				<div class="form-group">
+					<input name="Name" class="form-control" placeholder="ポケモン名" />
+				</div>
+				<button type="submit" class="btn btn-pokemon">検索</button>
+			</form>
 		</div>
 	</div>
 	
 	<script src="~/lib/jquery/dist/jquery.min.js"></script>
 	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="~/js/site.js" asp-append-version="true"></script>
+	<script>
+		function openSearchModal() {
+			document.getElementById('searchModal').style.display = 'block';
+		}
+
+		function closeSearchModal() {
+			document.getElementById('searchModal').style.display = 'none';
+		}
+
+		// Close modal when clicking outside
+		window.onclick = function(event) {
+			if (event.target == document.getElementById('searchModal')) {
+				closeSearchModal();
+			}
+		}
+
+		// Handle form submission with AJAX
+		$(document).ready(function() {
+			$('#searchForm').on('submit', function(e) {
+				e.preventDefault();
+				
+				var formData = {
+					IndexId: $('input[name="IndexId"]').val(),
+					Name: $('input[name="Name"]').val()
+				};
+
+				$.ajax({
+					url: '@Url.Action("SearchAjax", "Pokemon")',
+					type: 'POST',
+					data: formData,
+					success: function(response) {
+						if (response.success) {
+							window.location.href = response.redirectUrl;
+						} else {
+							alert(response.message);
+						}
+					},
+					error: function(xhr, status, error) {
+						console.error('Error:', error);
+						alert('An error occurred while searching. Please try again.');
+					}
+				});
+			});
+		});
+	</script>
 	@await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+

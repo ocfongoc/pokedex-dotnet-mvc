@@ -1,4 +1,4 @@
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using PokemonDex.Data;
 using PokemonDex.Models;
@@ -45,36 +45,48 @@ namespace PokemonDex.Controllers
 
         public IActionResult Search()
         {
-            List<Pokemon> pokemons = _db.Pokemons.ToList();
-            return View(new PokemonSearchViewModel { pokemons = pokemons });
+            return View();
         }
 
         [HttpPost]
-        public IActionResult Search(PokemonSearchViewModel model)
+        public IActionResult Search(PokemonSearch model)
         {
-            List<Pokemon> pokemons = _db.Pokemons.ToList();
-            model.pokemons = pokemons;
-
-            if (string.IsNullOrEmpty(model.SearchTerm))
+            Pokemon? pokemon = null;
+            if (model.IndexId != null) { 
+                pokemon = _db.Pokemons.FirstOrDefault(p => p.IndexId == model.IndexId);
+            }
+            if (model.Name != null)
             {
-                return View(model);
+                pokemon = _db.Pokemons.FirstOrDefault(p => p.Name == model.Name);
             }
 
-            var searchTerm = model.SearchTerm.ToLower();
-            var matchingPokemon = model.SearchType switch
+            if (pokemon != null)
             {
-                "id" => pokemons.FirstOrDefault(p => p.IndexId.ToLower().Contains(searchTerm)),
-                "name" => pokemons.FirstOrDefault(p => p.Name.ToLower().Contains(searchTerm)),
-                "type" => pokemons.FirstOrDefault(p => p.Type.ToLower().Contains(searchTerm)),
-                _ => null
-            };
-
-            if (matchingPokemon != null)
-            {
-                return RedirectToAction("Detail", new { id = matchingPokemon.IndexId });
+                return RedirectToAction("Detail", new { id = pokemon.IndexId });
             }
 
             return View(model);
+        }
+
+        [HttpPost]
+        public IActionResult SearchAjax(PokemonSearch model)
+        {
+            if (string.IsNullOrEmpty(model.IndexId) && string.IsNullOrEmpty(model.Name))
+            {
+                return Json(new { success = false, message = "検索内容を入力してください" });
+            }
+
+            var pokemon = _db.Pokemons.FirstOrDefault(p => 
+                (!string.IsNullOrEmpty(model.IndexId) && p.IndexId.Contains(model.IndexId)) ||
+                (!string.IsNullOrEmpty(model.Name) && p.Name.Contains(model.Name))
+            );
+
+            if (pokemon != null)
+            {
+                return Json(new { success = true, redirectUrl = Url.Action("Detail", new { id = pokemon.IndexId }) });
+            }
+
+            return Json(new { success = false, message = "ポケモンが見つからない" });
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
